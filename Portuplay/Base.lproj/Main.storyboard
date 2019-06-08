@@ -18,7 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNa-YA-BQn">
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="tXN-tU-Zff">
+                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="E98-Iw-1sg"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNa-YA-BQn">
                                 <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -59,19 +66,28 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tXN-tU-Zff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1rj-G4-TTE"/>
                             <constraint firstAttribute="bottom" secondItem="DNa-YA-BQn" secondAttribute="bottom" id="6uP-Wu-AZH"/>
+                            <constraint firstItem="tXN-tU-Zff" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LQg-HO-3rx"/>
+                            <constraint firstItem="tXN-tU-Zff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pkv-Iv-zWU"/>
                             <constraint firstItem="DNa-YA-BQn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RoJ-c6-Aff"/>
                             <constraint firstItem="DNa-YA-BQn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bqf-m7-jOi"/>
+                            <constraint firstItem="DNa-YA-BQn" firstAttribute="top" secondItem="tXN-tU-Zff" secondAttribute="bottom" id="iS5-4b-8wa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Desafios" id="FM3-Cz-oxg"/>
                     <connections>
                         <outlet property="desafiosTable" destination="DNa-YA-BQn" id="z1U-tk-c8o"/>
+                        <outlet property="searchBar" destination="tXN-tU-Zff" id="Wq6-24-CJR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="yhD-I7-bQ8"/>
+                <searchDisplayController id="yhD-I7-bQ8">
+                    <connections>
+                        <outlet property="searchBar" destination="tXN-tU-Zff" id="6Wp-m7-Ngp"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
