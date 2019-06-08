@@ -59,7 +59,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         return searchController.searchBar.text?.isEmpty ?? true
     }
     
-    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+    func filterContentForSearchText(_ searchText: String) {
         filteredDesafios = desafios.filter { $0.title.localizedCaseInsensitiveContains(searchText)}
         desafiosTable.reloadData()
     }
