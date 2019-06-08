@@ -14,6 +14,7 @@
 		27C78CA722A87E670039E362 /* Desafio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CA622A87E670039E362 /* Desafio.swift */; };
 		27C78CA922A87F550039E362 /* DesafiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CA822A87F550039E362 /* DesafiosViewController.swift */; };
 		27C78CAB22A881FA0039E362 /* DesafioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CAA22A881FA0039E362 /* DesafioCell.swift */; };
+		6F2DC69BEE6A6D2C21980470 /* Pods_Portuplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		27C78CA622A87E670039E362 /* Desafio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio.swift; sourceTree = "<group>"; };
 		27C78CA822A87F550039E362 /* DesafiosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafiosViewController.swift; sourceTree = "<group>"; };
 		27C78CAA22A881FA0039E362 /* DesafioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioCell.swift; sourceTree = "<group>"; };
+		32D415F5EAA1D831C485DD8F /* Pods-Portuplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portuplay.release.xcconfig"; path = "Target Support Files/Pods-Portuplay/Pods-Portuplay.release.xcconfig"; sourceTree = "<group>"; };
+		7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portuplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EDCD3BB193EFAAC00805C4 /* Pods-Portuplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portuplay.debug.xcconfig"; path = "Target Support Files/Pods-Portuplay/Pods-Portuplay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2DC69BEE6A6D2C21980470 /* Pods_Portuplay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				27C78C9322A847C40039E362 /* Portuplay */,
 				27C78C9222A847C40039E362 /* Products */,
+				D3CDB756AD93F03EC1081481 /* Pods */,
+				86CE5717F15194737E6DEC11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = Portuplay;
 			sourceTree = "<group>";
 		};
+		86CE5717F15194737E6DEC11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3CDB756AD93F03EC1081481 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6EDCD3BB193EFAAC00805C4 /* Pods-Portuplay.debug.xcconfig */,
+				32D415F5EAA1D831C485DD8F /* Pods-Portuplay.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27C78CA322A847C50039E362 /* Build configuration list for PBXNativeTarget "Portuplay" */;
 			buildPhases = (
+				F83B0A016799F46B67F017F5 /* [CP] Check Pods Manifest.lock */,
 				27C78C8D22A847C40039E362 /* Sources */,
 				27C78C8E22A847C40039E362 /* Frameworks */,
 				27C78C8F22A847C40039E362 /* Resources */,
+				A48B3E23A1AC978773213612 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A48B3E23A1AC978773213612 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Portuplay/Pods-Portuplay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Portuplay/Pods-Portuplay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Portuplay/Pods-Portuplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83B0A016799F46B67F017F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Portuplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27C78C8D22A847C40039E362 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		27C78CA422A847C50039E362 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6EDCD3BB193EFAAC00805C4 /* Pods-Portuplay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +376,7 @@
 		};
 		27C78CA522A847C50039E362 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D415F5EAA1D831C485DD8F /* Pods-Portuplay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

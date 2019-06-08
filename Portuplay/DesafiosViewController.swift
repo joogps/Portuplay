@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class DesafiosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var desafiosTable: UITableView!
