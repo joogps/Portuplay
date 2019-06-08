@@ -12,8 +12,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var desafiosTable: UITableView!
     var desafios: [Desafio] = []
     
-    @IBOutlet weak var searchBar: UISearchBar!
-    var isSearching = false
+    let searchController = UISearchController(searchResultsController: nil)
     var filteredDesafios: [Desafio] = []
     
     override func viewDidLoad() {
@@ -23,11 +22,14 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         desafios.append(Desafio(title: "Adjetivos", subtitle: "Intermediário"))
         desafios.append(Desafio(title: "Verbos", subtitle: "Fácil"))
         
-        searchBar.returnKeyType = .done
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isSearching {
+        if isSearching() {
             return filteredDesafios.count
         }
         
@@ -40,9 +42,9 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
             return UITableViewCell()
         }
         
-        var desafio: Desafio!
+        var desafio: Desafio
         
-        if isSearching {
+        if isSearching() {
             desafio = filteredDesafios[indexPath.row]
         } else {
             desafio = desafios[indexPath.row]
@@ -53,15 +55,22 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text == nil || searchBar.text == "" {
-            isSearching = false
-            view.endEditing(true)
-        } else {
-            isSearching = true
-            filteredDesafios = desafios.filter ({$0.title.localizedCaseInsensitiveContains(searchBar.text!)})
-        }
-        
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredDesafios = desafios.filter { $0.title.localizedCaseInsensitiveContains(searchText)}
         desafiosTable.reloadData()
+    }
+    
+    func isSearching() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+}
+
+extension DesafiosViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
     }
 }
