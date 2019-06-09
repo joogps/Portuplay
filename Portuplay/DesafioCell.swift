@@ -14,7 +14,7 @@ class DesafioCell: UITableViewCell {
     
     func setDesafio (_ desafio: Desafio) {
         title.text = desafio.title
-        subtitle.text = desafio.subtitle
+        subtitle.text = desafio.difficulty
         
         self.isHidden = false
     }

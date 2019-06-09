@@ -10,10 +10,12 @@ import Foundation
 
 class Desafio {
     var title: String
-    var subtitle: String
+    var difficulty: String
+    var goal: String
     
-    init(title: String, subtitle: String) {
+    init(title: String, difficulty: String, goal: String) {
         self.title = title
-        self.subtitle = subtitle
+        self.difficulty = difficulty
+        self.goal = goal
     }
 }

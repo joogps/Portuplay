@@ -19,9 +19,15 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        desafios.append(Desafio(title: "Substantivos", subtitle: "Fácil"))
-        desafios.append(Desafio(title: "Adjetivos", subtitle: "Intermediário"))
-        desafios.append(Desafio(title: "Verbos", subtitle: "Fácil"))
+        let files = ["Substantivos", "Adjetivos", "Verbos"]
+        for file in files {
+            let path = Bundle.main.path(forResource: file, ofType: "json")
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
+            let json = try? JSON(data: data!)
+            
+            let desafio = Desafio(title: json!["title"].string!, difficulty: json!["difficulty"].string!, goal: json!["goal"].string!)
+            desafios.append(desafio)
+        }
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

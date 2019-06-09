@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270E789522ACA8340002FE10 /* Verbos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789222ACA8330002FE10 /* Verbos.json */; };
+		270E789622ACA8340002FE10 /* Adjetivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789322ACA8330002FE10 /* Adjetivos.json */; };
+		270E789722ACA8340002FE10 /* Substantivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789422ACA8330002FE10 /* Substantivos.json */; };
 		27C78C9522A847C40039E362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78C9422A847C40039E362 /* AppDelegate.swift */; };
 		27C78C9A22A847C40039E362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C78C9822A847C40039E362 /* Main.storyboard */; };
 		27C78C9C22A847C50039E362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C78C9B22A847C50039E362 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270E789222ACA8330002FE10 /* Verbos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Verbos.json; sourceTree = "<group>"; };
+		270E789322ACA8330002FE10 /* Adjetivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Adjetivos.json; sourceTree = "<group>"; };
+		270E789422ACA8330002FE10 /* Substantivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Substantivos.json; sourceTree = "<group>"; };
 		27C78C9122A847C40039E362 /* Portuplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portuplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C78C9422A847C40039E362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C78C9922A847C40039E362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +50,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270E789122ACA8330002FE10 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				270E789222ACA8330002FE10 /* Verbos.json */,
+				270E789322ACA8330002FE10 /* Adjetivos.json */,
+				270E789422ACA8330002FE10 /* Substantivos.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		27C78C8822A847C40039E362 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +89,7 @@
 				27C78C9B22A847C50039E362 /* Assets.xcassets */,
 				27C78C9D22A847C50039E362 /* LaunchScreen.storyboard */,
 				27C78CA022A847C50039E362 /* Info.plist */,
+				270E789122ACA8330002FE10 /* Data */,
 			);
 			path = Portuplay;
 			sourceTree = "<group>";
@@ -91,7 +108,6 @@
 				D6EDCD3BB193EFAAC00805C4 /* Pods-Portuplay.debug.xcconfig */,
 				32D415F5EAA1D831C485DD8F /* Pods-Portuplay.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +171,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270E789722ACA8340002FE10 /* Substantivos.json in Resources */,
+				270E789622ACA8340002FE10 /* Adjetivos.json in Resources */,
+				270E789522ACA8340002FE10 /* Verbos.json in Resources */,
 				27C78C9F22A847C50039E362 /* LaunchScreen.storyboard in Resources */,
 				27C78C9C22A847C50039E362 /* Assets.xcassets in Resources */,
 				27C78C9A22A847C40039E362 /* Main.storyboard in Resources */,
