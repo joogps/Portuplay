@@ -7,15 +7,18 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Desafio {
     var title: String
-    var difficulty: String
     var goal: String
+    var difficulty: String
+    var time: Int
     
-    init(title: String, difficulty: String, goal: String) {
-        self.title = title
-        self.difficulty = difficulty
-        self.goal = goal
+    init(_ obj: JSON) {
+        title = obj["title"].string!
+        goal = obj["goal"].string!
+        difficulty = obj["difficulty"].string!
+        time = obj["time"].int!
     }
 }

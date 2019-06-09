@@ -1,7 +1,8 @@
 {
     "title": "Substantivos",
-    "difficulty": "Fácil",
     "goal": "Aperte nos substantivos presentes em cada frase",
+    "difficulty": "Fácil",
+    "time": 160,
     "phrases": [
         {"main": "Eu gosto de suco.", "select": ["suco"]}
     ]

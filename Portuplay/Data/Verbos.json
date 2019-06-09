@@ -1,7 +1,8 @@
 {
     "title": "Verbos",
-    "difficulty": "Fácil",
     "goal": "Aperte nos verbos presentes em cada frase",
+    "difficulty": "Fácil",
+    "time": 160,
     "phrases": [
         {"main": "Ele andou pela cidade.", "select": ["andou"]}
     ]

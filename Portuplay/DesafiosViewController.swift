@@ -25,7 +25,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
             let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
             let json = try? JSON(data: data!)
             
-            let desafio = Desafio(title: json!["title"].string!, difficulty: json!["difficulty"].string!, goal: json!["goal"].string!)
+            let desafio = Desafio(json!)
             desafios.append(desafio)
         }
         
@@ -43,7 +43,6 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         return desafios.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DesafioCell") as? DesafioCell else {
             return UITableViewCell()
@@ -60,6 +59,22 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.setDesafio(desafio)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController: DetailsViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailsViewController
+
+        var desafio: Desafio
+        
+        if isSearching() {
+            desafio = filteredDesafios[indexPath.row]
+        } else {
+            desafio = desafios[indexPath.row]
+        }
+        
+        detailViewController.setDetails(desafio)
+        
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     func searchBarIsEmpty() -> Bool {

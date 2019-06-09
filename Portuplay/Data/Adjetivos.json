@@ -1,7 +1,8 @@
 {
     "title": "Adjetivos",
-    "difficulty": "Intermediário",
     "goal": "Aperte nos adjetivos presentes em cada frase",
+    "difficulty": "Intermediário",
+    "time": 180,
     "phrases": [
         {"main": "Ele é alto.", "select": ["alto"]}
     ]
