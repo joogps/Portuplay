@@ -75,6 +75,8 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         detailsViewController.title = desafio.title
         
         self.navigationController?.pushViewController(detailsViewController, animated: true)
+        
+        desafiosTable.deselectRow(at: indexPath, animated: true)
     }
     
     func searchBarIsEmpty() -> Bool {
