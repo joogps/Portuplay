@@ -62,7 +62,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailViewController: DetailsViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailsViewController
+        let detailsViewController: UIViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! UIViewController
 
         var desafio: Desafio
         
@@ -72,9 +72,9 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
             desafio = desafios[indexPath.row]
         }
         
-        detailViewController.setDetails(desafio)
+        detailsViewController.title = desafio.title
         
-        self.navigationController?.pushViewController(detailViewController, animated: true)
+        self.navigationController?.pushViewController(detailsViewController, animated: true)
     }
     
     func searchBarIsEmpty() -> Bool {
