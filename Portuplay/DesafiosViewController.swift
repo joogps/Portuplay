@@ -62,7 +62,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailsViewController: UIViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! UIViewController
+        let detailsViewController: DetailsViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailsViewController
 
         var desafio: Desafio
         
@@ -72,7 +72,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
             desafio = desafios[indexPath.row]
         }
         
-        detailsViewController.title = desafio.title
+        detailsViewController.setDetails(desafio)
         
         self.navigationController?.pushViewController(detailsViewController, animated: true)
         
