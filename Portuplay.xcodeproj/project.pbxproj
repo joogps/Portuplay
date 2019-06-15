@@ -17,6 +17,7 @@
 		27C78CA722A87E670039E362 /* Desafio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CA622A87E670039E362 /* Desafio.swift */; };
 		27C78CA922A87F550039E362 /* DesafiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CA822A87F550039E362 /* DesafiosViewController.swift */; };
 		27C78CAB22A881FA0039E362 /* DesafioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CAA22A881FA0039E362 /* DesafioCell.swift */; };
+		27E91F5722B46B390047CC59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E91F5622B46B390047CC59 /* GameViewController.swift */; };
 		27F9E2FA22B3026B005B1AE2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9E2F922B3026B005B1AE2 /* DetailsViewController.swift */; };
 		6F2DC69BEE6A6D2C21980470 /* Pods_Portuplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		27C78CA622A87E670039E362 /* Desafio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio.swift; sourceTree = "<group>"; };
 		27C78CA822A87F550039E362 /* DesafiosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafiosViewController.swift; sourceTree = "<group>"; };
 		27C78CAA22A881FA0039E362 /* DesafioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioCell.swift; sourceTree = "<group>"; };
+		27E91F5622B46B390047CC59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		27F9E2F922B3026B005B1AE2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		32D415F5EAA1D831C485DD8F /* Pods-Portuplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portuplay.release.xcconfig"; path = "Target Support Files/Pods-Portuplay/Pods-Portuplay.release.xcconfig"; sourceTree = "<group>"; };
 		7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portuplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				27C78C9822A847C40039E362 /* Main.storyboard */,
 				27C78CA822A87F550039E362 /* DesafiosViewController.swift */,
 				27F9E2F922B3026B005B1AE2 /* DetailsViewController.swift */,
+				27E91F5622B46B390047CC59 /* GameViewController.swift */,
 				27C78CAA22A881FA0039E362 /* DesafioCell.swift */,
 				27C78CA622A87E670039E362 /* Desafio.swift */,
 				27C78C9B22A847C50039E362 /* Assets.xcassets */,
@@ -236,6 +239,7 @@
 				27C78C9522A847C40039E362 /* AppDelegate.swift in Sources */,
 				27C78CA922A87F550039E362 /* DesafiosViewController.swift in Sources */,
 				27C78CAB22A881FA0039E362 /* DesafioCell.swift in Sources */,
+				27E91F5722B46B390047CC59 /* GameViewController.swift in Sources */,
 				27F9E2FA22B3026B005B1AE2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

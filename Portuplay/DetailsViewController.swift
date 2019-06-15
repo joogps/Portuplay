@@ -9,6 +9,10 @@
 import UIKit
 
 class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var detailsTable: UITableView!
+    
+    var desafio: Desafio? = nil
+    
     let sections = ["OBJETIVO", "DIFICULDADE", "TEMPO", ""]
     var labels: [String] = []
 
@@ -17,6 +21,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func setDetails(_ desafio: Desafio) {
+        self.desafio = desafio
+        
         let title = desafio.title
         let goal = desafio.goal
         let difficulty = desafio.difficulty
@@ -57,5 +63,14 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return cell!
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
+        
+        gameViewController.setGame(desafio!)
+        
+        self.navigationController?.pushViewController(gameViewController, animated: true)
+        
+        detailsTable.deselectRow(at: indexPath, animated: true)
+    }
 }

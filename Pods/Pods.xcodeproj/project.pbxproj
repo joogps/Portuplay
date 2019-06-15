@@ -3,21 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22E8939D266172F82E3F9D62BF8D2F89 /* Pods-Portuplay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6055DF3F32348EF58E560A835658C9 /* Pods-Portuplay-dummy.m */; };
-		29C63AB0D159A830DBD4F8E61F5CE5DE /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		763EA582B030AB9A2FC93F6C1AF1EF19 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */; };
-		B8B9F6DA9BE6BE3679EC77D89E028E73 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */; };
+		29C63AB0D159A830DBD4F8E61F5CE5DE /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8292908E3FFD49D7A4FEC9C0BBDE4847 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BEDF1575C99119501C203D96F6C6679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4F256F296FEA82A84729BC1277E411B6 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B1904D51BB9199417B656E9F510BA /* TagListView.swift */; };
+		5DA131A18A8FAAC571AEF9FAAC201C84 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B483D0525BD337DCE29C4AD79FCA2B83 /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B35AC325A3D395C4E90DBC7589D2F00 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D309CF4A23BA6B7EE066651524CE64C3 /* TagView.swift */; };
+		726FB505E9371C571526F1146F8CCDE1 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980665896A3C58C15AE1560C8ED2AD31 /* CloseButton.swift */; };
+		763EA582B030AB9A2FC93F6C1AF1EF19 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0287CB88F835EC13DEC1E2D80305E6C2 /* SwiftyJSON-dummy.m */; };
+		A38277087BDFD4804DAFC7833A19FABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B8B9F6DA9BE6BE3679EC77D89E028E73 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0317DD088146913D4E769799FFEB9418 /* SwiftyJSON.swift */; };
 		BA6D4D69802EBF7C16A65FAE1F8965C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BF493D0673D6BA7CE2E429CB2952E9E4 /* Pods-Portuplay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8856C954F5F9010144B81FEF7668880F /* Pods-Portuplay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6AB25106B33086BA031517798809BBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BB1BF2BCF3D758A7D034FB7229529E43 /* Pods-Portuplay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8856C954F5F9010144B81FEF7668880F /* Pods-Portuplay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD4131E120E52D73E03B634985FDB5D4 /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8013996F9C93C400561CFB2806A6083 /* TagListView-dummy.m */; };
+		F39AA161F5324D14F3537E3BC0DF1E61 /* Pods-Portuplay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6055DF3F32348EF58E560A835658C9 /* Pods-Portuplay-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		520560C5264E09C9F8BB2A64E23B21BB /* PBXContainerItemProxy */ = {
+		008856F55834E1A4825CB9C15D445639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
+			remoteInfo = TagListView;
+		};
+		45E8179E20D84CB9323EF2684ABFFF05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -27,26 +40,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05EB2E221DD60B8EFCF51F6CEE4D84ED /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		0287CB88F835EC13DEC1E2D80305E6C2 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		0317DD088146913D4E769799FFEB9418 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		0EE862AAB4EF86A31E24205926E8D4A3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		18608F39384449F29CA82BC2235E22F7 /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
 		1DA9B3253612965920EFC46EFE8CEC46 /* Pods-Portuplay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Portuplay-Info.plist"; sourceTree = "<group>"; };
 		2272EB45ABFED799C20F11CB1ABB94D5 /* Pods-Portuplay-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Portuplay-frameworks.sh"; sourceTree = "<group>"; };
+		298CF7600F72BC6451917CB2CDBB1739 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3982AA736383DAA86EE47BB47A83DDBC /* Pods-Portuplay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Portuplay-acknowledgements.plist"; sourceTree = "<group>"; };
 		3A68891E38A242C3F01B01B71A9DB72D /* Pods_Portuplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Portuplay.framework; path = "Pods-Portuplay.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		4CBD637252FF8EBA2CB01982D5DB40F4 /* Pods-Portuplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Portuplay.debug.xcconfig"; sourceTree = "<group>"; };
-		571603CA3E54B6CD8547FC7AAB992E07 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		5D1B1904D51BB9199417B656E9F510BA /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
 		67747A845ACD39E22DC33ACA2B38A397 /* Pods-Portuplay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Portuplay.modulemap"; sourceTree = "<group>"; };
+		7EADCB108FF779C887D7F424A14A698D /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
+		8292908E3FFD49D7A4FEC9C0BBDE4847 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView.framework; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856C954F5F9010144B81FEF7668880F /* Pods-Portuplay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Portuplay-umbrella.h"; sourceTree = "<group>"; };
+		92BBD72D4B8E84EBEE73AD779CBF025E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		980665896A3C58C15AE1560C8ED2AD31 /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABD632A63C0F82E41B483B82C793EED8 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
 		AE6D06DDF3604B352C5E564A11E8FC19 /* Pods-Portuplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Portuplay.release.xcconfig"; sourceTree = "<group>"; };
+		B483D0525BD337DCE29C4AD79FCA2B83 /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
+		C44B0502721444F41244C765B6A10F1F /* TagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.xcconfig; sourceTree = "<group>"; };
+		C8013996F9C93C400561CFB2806A6083 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
 		CB6055DF3F32348EF58E560A835658C9 /* Pods-Portuplay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Portuplay-dummy.m"; sourceTree = "<group>"; };
-		E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		D309CF4A23BA6B7EE066651524CE64C3 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		E8473499E91B2D5B0E8BEDA4FEFA70CC /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
 		F29BBA3E296C0A0D429C7D74844EA016 /* Pods-Portuplay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Portuplay-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC2EB816BB3FC58B483805507C7934DF /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,42 +81,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		837AB9EC611C84A1C537940CAAB07925 /* Frameworks */ = {
+		772CD1367749A2935CDCF53300C60207 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6AB25106B33086BA031517798809BBF /* Foundation.framework in Frameworks */,
+				A38277087BDFD4804DAFC7833A19FABD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDAC06C5303E8C58D2EC0A2B8012FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEDF1575C99119501C203D96F6C6679 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C6A71D462ED46C2A7F74D962134DC74 /* Pods */ = {
+		124402D89309DE18AE0629021EC2E7FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36AB58DCE8747D206B69D48084D7CBB2 /* SwiftyJSON */,
+				3A68891E38A242C3F01B01B71A9DB72D /* Pods_Portuplay.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		36AB58DCE8747D206B69D48084D7CBB2 /* SwiftyJSON */ = {
+		2E51C75ECCBA061C9FA175EFE1EB18C6 /* TagListView */ = {
 			isa = PBXGroup;
 			children = (
-				0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */,
-				FF2248F76C1F51163F78F4C1DED1A044 /* Support Files */,
+				980665896A3C58C15AE1560C8ED2AD31 /* CloseButton.swift */,
+				5D1B1904D51BB9199417B656E9F510BA /* TagListView.swift */,
+				D309CF4A23BA6B7EE066651524CE64C3 /* TagView.swift */,
+				4F185C9CA9796E4B57CBA098C7C0C8F1 /* Support Files */,
+			);
+			name = TagListView;
+			path = TagListView;
+			sourceTree = "<group>";
+		};
+		47D5AD1D6AEDA93835F402444070028A /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				0317DD088146913D4E769799FFEB9418 /* SwiftyJSON.swift */,
+				E95154438C7658E2167F427EE4EAC993 /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		B29021404E13E9DFAF157BC21357E4BF /* Products */ = {
+		4F185C9CA9796E4B57CBA098C7C0C8F1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A68891E38A242C3F01B01B71A9DB72D /* Pods_Portuplay.framework */,
-				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+				7EADCB108FF779C887D7F424A14A698D /* TagListView.modulemap */,
+				C44B0502721444F41244C765B6A10F1F /* TagListView.xcconfig */,
+				C8013996F9C93C400561CFB2806A6083 /* TagListView-dummy.m */,
+				18608F39384449F29CA82BC2235E22F7 /* TagListView-Info.plist */,
+				FC2EB816BB3FC58B483805507C7934DF /* TagListView-prefix.pch */,
+				B483D0525BD337DCE29C4AD79FCA2B83 /* TagListView-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/TagListView";
+			sourceTree = "<group>";
+		};
+		A804720659BDACF52340BDFDFF0EBA30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47D5AD1D6AEDA93835F402444070028A /* SwiftyJSON */,
+				2E51C75ECCBA061C9FA175EFE1EB18C6 /* TagListView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B6F37472BC33B0471F08DD4A2B7B0889 /* Targets Support Files */ = {
@@ -134,8 +193,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				2C6A71D462ED46C2A7F74D962134DC74 /* Pods */,
-				B29021404E13E9DFAF157BC21357E4BF /* Products */,
+				A804720659BDACF52340BDFDFF0EBA30 /* Pods */,
+				124402D89309DE18AE0629021EC2E7FC /* Products */,
 				B6F37472BC33B0471F08DD4A2B7B0889 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -148,15 +207,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FF2248F76C1F51163F78F4C1DED1A044 /* Support Files */ = {
+		E95154438C7658E2167F427EE4EAC993 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				05EB2E221DD60B8EFCF51F6CEE4D84ED /* SwiftyJSON.modulemap */,
-				E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */,
-				E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */,
-				E8473499E91B2D5B0E8BEDA4FEFA70CC /* SwiftyJSON-Info.plist */,
-				571603CA3E54B6CD8547FC7AAB992E07 /* SwiftyJSON-prefix.pch */,
-				4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */,
+				0EE862AAB4EF86A31E24205926E8D4A3 /* SwiftyJSON.modulemap */,
+				92BBD72D4B8E84EBEE73AD779CBF025E /* SwiftyJSON.xcconfig */,
+				0287CB88F835EC13DEC1E2D80305E6C2 /* SwiftyJSON-dummy.m */,
+				ABD632A63C0F82E41B483B82C793EED8 /* SwiftyJSON-Info.plist */,
+				298CF7600F72BC6451917CB2CDBB1739 /* SwiftyJSON-prefix.pch */,
+				8292908E3FFD49D7A4FEC9C0BBDE4847 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
@@ -165,11 +224,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A78BBFDC7731C058302626DA6DF191EF /* Headers */ = {
+		5365F41FF8B406701224F4D73F9A6328 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF493D0673D6BA7CE2E429CB2952E9E4 /* Pods-Portuplay-umbrella.h in Headers */,
+				BB1BF2BCF3D758A7D034FB7229529E43 /* Pods-Portuplay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B820BCDCF974B9DFA9ED0DF0ECE49AE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA131A18A8FAAC571AEF9FAAC201C84 /* TagListView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +251,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B43A58FC22C898DE29F6E12FE9636507 /* TagListView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04DA25108FF7CBEAAAB169A0B113FF7 /* Build configuration list for PBXNativeTarget "TagListView" */;
+			buildPhases = (
+				B820BCDCF974B9DFA9ED0DF0ECE49AE5 /* Headers */,
+				2399DC90E03689A9300D0DA39D04C3B9 /* Sources */,
+				772CD1367749A2935CDCF53300C60207 /* Frameworks */,
+				83CB51CCDBB972880A633D5C7AEC76ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagListView;
+			productName = TagListView;
+			productReference = 85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 500983288FD27F691001EEF004174E82 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
@@ -204,17 +289,18 @@
 		};
 		FF82D2963BA9EF3AFBB1048C4E500F5B /* Pods-Portuplay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F211E13D9E2E15595385DD2DAFF20D93 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */;
+			buildConfigurationList = 031D5502AED3023E5632323068CC83D1 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */;
 			buildPhases = (
-				A78BBFDC7731C058302626DA6DF191EF /* Headers */,
-				4E398F3FF4ABE886237887A39D0F0CFA /* Sources */,
-				837AB9EC611C84A1C537940CAAB07925 /* Frameworks */,
-				0948BB87E3800E46A35F0E5B5539631E /* Resources */,
+				5365F41FF8B406701224F4D73F9A6328 /* Headers */,
+				036DD42C639E0A45F1E378EDA5F1D97A /* Sources */,
+				7CDAC06C5303E8C58D2EC0A2B8012FF6 /* Frameworks */,
+				354F946901F795DC212F53972E2F69A7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D0FD4A87E74DE7EF0A46D77F9E989573 /* PBXTargetDependency */,
+				7333216C8A6250F95AE41A4C040AC20D /* PBXTargetDependency */,
+				09C278BE4C7EE05C47AC671E99582D4D /* PBXTargetDependency */,
 			);
 			name = "Pods-Portuplay";
 			productName = "Pods-Portuplay";
@@ -231,19 +317,20 @@
 				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B29021404E13E9DFAF157BC21357E4BF /* Products */;
+			productRefGroup = 124402D89309DE18AE0629021EC2E7FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FF82D2963BA9EF3AFBB1048C4E500F5B /* Pods-Portuplay */,
 				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
+				B43A58FC22C898DE29F6E12FE9636507 /* TagListView */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +343,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0948BB87E3800E46A35F0E5B5539631E /* Resources */ = {
+		354F946901F795DC212F53972E2F69A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CB51CCDBB972880A633D5C7AEC76ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +360,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		036DD42C639E0A45F1E378EDA5F1D97A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39AA161F5324D14F3537E3BC0DF1E61 /* Pods-Portuplay-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C23F93016AD02D1E2389C53E71EF604 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,26 +377,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E398F3FF4ABE886237887A39D0F0CFA /* Sources */ = {
+		2399DC90E03689A9300D0DA39D04C3B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E8939D266172F82E3F9D62BF8D2F89 /* Pods-Portuplay-dummy.m in Sources */,
+				726FB505E9371C571526F1146F8CCDE1 /* CloseButton.swift in Sources */,
+				CD4131E120E52D73E03B634985FDB5D4 /* TagListView-dummy.m in Sources */,
+				4F256F296FEA82A84729BC1277E411B6 /* TagListView.swift in Sources */,
+				6B35AC325A3D395C4E90DBC7589D2F00 /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D0FD4A87E74DE7EF0A46D77F9E989573 /* PBXTargetDependency */ = {
+		09C278BE4C7EE05C47AC671E99582D4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TagListView;
+			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
+			targetProxy = 008856F55834E1A4825CB9C15D445639 /* PBXContainerItemProxy */;
+		};
+		7333216C8A6250F95AE41A4C040AC20D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
 			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
-			targetProxy = 520560C5264E09C9F8BB2A64E23B21BB /* PBXContainerItemProxy */;
+			targetProxy = 45E8179E20D84CB9323EF2684ABFFF05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0641DBF793719EF07770686190B34A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44B0502721444F41244C765B6A10F1F /* TagListView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -359,7 +506,78 @@
 			};
 			name = Debug;
 		};
-		6DB4E2478C65B21412136558F745204D /* Release */ = {
+		2C8B3AA10756B6FB5663F940CE6ED1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44B0502721444F41244C765B6A10F1F /* TagListView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96EFDB97F9EFB8EEBBA65C5AA6A9488E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BBD72D4B8E84EBEE73AD779CBF025E /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEC03060604FB7412C1FE799A97F5DA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE6D06DDF3604B352C5E564A11E8FC19 /* Pods-Portuplay.release.xcconfig */;
 			buildSettings = {
@@ -398,83 +616,9 @@
 			};
 			name = Release;
 		};
-		6F180FBB6F3D7199D2FEC0EE695A45E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CBD637252FF8EBA2CB01982D5DB40F4 /* Pods-Portuplay.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Portuplay/Pods-Portuplay-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Portuplay/Pods-Portuplay.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		96EFDB97F9EFB8EEBBA65C5AA6A9488E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		E7E18A3E8278024C2F3A5AA8E8C2EFCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 92BBD72D4B8E84EBEE73AD779CBF025E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -567,9 +711,56 @@
 			};
 			name = Release;
 		};
+		FA0D275B53DC79DEA05695293FFD5372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBD637252FF8EBA2CB01982D5DB40F4 /* Pods-Portuplay.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Portuplay/Pods-Portuplay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Portuplay/Pods-Portuplay.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		031D5502AED3023E5632323068CC83D1 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0D275B53DC79DEA05695293FFD5372 /* Debug */,
+				BEC03060604FB7412C1FE799A97F5DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -588,11 +779,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F211E13D9E2E15595385DD2DAFF20D93 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */ = {
+		B04DA25108FF7CBEAAAB169A0B113FF7 /* Build configuration list for PBXNativeTarget "TagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F180FBB6F3D7199D2FEC0EE695A45E4 /* Debug */,
-				6DB4E2478C65B21412136558F745204D /* Release */,
+				2C8B3AA10756B6FB5663F940CE6ED1A0 /* Debug */,
+				0641DBF793719EF07770686190B34A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

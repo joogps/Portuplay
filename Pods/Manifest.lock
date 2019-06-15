@@ -1,16 +1,20 @@
 PODS:
   - SwiftyJSON (4.3.0)
+  - TagListView (1.4.0)
 
 DEPENDENCIES:
   - SwiftyJSON (~> 4.0)
+  - TagListView (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SwiftyJSON
+    - TagListView
 
 SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
-PODFILE CHECKSUM: 8901490d78109121cf33802e4088170c5ccdc502
+PODFILE CHECKSUM: 19f1c114be34aeac78e3affc9352f26621497a54
 
 COCOAPODS: 1.7.1

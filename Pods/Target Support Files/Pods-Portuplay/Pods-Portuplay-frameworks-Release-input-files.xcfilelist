@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Portuplay/Pods-Portuplay-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework

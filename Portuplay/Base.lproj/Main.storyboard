@@ -122,10 +122,85 @@
                         <viewLayoutGuide key="safeArea" id="8ak-3d-rBH"/>
                     </view>
                     <navigationItem key="navigationItem" id="6B3-Hn-jnQ"/>
+                    <connections>
+                        <outlet property="detailsTable" destination="D5O-t1-kGV" id="PGc-8c-JXy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMs-UR-tnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="831.69642857142856"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="qru-Jo-9IH">
+            <objects>
+                <viewController storyboardIdentifier="Game" id="yo6-DQ-tDW" customClass="GameViewController" customModule="Portuplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBI-H0-O3n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eay-YZ-TVL" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="74" y="287" width="266" height="427"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TNv-zI-4Vg" firstAttribute="bottom" secondItem="eay-YZ-TVL" secondAttribute="bottom" constant="148" id="mf1-7Z-Kt6"/>
+                            <constraint firstItem="eay-YZ-TVL" firstAttribute="leading" secondItem="TNv-zI-4Vg" secondAttribute="leading" constant="74" id="tVR-G1-Per"/>
+                            <constraint firstItem="eay-YZ-TVL" firstAttribute="top" secondItem="TNv-zI-4Vg" secondAttribute="top" constant="243" id="v61-rc-qtc"/>
+                            <constraint firstItem="TNv-zI-4Vg" firstAttribute="trailing" secondItem="eay-YZ-TVL" secondAttribute="trailing" constant="74" id="zUE-ff-eMh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TNv-zI-4Vg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T23-0k-Zsl"/>
+                    <connections>
+                        <outlet property="wordList" destination="eay-YZ-TVL" id="f2m-dw-Sre"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b46-F0-s3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="1569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CBJ-sC-cjw">
