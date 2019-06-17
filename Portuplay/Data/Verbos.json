@@ -4,6 +4,6 @@
     "difficulty": "Fácil",
     "time": 160,
     "phrases": [
-        {"main": "Ele andou pela cidade.", "select": ["andou"]}
+        {"total": "Ele andou pela cidade.", "select": ["andou"]}
     ]
 }

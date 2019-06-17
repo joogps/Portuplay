@@ -15,7 +15,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     let sections = ["OBJETIVO", "DIFICULDADE", "TEMPO", ""]
     var labels: [String] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -67,7 +67,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
         
-        gameViewController.setGame(desafio!)
+        gameViewController.desafio = desafio
         
         self.navigationController?.pushViewController(gameViewController, animated: true)
         

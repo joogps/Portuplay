@@ -15,10 +15,21 @@ class Desafio {
     var difficulty: String
     var time: Int
     
+    var phrases: [String]
+    var select: [[JSON]]
+    
     init(_ obj: JSON) {
         title = obj["title"].string!
         goal = obj["goal"].string!
         difficulty = obj["difficulty"].string!
         time = obj["time"].int!
+        
+        phrases = Array()
+        select = Array()
+        
+        for item in obj["phrases"].array! {
+            phrases.append(item["total"].string!)
+            select.append(item["select"].array!)
+        }
     }
 }

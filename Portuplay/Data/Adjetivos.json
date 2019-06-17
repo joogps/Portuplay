@@ -4,6 +4,6 @@
     "difficulty": "Intermediário",
     "time": 180,
     "phrases": [
-        {"main": "Ele é alto.", "select": ["alto"]}
+        {"total": "Ele é alto.", "select": ["alto"]}
     ]
 }

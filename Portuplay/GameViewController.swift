@@ -12,17 +12,14 @@ import TagListView
 class GameViewController: UIViewController {
     @IBOutlet weak var wordList: TagListView!
     
+    var desafio: Desafio? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController!.isNavigationBarHidden = true;
+        self.navigationController!.isNavigationBarHidden = true
         
         wordList.textFont = UIFont.systemFont(ofSize: 24)
         wordList.alignment = .center
-        
-        wordList.addTags(["Bla", "BlaBlaBla", "BlaBla"])
-    }
-    
-    func setGame (_ desafio: Desafio) {
-        
+        wordList.addTags(desafio!.phrases[0].components(separatedBy: " "))
     }
 }

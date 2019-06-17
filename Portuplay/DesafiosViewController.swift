@@ -63,7 +63,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsViewController: DetailsViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailsViewController
-
+        
         var desafio: Desafio
         
         if isSearching() {
