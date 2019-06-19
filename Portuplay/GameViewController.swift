@@ -18,33 +18,47 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController!.isNavigationBarHidden = true
         
-        wordList.textFont = UIFont.systemFont(ofSize: 23)
+        wordList.textFont = UIFont.systemFont(ofSize: 24)
         wordList.alignment = .center
         
-        let words = desafio!.phrases[0].components(separatedBy: " ")
+        var phrase = desafio!.phrases[0]
+        
+        let special = ".!?"
+        
+        for (i, char) in phrase.enumerated() {
+            if  special.contains(char) {
+                phrase.insert(" ", at: phrase.index(phrase.startIndex, offsetBy: i))
+            }
+        }
+        
+        let words = phrase.components(separatedBy: .whitespaces)
         
         for word in words {
-            let tag = wordList.addTag(word)
+            let tag = wordList.addTag(String(word))
             
-            tag.layer.transform = CATransform3DMakeTranslation(0, -3, 0)
-            
-            tag.onTap = { tag in
-                let move = CABasicAnimation(keyPath: "transform")
-                move.fromValue = tag.layer.transform
-                move.toValue = CATransform3DMakeTranslation(0, 0, 0)
-                move.duration = 0.2
-                tag.layer.add(move, forKey: move.keyPath)
-                tag.layer.transform = move.toValue as! CATransform3D
+            if (!special.contains(word)) {
+                tag.layer.transform = CATransform3DMakeTranslation(0, -3, 0)
                 
-                let color = (self.desafio?.answers[0].contains(tag.titleLabel!.text!))! ? UIColor.green : UIColor.red
-                
-                let background = CABasicAnimation(keyPath: "backgroundColor")
-                background.fromValue = tag.layer.backgroundColor
-                background.toValue = color.cgColor
-                background.duration = 0.6
-                tag.layer.add(background, forKey: background.keyPath)
-                
-                tag.tagBackgroundColor = UIColor(cgColor: background.toValue as! CGColor)
+                tag.onTap = { tag in
+                    let move = CABasicAnimation(keyPath: "transform")
+                    move.fromValue = tag.layer.transform
+                    move.toValue = CATransform3DMakeTranslation(0, 0, 0)
+                    move.duration = 0.1
+                    tag.layer.add(move, forKey: move.keyPath)
+                    tag.layer.transform = move.toValue as! CATransform3D
+                    
+                    let color = (self.desafio?.answers[0].contains(tag.titleLabel!.text!))! ?
+                        UIColor(red:0.56, green:1.00, blue:0.23, alpha:1.0) :
+                        UIColor(red:1.00, green:0.42, blue:0.42, alpha:1.0)
+                    
+                    let background = CABasicAnimation(keyPath: "backgroundColor")
+                    background.fromValue = tag.layer.backgroundColor
+                    background.toValue = color.cgColor
+                    background.duration = 0.6
+                    tag.layer.add(background, forKey: background.keyPath)
+                    
+                    tag.tagBackgroundColor = UIColor(cgColor: background.toValue as! CGColor)
+                }
             }
         }
     }
