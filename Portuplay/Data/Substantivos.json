@@ -4,6 +4,6 @@
     "difficulty": "Fácil",
     "time": 160,
     "phrases": [
-        {"total": "Eu gosto de suco.", "select": ["suco"]}
+        {"total": "Eu gosto de suco.", "answer": ["suco"]}
     ]
 }

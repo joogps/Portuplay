@@ -16,7 +16,7 @@ class Desafio {
     var time: Int
     
     var phrases: [String]
-    var select: [[JSON]]
+    var answers: [[String]]
     
     init(_ obj: JSON) {
         title = obj["title"].string!
@@ -25,11 +25,17 @@ class Desafio {
         time = obj["time"].int!
         
         phrases = Array()
-        select = Array()
+        answers = Array()
         
         for item in obj["phrases"].array! {
             phrases.append(item["total"].string!)
-            select.append(item["select"].array!)
+            
+            var answer: [String] = Array()
+            for ans in item["answer"].array! {
+                answer.append(ans.string!)
+            }
+            
+            answers.append(answer)
         }
     }
 }
