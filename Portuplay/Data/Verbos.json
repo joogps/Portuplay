@@ -2,7 +2,7 @@
     "title": "Verbos",
     "goal": "Aperte nos verbos presentes em cada frase",
     "difficulty": "Fácil",
-    "time": 160,
+    "time": 60,
     "phrases": [
         {"total": "Ele andou pela cidade.", "answer": ["andou"]}
     ]

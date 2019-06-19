@@ -11,6 +11,7 @@ import TagListView
 
 class GameViewController: UIViewController {
     @IBOutlet weak var wordList: TagListView!
+    @IBOutlet weak var timeIndicator: TimeIndicator!
     
     var desafio: Desafio? = nil
     
@@ -61,5 +62,8 @@ class GameViewController: UIViewController {
                 }
             }
         }
+        
+        timeIndicator.gameOverTime = Double(desafio!.time)
+        timeIndicator.timeLabel.text = String(Int(timeIndicator.gameOverTime))
     }
 }
