@@ -17,6 +17,8 @@ class TimeIndicator: UIView {
     
     var gameOverTime = 0.0
     
+    var parentView: GameViewController? = nil
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadTime()
@@ -56,6 +58,15 @@ class TimeIndicator: UIView {
         time += 1
         timeLabel.text = String(Int(gameOverTime-time))
         timeIndicator.strokeEnd = CGFloat(1-(time/gameOverTime))
+        
+        if time == gameOverTime {
+            UIApplication.shared.beginIgnoringInteractionEvents()
+            self.timer.invalidate()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(900)) {
+                self.parentView?.gameOver()
+            }
+        }
     }
     
     func setTimer() {

@@ -254,23 +254,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="7Mz-zR-QAv">
-                                <rect key="frame" x="107" y="373.5" width="200" height="149.5"/>
+                                <rect key="frame" x="80" y="366" width="254" height="164.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyr-3M-N9m">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyr-3M-N9m">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="41"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="861-gk-LCx">
-                                        <rect key="frame" x="0.0" y="64" width="200" height="32.5"/>
+                                        <rect key="frame" x="0.0" y="64" width="254" height="32.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beK-T7-RVX">
-                                        <rect key="frame" x="0.0" y="119.5" width="200" height="30"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="254" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ogE-6S-A8k"/>
+                                        </constraints>
                                         <state key="normal" title="Voltar">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -281,21 +284,24 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0093617555427757404" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7Mz-zR-QAv" firstAttribute="centerX" secondItem="Jii-T5-ntN" secondAttribute="centerX" id="T8X-kU-RXl"/>
-                            <constraint firstItem="7Mz-zR-QAv" firstAttribute="centerY" secondItem="Jii-T5-ntN" secondAttribute="centerY" id="cKQ-LS-kwZ"/>
+                            <constraint firstItem="7Mz-zR-QAv" firstAttribute="centerX" secondItem="Jii-T5-ntN" secondAttribute="centerX" id="aW3-PW-izH"/>
+                            <constraint firstItem="7Mz-zR-QAv" firstAttribute="centerY" secondItem="Jii-T5-ntN" secondAttribute="centerY" id="bqh-yg-KXP"/>
+                            <constraint firstItem="Akp-8s-nDY" firstAttribute="trailing" secondItem="7Mz-zR-QAv" secondAttribute="trailing" constant="80" id="juu-Qn-g2l"/>
+                            <constraint firstItem="7Mz-zR-QAv" firstAttribute="leading" secondItem="Akp-8s-nDY" secondAttribute="leading" constant="80" id="tSk-pj-1iB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Akp-8s-nDY"/>
                     </view>
                     <connections>
-                        <outlet property="score" destination="861-gk-LCx" id="BqF-dW-Ds2"/>
-                        <outlet property="voltar" destination="beK-T7-RVX" id="8mH-Le-4w5"/>
+                        <outlet property="score" destination="861-gk-LCx" id="NO1-mW-hGt"/>
+                        <outlet property="status" destination="Qyr-3M-N9m" id="DvH-v4-mfs"/>
+                        <outlet property="voltar" destination="beK-T7-RVX" id="BbX-C5-RL5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyW-jQ-Ohx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="2231"/>
+            <point key="canvasLocation" x="113" y="2230"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CBJ-sC-cjw">

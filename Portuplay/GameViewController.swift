@@ -18,15 +18,31 @@ class GameViewController: UIViewController {
     @IBOutlet weak var gameStackView: UIStackView!
     
     var desafio: Desafio? = nil
+    var answers: [String] = Array()
     
     var score = 0;
+    
+    let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFont.TextStyle.body)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController!.isNavigationBarHidden = true
         
         gameTitle.text = desafio!.title
-        self.gameScore.text = String(format: "%02d", self.score)+" / "+String(self.desafio!.correct)
+        self.gameScore.text = String(format: "%0"+String(String(self.desafio!.correct).count)+"d", self.score)+" / "+String(self.desafio!.correct)
+        
+        let bodyMonospacedNumbersFontDescriptor = bodyFontDescriptor.addingAttributes(
+            [
+                UIFontDescriptor.AttributeName.featureSettings: [
+                    [
+                        UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType,
+                        UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector
+                    ]
+                ]
+            ])
+        
+        gameScore.font = UIFont(descriptor: bodyMonospacedNumbersFontDescriptor, size: 20.0)
+        gameScore.adjustsFontSizeToFitWidth = true
         
         gameStackView.setCustomSpacing(25, after: gameScore)
         gameStackView.setCustomSpacing(45, after: timeIndicator)
@@ -36,6 +52,8 @@ class GameViewController: UIViewController {
         
         timeIndicator.gameOverTime = Double(desafio!.time)
         timeIndicator.timeLabel.text = String(Int(timeIndicator.gameOverTime))
+        
+        timeIndicator.parentView = self
         
         addPhrase(Int.random(in: 0 ..< desafio!.phrases.count) )
         
@@ -68,31 +86,46 @@ class GameViewController: UIViewController {
                     tag.layer.add(move, forKey: move.keyPath)
                     tag.layer.transform = move.toValue as! CATransform3D
                     
-                    let correct = (self.desafio?.answers[index].contains(tag.titleLabel!.text!))!
+                    let gameover = !(self.desafio?.answers[index].contains(tag.titleLabel!.text!))!
                     
-                    UIApplication.shared.beginIgnoringInteractionEvents()
                     self.timeIndicator.timer.invalidate()
                     
-                    if !correct {
+                    if gameover {
+                        UIApplication.shared.beginIgnoringInteractionEvents()
+                        
                         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(900)) {
-                            let gameOverViewController: GameOverViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
-                         
-                            self.navigationController?.pushViewController(gameOverViewController, animated: true)
+                            self.gameOver()
                         }
                     } else {
-                        self.score += 1
+                        self.answers.append(tag.titleLabel!.text!)
                         
-                        let animation = {
-                            self.gameScore.text = String(format: "%02d", self.score)+" / "+String(self.desafio!.correct)
+                        let correct =  self.desafio?.answers[index].count == self.answers.count && self.desafio?.answers[index].sorted() == self.answers.sorted()
+                        
+                        if correct {
+                            UIApplication.shared.beginIgnoringInteractionEvents()
+                            
+                            self.score += 1
+                            
+                            let animation = {
+                                self.gameScore.text = String(format: "%0"+String(String(self.desafio!.correct).count)+"d", self.score)+" / "+String(self.desafio!.correct)
+                            }
+                            
+                            UIView.transition(with: self.gameScore, duration: 0.5, options: .transitionCrossDissolve, animations: animation, completion: nil)
+                            
+                            if self.score == self.desafio!.correct {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(900)) {
+                                    self.complete()
+                                }
+                            }
+                            else {
+                                self.newPhrase()
+                            }
                         }
-                        UIView.transition(with: self.gameScore, duration: 0.5, options: .transitionCrossDissolve, animations: animation, completion: nil)
-                        
-                        self.newPhrase()
                     }
                     
-                    let color =  correct ?
-                        UIColor(red:0.56, green:1.00, blue:0.23, alpha:1.0) :
-                        UIColor(red:1.00, green:0.42, blue:0.42, alpha:1.0)
+                    let color =  !gameover ?
+                        UIColor(red: 0.56, green: 1.00, blue: 0.23, alpha:1.0) :
+                        UIColor(red: 1.00, green: 0.35, blue: 0.45, alpha:1.0)
                     
                     let background = CABasicAnimation(keyPath: "backgroundColor")
                     background.fromValue = tag.layer.backgroundColor
@@ -126,5 +159,23 @@ class GameViewController: UIViewController {
                 UIApplication.shared.endIgnoringInteractionEvents()
             })
         })
+    }
+    
+    func gameOver() {
+        let gameOverViewController: GameOverViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
+        
+        gameOverViewController.statusText = "GAME OVER"
+        gameOverViewController.scoreText = self.gameScore.text!
+        
+        self.navigationController?.pushViewController(gameOverViewController, animated: true)
+    }
+    
+    func complete() {
+        let gameOverViewController: GameOverViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
+        
+        gameOverViewController.statusText = "DESAFIO CONCLUÍDO"
+        gameOverViewController.scoreText = self.gameScore.text!
+        
+        self.navigationController?.pushViewController(gameOverViewController, animated: true)
     }
 }

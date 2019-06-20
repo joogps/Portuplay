@@ -3,7 +3,7 @@
     "goal": "Aperte nos substantivos presentes em cada frase",
     "difficulty": "Fácil",
     "correct": 10,
-    "time": 10,
+    "time": 3,
     "phrases": [
         {"total": "Eu gosto de suco.", "answer": ["suco"]}
     ]
