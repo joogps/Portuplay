@@ -179,6 +179,9 @@ class GameViewController: UIViewController {
         gameOverViewController.statusText = "DESAFIO CONCLUÍDO"
         gameOverViewController.scoreText = self.gameScore.text!
         
+        desafio!.complete = true
+        defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio!.fileName)
+        
         self.navigationController?.pushViewController(gameOverViewController, animated: true)
     }
 }

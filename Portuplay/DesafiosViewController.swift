@@ -19,14 +19,42 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let files = ["Substantivos", "Adjetivos", "Verbos"]
         for file in files {
-            let path = Bundle.main.path(forResource: file, ofType: "json")
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
-            let json = try? JSON(data: data!)
-            
-            let desafio = Desafio(json!)
-            desafios.append(desafio)
+            if UserDefaults.standard.object(forKey: file) != nil {
+                if let data = UserDefaults.standard.value(forKey: file) as? Data {
+                    desafios.append(try! PropertyListDecoder().decode(Desafio.self, from: data))
+                }
+            } else {
+                let path = Bundle.main.path(forResource: file, ofType: "json")
+                let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
+                let json = try? JSON(data: data!)
+                
+                let title = json?["title"].string!
+                let goal = json?["goal"].string!
+                let difficulty = json?["difficulty"].string!
+                let correct = json?["correct"].int!
+                let time = json?["time"].int!
+                
+                var phrases = [String]()
+                var answers = [[String]]()
+                
+                for item in (json?["phrases"].array!)! {
+                    phrases.append(item["total"].string!)
+                    
+                    var answer: [String] = Array()
+                    for ans in item["answer"].array! {
+                        answer.append(ans.string!)
+                    }
+                    
+                    answers.append(answer)
+                }
+                
+                let desafio = Desafio(title: title!, goal: goal!, difficulty: difficulty!, correct: correct!, time: time!, phrases: phrases, answers: answers, complete: false, fileName: file)
+                
+                defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
+                
+                desafios.append(desafio)
+            }
         }
         
         searchController.searchResultsUpdater = self
@@ -98,5 +126,3 @@ extension DesafiosViewController: UISearchResultsUpdating {
         filterContentForSearchText(searchController.searchBar.text!)
     }
 }
-
-struct 

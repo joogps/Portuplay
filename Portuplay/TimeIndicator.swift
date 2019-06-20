@@ -28,7 +28,7 @@ class TimeIndicator: UIView {
         super.init(coder: aCoder)
         loadTime()
     }
-
+    
     func loadTime() {
         setTimer()
         

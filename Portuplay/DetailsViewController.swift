@@ -13,7 +13,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var desafio: Desafio? = nil
     
-    let sections = ["OBJETIVO", "DIFICULDADE", "PARA GANHAR", "TEMPO POR QUESTÃO", ""]
+    let sections = ["OBJETIVO", "DIFICULDADE", "PARA GANHAR", "TEMPO POR QUESTÃO", "COMPLETO", ""]
     var labels: [String] = []
     
     override func viewDidLoad() {
@@ -28,12 +28,14 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         let difficulty = desafio.difficulty
         let correct = desafio.correct
         let time = desafio.time
+        let complete = desafio.complete
         
         self.title = title
         labels.append(goal)
         labels.append(difficulty)
         labels.append(String(correct)+" acertos seguidos")
         labels.append(String(time)+" segundos")
+        labels.append(complete ? "Sim" : "Não")
         
         labels.append("Jogar")
     }
@@ -67,12 +69,14 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
-        
-        gameViewController.desafio = desafio
-        
-        self.navigationController?.pushViewController(gameViewController, animated: true)
-        
-        detailsTable.deselectRow(at: indexPath, animated: true)
+        if labels[indexPath.row] == "Jogar" {
+            let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
+            
+            gameViewController.desafio = desafio
+            
+            self.navigationController?.pushViewController(gameViewController, animated: true)
+            
+            detailsTable.deselectRow(at: indexPath, animated: true)
+        }
     }
 }
