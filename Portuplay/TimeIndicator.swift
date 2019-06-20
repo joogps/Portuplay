@@ -28,13 +28,13 @@ class TimeIndicator: UIView {
     }
 
     func loadTime() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        setTimer()
         
         let circle = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: min(self.frame.width, self.frame.height)/2, startAngle: -CGFloat.pi/2, endAngle: CGFloat.pi*1.5, clockwise: true)
         
         timeIndicator.path = circle.cgPath
         
-        timeIndicator.strokeColor = UIColor.lightGray.cgColor
+        timeIndicator.strokeColor = UIColor.black.cgColor
         timeIndicator.lineWidth = 10
         timeIndicator.fillColor = UIColor.clear.cgColor
         timeIndicator.lineCap = .round
@@ -45,7 +45,7 @@ class TimeIndicator: UIView {
         
         timeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         timeLabel.textAlignment = .center
-        timeLabel.textColor = .lightGray
+        timeLabel.textColor = .black
         timeLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         
         self.addSubview(timeLabel)
@@ -55,5 +55,9 @@ class TimeIndicator: UIView {
         time += 1
         timeLabel.text = String(Int(gameOverTime-time))
         timeIndicator.strokeEnd = CGFloat(1-(time/gameOverTime))
+    }
+    
+    func setTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 }

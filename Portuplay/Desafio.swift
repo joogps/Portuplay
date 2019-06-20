@@ -13,6 +13,7 @@ class Desafio {
     var title: String
     var goal: String
     var difficulty: String
+    var correct: Int
     var time: Int
     
     var phrases: [String]
@@ -22,6 +23,7 @@ class Desafio {
         title = obj["title"].string!
         goal = obj["goal"].string!
         difficulty = obj["difficulty"].string!
+        correct = obj["correct"].int!
         time = obj["time"].int!
         
         phrases = Array()

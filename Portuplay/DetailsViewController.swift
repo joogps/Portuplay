@@ -13,7 +13,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var desafio: Desafio? = nil
     
-    let sections = ["OBJETIVO", "DIFICULDADE", "TEMPO", ""]
+    let sections = ["OBJETIVO", "DIFICULDADE", "PARA GANHAR", "TEMPO POR QUESTÃO", ""]
     var labels: [String] = []
     
     override func viewDidLoad() {
@@ -26,11 +26,13 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         let title = desafio.title
         let goal = desafio.goal
         let difficulty = desafio.difficulty
+        let correct = desafio.correct
         let time = desafio.time
         
         self.title = title
         labels.append(goal)
         labels.append(difficulty)
+        labels.append(String(correct)+" acertos seguidos")
         labels.append(String(time)+" segundos")
         
         labels.append("Jogar")

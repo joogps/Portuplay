@@ -2,8 +2,12 @@
     "title": "Verbos",
     "goal": "Aperte nos verbos presentes em cada frase",
     "difficulty": "Fácil",
-    "time": 60,
+    "correct": 10,
+    "time": 8,
     "phrases": [
-        {"total": "Ele andou pela cidade.", "answer": ["andou"]}
+        {"total": "Ele andou pela cidade.", "answer": ["andou"]},
+        {"total": "Claudia correu com o seu gato.", "answer": ["correu"]},
+        {"total": "Ela foi para casa.", "answer": ["foi"]},
+        {"total": "Ele preparou um bolo.", "answer": ["preparou"]}
     ]
 }
