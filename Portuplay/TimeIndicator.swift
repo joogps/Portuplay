@@ -30,7 +30,8 @@ class TimeIndicator: UIView {
     func loadTime() {
         setTimer()
         
-        let circle = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: min(self.frame.width, self.frame.height)/2, startAngle: -CGFloat.pi/2, endAngle: CGFloat.pi*1.5, clockwise: true)
+        let radius = min(self.frame.width, self.frame.height)/2
+        let circle = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/2-radius, y: self.frame.height/2), radius: radius, startAngle: -CGFloat.pi/2, endAngle: CGFloat.pi*1.5, clockwise: true)
         
         timeIndicator.path = circle.cgPath
         
@@ -43,7 +44,7 @@ class TimeIndicator: UIView {
         
         self.layer.addSublayer(timeIndicator)
         
-        timeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
+        timeLabel = UILabel(frame: CGRect(x: -radius, y: 0, width: self.frame.width, height: self.frame.height))
         timeLabel.textAlignment = .center
         timeLabel.textColor = .black
         timeLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
