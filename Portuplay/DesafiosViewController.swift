@@ -98,3 +98,5 @@ extension DesafiosViewController: UISearchResultsUpdating {
         filterContentForSearchText(searchController.searchBar.text!)
     }
 }
+
+struct 
