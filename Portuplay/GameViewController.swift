@@ -88,10 +88,9 @@ class GameViewController: UIViewController {
                     
                     let gameover = !(self.desafio?.answers[index].contains(tag.titleLabel!.text!))!
                     
-                    self.timeIndicator.timer.invalidate()
-                    
                     if gameover {
                         UIApplication.shared.beginIgnoringInteractionEvents()
+                        self.timeIndicator.timer.invalidate()
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(900)) {
                             self.gameOver()
@@ -99,10 +98,13 @@ class GameViewController: UIViewController {
                     } else {
                         self.answers.append(tag.titleLabel!.text!)
                         
-                        let correct =  self.desafio?.answers[index].count == self.answers.count && self.desafio?.answers[index].sorted() == self.answers.sorted()
+                        let correct =  self.desafio?.answers[index].count == self.answers.count && (self.desafio?.answers[index] as! [String]).sorted() == self.answers.sorted()
+                        
+                        print(correct)
                         
                         if correct {
                             UIApplication.shared.beginIgnoringInteractionEvents()
+                            self.timeIndicator.timer.invalidate()
                             
                             self.score += 1
                             
@@ -140,6 +142,8 @@ class GameViewController: UIViewController {
     }
     
     func newPhrase() {
+        answers = Array()
+        
         UIView.animate(withDuration: 0.9, animations: { () -> Void in
             self.wordList.alpha = 0
             self.timeIndicator.alpha = 0
