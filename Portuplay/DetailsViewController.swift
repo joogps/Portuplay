@@ -69,7 +69,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if labels[indexPath.row] == "Jogar" {
+        if labels[indexPath.section] == "Jogar" {
             let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
             
             gameViewController.desafio = desafio
