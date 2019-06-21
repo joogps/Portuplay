@@ -30,7 +30,7 @@ class GameOverViewController: UIViewController {
             colorTop =  UIColor.orange.cgColor
             colorBottom = UIColor.red.cgColor
         } else if statusText == "DESAFIO CONCLUÍDO" {
-            colorTop =  UIColor.cyan.cgColor
+            colorTop =  UIColor(red: 0, green: 0.8, blue: 0.2, alpha: 1).cgColor
             colorBottom = UIColor.green.cgColor
         }
         
