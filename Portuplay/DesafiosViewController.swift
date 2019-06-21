@@ -20,7 +20,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         
         for file in files {
-            if UserDefaults.standard.object(forKey: file) != nil {
+            if UserDefaults.standard.object(forKey: file) as? Data != nil {
                 if let data = UserDefaults.standard.value(forKey: file) as? Data {
                     desafios.append(try! PropertyListDecoder().decode(Desafio.self, from: data))
                 }
@@ -49,13 +49,15 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
                     answers.append(answer)
                 }
                 
-                let desafio = Desafio(title: title!, goal: goal!, difficulty: difficulty!, correct: correct!, time: time!, phrases: phrases, answers: answers, complete: false, fileName: file)
+                let desafio = Desafio(title: title!, goal: goal!, difficulty: difficulty!, correct: correct!, time: time!, phrases: phrases, answers: answers, completed: false, fileName: file)
                 
                 defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
                 
                 desafios.append(desafio)
             }
         }
+        
+        desafios = desafios.sorted(by: { !$0.completed && $1.completed })
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

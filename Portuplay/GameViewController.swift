@@ -118,7 +118,9 @@ class GameViewController: UIViewController {
                                 }
                             }
                             else {
-                                self.newPhrase()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(350)) {
+                                    self.newPhrase()
+                                }
                             }
                         }
                     }
@@ -179,7 +181,7 @@ class GameViewController: UIViewController {
         gameOverViewController.statusText = "DESAFIO CONCLUÍDO"
         gameOverViewController.scoreText = self.gameScore.text!
         
-        desafio!.complete = true
+        desafio!.completed = true
         defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio!.fileName)
         
         self.navigationController?.pushViewController(gameOverViewController, animated: true)

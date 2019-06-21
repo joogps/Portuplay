@@ -19,7 +19,7 @@ struct Desafio:Codable {
     var phrases: [String]
     var answers: [[String]]
     
-    var complete: Bool = false
+    var completed: Bool = false
     
     var fileName: String = String()
 }

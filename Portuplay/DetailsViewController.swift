@@ -28,14 +28,14 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         let difficulty = desafio.difficulty
         let correct = desafio.correct
         let time = desafio.time
-        let complete = desafio.complete
+        let completed = desafio.completed
         
         self.title = title
         labels.append(goal)
         labels.append(difficulty)
         labels.append(String(correct)+" acertos seguidos")
         labels.append(String(time)+" segundos")
-        labels.append(complete ? "Sim" : "Não")
+        labels.append(completed ? "Sim" : "Não")
         
         labels.append("Jogar")
     }
