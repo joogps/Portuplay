@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIToolbarDelegate {
     @IBOutlet weak var detailsTable: UITableView!
     @IBOutlet weak var difficultyPicker: UISegmentedControl!
     
@@ -22,7 +22,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController!.navigationBar.clipsToBounds = true
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     func setDetails(_ desafio: Desafio) {
@@ -76,17 +76,27 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if labels[indexPath.section] == "Jogar" {
-            let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
+            let blackViewController: BlackViewController = BlackViewController()
             
-            gameViewController.desafio = desafio
-            gameViewController.difficultyIndex = self.difficultyIndex
+            blackViewController.desafio = desafio
+            blackViewController.difficultyIndex = difficultyIndex
             
-            self.navigationController?.pushViewController(gameViewController, animated: true)
+            let transition = CATransition()
+            transition.timingFunction = CAMediaTimingFunction(name:
+                .easeInEaseOut)
+            transition.type = .fade
+            transition.duration = 0.5
+            self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
+            
+            self.navigationController?.pushViewController(blackViewController, animated: false)
             
             detailsTable.deselectRow(at: indexPath, animated: true)
         }
     }
     
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
+    }
     
     @IBAction func updateDifficulty(_ sender: UISegmentedControl) {
         difficultyIndex = sender.selectedSegmentIndex
@@ -95,10 +105,32 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 }
 
-extension DetailsViewController: UIToolbarDelegate {
-    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
-        return .topAttached
+class BlackViewController: UIViewController {
+    var desafio: Desafio? = nil
+    var difficultyIndex: Int? = nil
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationController!.isNavigationBarHidden = true
+        
+        self.view.backgroundColor = .black
+        
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { timer in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let countdownViewController: CountdownViewController = storyboard.instantiateViewController(withIdentifier: "Countdown") as! CountdownViewController
+            
+            countdownViewController.desafio = self.desafio
+            countdownViewController.difficultyIndex = self.difficultyIndex
+            
+            let transition = CATransition()
+            transition.timingFunction = CAMediaTimingFunction(name:
+                .easeInEaseOut)
+            transition.type = .fade
+            transition.duration = 0.5
+            self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
+            
+            self.navigationController?.pushViewController(countdownViewController, animated: false)
+        })
     }
 }
-
-

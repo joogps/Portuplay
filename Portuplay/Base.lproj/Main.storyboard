@@ -80,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" id="Sl2-IK-bbv">
-                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="HXO-Ff-M1W">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="HXO-Ff-M1W">
                                             <rect key="frame" x="20" y="7.5" width="374" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
@@ -94,6 +94,9 @@
                                         </segmentedControl>
                                     </barButtonItem>
                                 </items>
+                                <connections>
+                                    <outlet property="delegate" destination="u1v-Wb-VCe" id="OxA-AQ-F8N"/>
+                                </connections>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-t1-kGV">
                                 <rect key="frame" x="0.0" y="184" width="414" height="712"/>
@@ -259,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b46-F0-s3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="1545"/>
+            <point key="canvasLocation" x="1048" y="2230"/>
         </scene>
         <!--Game Over View Controller-->
         <scene sceneID="vJt-o5-qeB">
@@ -317,7 +320,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyW-jQ-Ohx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="2230"/>
+            <point key="canvasLocation" x="2070" y="2230"/>
+        </scene>
+        <!--Countdown View Controller-->
+        <scene sceneID="ndX-vw-Yxf">
+            <objects>
+                <viewController storyboardIdentifier="Countdown" id="yaf-VM-FWB" customClass="CountdownViewController" customModule="Portuplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D6F-jW-0Iy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zve-qN-jfC">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="167"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zve-qN-jfC" firstAttribute="centerX" secondItem="D6F-jW-0Iy" secondAttribute="centerX" id="3X3-hr-88U"/>
+                            <constraint firstItem="zve-qN-jfC" firstAttribute="centerY" secondItem="D6F-jW-0Iy" secondAttribute="centerY" id="FVp-Zk-fKz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9U5-bn-D1i"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="zve-qN-jfC" id="WXW-b6-yYN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0b-cj-Vq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="1516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CBJ-sC-cjw">

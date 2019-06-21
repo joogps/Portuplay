@@ -28,6 +28,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController!.isNavigationBarHidden = true
         
         gameTitle.text = desafio!.title
@@ -169,7 +170,7 @@ class GameViewController: UIViewController {
     }
     
     func gameOver() {
-        let gameOverViewController: GameOverViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
+        let gameOverViewController: GameOverViewController = self.self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
         
         gameOverViewController.statusText = "GAME OVER"
         gameOverViewController.scoreText = self.gameScore.text!
@@ -178,7 +179,7 @@ class GameViewController: UIViewController {
     }
     
     func complete() {
-        let gameOverViewController: GameOverViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
+        let gameOverViewController: GameOverViewController = self.self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
         
         gameOverViewController.statusText = "DESAFIO CONCLUÍDO"
         gameOverViewController.scoreText = self.gameScore.text!
