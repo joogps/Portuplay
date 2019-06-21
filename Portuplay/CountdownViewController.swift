@@ -20,12 +20,12 @@ class CountdownViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
-        
         self.navigationController!.isNavigationBarHidden = true
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(350)) {
             self.updateCountdown()
+            
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateCountdown), userInfo: nil, repeats: true)
         }
     }
     
@@ -35,7 +35,7 @@ class CountdownViewController: UIViewController {
             CAMediaTimingFunctionName.easeInEaseOut)
         transition.type = .push
         transition.subtype = .fromTop
-        transition.duration = 0.3
+        transition.duration = 0.35
         
         if countdown >= 1 {
             countdownLabel.layer.add(transition, forKey: CATransitionType.push.rawValue)
@@ -49,7 +49,7 @@ class CountdownViewController: UIViewController {
             gameViewController.desafio = desafio
             gameViewController.difficultyIndex = difficultyIndex!
             
-            transition.duration = 0.5
+            transition.duration = 0.75
             self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
             
             self.navigationController?.pushViewController(gameViewController, animated: false)

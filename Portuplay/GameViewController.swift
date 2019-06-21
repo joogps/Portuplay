@@ -100,7 +100,7 @@ class GameViewController: UIViewController {
                         UIApplication.shared.beginIgnoringInteractionEvents()
                         self.timeIndicator.timer.invalidate()
                         
-                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(450)) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(700)) {
                             self.gameOver()
                         }
                     } else {
@@ -121,12 +121,12 @@ class GameViewController: UIViewController {
                             UIView.transition(with: self.gameScore, duration: 0.5, options: .transitionCrossDissolve, animations: animation, completion: nil)
                             
                             if self.score == self.desafio!.correct[self.difficultyIndex].int! {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(450)) {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(700)) {
                                     self.complete()
                                 }
                             }
                             else {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(350)) {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400)) {
                                     self.newPhrase()
                                 }
                             }
