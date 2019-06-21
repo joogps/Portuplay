@@ -14,7 +14,7 @@ class DesafioCell: UITableViewCell {
     func setDesafio(_ desafio: Desafio) {
         title.text = desafio.title
         
-        if desafio.completed.contains(false) {
+        if desafio.concluded.contains(false) {
             let radius: CGFloat = 4
 
             let badgeView = UIView(frame: CGRect(x: 0, y: 0, width: radius*2, height: radius*2))

@@ -56,7 +56,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
             }
         }
         
-        desafios = desafios.sorted(by: { $0.completed.contains(false) && !$1.completed.contains(false) })
+        desafios = desafios.sorted(by: { $0.concluded.contains(false) && !$1.concluded.contains(false) })
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

@@ -14,7 +14,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var desafio: Desafio? = nil
     
-    let sections = ["OBJETIVO", "PARA CONCLUIR", "TEMPO POR QUESTÃO", "COMPLETO", ""]
+    let sections = ["OBJETIVO", "PARA CONCLUIR", "TEMPO POR QUESTÃO", "CONCLUÍDO", ""]
     var labels: [String] = []
     
     var difficultyIndex = 0
@@ -34,7 +34,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         let goal = desafio.goal
         let correct = desafio.correct[difficultyIndex].int!
         let time = desafio.time[difficultyIndex].int!
-        let completed = desafio.completed
+        let completed = desafio.concluded
         
         self.title = title
         labels.append(goal)

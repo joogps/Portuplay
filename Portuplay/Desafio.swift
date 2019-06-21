@@ -18,7 +18,7 @@ struct Desafio: Codable {
     var phrases: [String]
     var answers: [[String]]
     
-    var completed: [Bool] = [false]
+    var concluded: [Bool] = [false]
     
     var fileName: String = String()
     
@@ -31,7 +31,7 @@ struct Desafio: Codable {
         self.phrases = phrases
         self.answers = answers
         
-        self.completed = Array(repeating: false, count: 3)
+        self.concluded = Array(repeating: false, count: 3)
         
         self.fileName = fileName
     }
