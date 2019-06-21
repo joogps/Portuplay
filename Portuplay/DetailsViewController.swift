@@ -23,6 +23,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        difficultyPicker.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
     }
     
     func setDetails(_ desafio: Desafio) {
