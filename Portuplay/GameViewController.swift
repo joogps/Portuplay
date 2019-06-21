@@ -11,6 +11,7 @@ import TagListView
 
 class GameViewController: UIViewController {
     @IBOutlet weak var gameTitle: UILabel!
+    @IBOutlet weak var gameDifficulty: UILabel!
     @IBOutlet weak var gameScore: UILabel!
     @IBOutlet weak var timeIndicator: TimeIndicator!
     @IBOutlet weak var wordList: TagListView!
@@ -34,6 +35,8 @@ class GameViewController: UIViewController {
         gameTitle.text = desafio!.title
         self.gameScore.text = String(self.score)+" / "+String(self.desafio!.correct[difficultyIndex].int!)
         
+        gameDifficulty.text = ["Fácil", "Médio", "Difícil"][difficultyIndex]
+        
         let bodyMonospacedNumbersFontDescriptor = bodyFontDescriptor.addingAttributes(
             [
                 UIFontDescriptor.AttributeName.featureSettings: [
@@ -47,8 +50,10 @@ class GameViewController: UIViewController {
         gameScore.font = UIFont(descriptor: bodyMonospacedNumbersFontDescriptor, size: 20.0)
         gameScore.adjustsFontSizeToFitWidth = true
         
-        gameStackView.setCustomSpacing(25, after: gameScore)
-        gameStackView.setCustomSpacing(45, after: timeIndicator)
+        gameStackView.setCustomSpacing(10, after: gameTitle)
+        gameStackView.setCustomSpacing(20, after: gameDifficulty)
+        gameStackView.setCustomSpacing(40, after: gameScore)
+        gameStackView.setCustomSpacing(40, after: timeIndicator)
         
         wordList.textFont = UIFont.systemFont(ofSize: 24)
         wordList.alignment = .center
