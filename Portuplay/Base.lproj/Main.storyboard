@@ -22,31 +22,23 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DesafioCell" textLabel="oMl-Ah-WCi" detailTextLabel="8DM-eE-Tge" rowHeight="72" style="IBUITableViewCellStyleSubtitle" id="MUG-QR-Eqb" customClass="DesafioCell" customModule="Portuplay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="72"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DesafioCell" textLabel="oMl-Ah-WCi" style="IBUITableViewCellStyleDefault" id="MUG-QR-Eqb" customClass="DesafioCell" customModule="Portuplay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MUG-QR-Eqb" id="gKP-0y-Y9a" customClass="DesafioCell" customModule="Portuplay" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oMl-Ah-WCi">
-                                                    <rect key="frame" x="20" y="16" width="33.5" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oMl-Ah-WCi">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8DM-eE-Tge">
-                                                    <rect key="frame" x="20" y="39.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="subtitle" destination="8DM-eE-Tge" id="LX2-qT-h9v"/>
                                             <outlet property="title" destination="oMl-Ah-WCi" id="cus-if-bPD"/>
                                         </connections>
                                     </tableViewCell>
@@ -84,8 +76,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eE3-GI-ED3">
+                                <rect key="frame" x="0.0" y="140" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="Sl2-IK-bbv">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="HXO-Ff-M1W">
+                                            <rect key="frame" x="20" y="7.5" width="374" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Fácil"/>
+                                                <segment title="Médio"/>
+                                                <segment title="Difícil"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="updateDifficulty:" destination="u1v-Wb-VCe" eventType="valueChanged" id="LzO-ZQ-576"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-t1-kGV">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="184" width="414" height="712"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailCell" textLabel="xla-oi-uJg" style="IBUITableViewCellStyleDefault" id="Xwa-8U-kmL">
@@ -103,6 +114,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -116,14 +128,18 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="D5O-t1-kGV" secondAttribute="bottom" id="1Au-4C-Nwa"/>
                             <constraint firstItem="D5O-t1-kGV" firstAttribute="trailing" secondItem="8ak-3d-rBH" secondAttribute="trailing" id="488-vW-HAf"/>
+                            <constraint firstItem="eE3-GI-ED3" firstAttribute="top" secondItem="8ak-3d-rBH" secondAttribute="top" id="7zt-oE-hGX"/>
+                            <constraint firstItem="D5O-t1-kGV" firstAttribute="top" secondItem="eE3-GI-ED3" secondAttribute="bottom" id="IPr-4o-uoh"/>
                             <constraint firstItem="D5O-t1-kGV" firstAttribute="leading" secondItem="8ak-3d-rBH" secondAttribute="leading" id="g4m-TO-RCA"/>
-                            <constraint firstItem="D5O-t1-kGV" firstAttribute="top" secondItem="8ak-3d-rBH" secondAttribute="top" id="p0f-Sk-iH4"/>
+                            <constraint firstItem="eE3-GI-ED3" firstAttribute="leading" secondItem="8ak-3d-rBH" secondAttribute="leading" id="lED-tF-sUf"/>
+                            <constraint firstItem="eE3-GI-ED3" firstAttribute="trailing" secondItem="8ak-3d-rBH" secondAttribute="trailing" id="uJg-56-tyS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ak-3d-rBH"/>
                     </view>
                     <navigationItem key="navigationItem" id="6B3-Hn-jnQ"/>
                     <connections>
                         <outlet property="detailsTable" destination="D5O-t1-kGV" id="PGc-8c-JXy"/>
+                        <outlet property="difficultyPicker" destination="HXO-Ff-M1W" id="oEB-ph-Qk7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMs-UR-tnf" userLabel="First Responder" sceneMemberID="firstResponder"/>

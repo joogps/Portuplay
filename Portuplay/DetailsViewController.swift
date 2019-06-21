@@ -10,32 +10,37 @@ import UIKit
 
 class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var detailsTable: UITableView!
+    @IBOutlet weak var difficultyPicker: UISegmentedControl!
     
     var desafio: Desafio? = nil
     
-    let sections = ["OBJETIVO", "DIFICULDADE", "PARA GANHAR", "TEMPO POR QUESTÃO", "COMPLETO", ""]
+    let sections = ["OBJETIVO", "PARA CONCLUIR", "TEMPO POR QUESTÃO", "COMPLETO", ""]
     var labels: [String] = []
+    
+    var difficultyIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.clipsToBounds = true
     }
     
     func setDetails(_ desafio: Desafio) {
+        labels = []
+        
         self.desafio = desafio
         
         let title = desafio.title
         let goal = desafio.goal
-        let difficulty = desafio.difficulty
-        let correct = desafio.correct
-        let time = desafio.time
+        let correct = desafio.correct[difficultyIndex].int!
+        let time = desafio.time[difficultyIndex].int!
         let completed = desafio.completed
         
         self.title = title
         labels.append(goal)
-        labels.append(difficulty)
         labels.append(String(correct)+" acertos seguidos")
         labels.append(String(time)+" segundos")
-        labels.append(completed ? "Sim" : "Não")
+        labels.append(completed[difficultyIndex] ? "Sim" : "Não")
         
         labels.append("Jogar")
     }
@@ -63,6 +68,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             cell?.textLabel?.textColor = self.view.tintColor
         } else {
             cell?.selectionStyle = .none
+            cell?.textLabel?.textColor = .darkText
         }
         
         return cell!
@@ -73,10 +79,26 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             let gameViewController: GameViewController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
             
             gameViewController.desafio = desafio
+            gameViewController.difficultyIndex = self.difficultyIndex
             
             self.navigationController?.pushViewController(gameViewController, animated: true)
             
             detailsTable.deselectRow(at: indexPath, animated: true)
         }
     }
+    
+    
+    @IBAction func updateDifficulty(_ sender: UISegmentedControl) {
+        difficultyIndex = sender.selectedSegmentIndex
+        setDetails(desafio!)
+        detailsTable.reloadData()
+    }
 }
+
+extension DetailsViewController: UIToolbarDelegate {
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
+    }
+}
+
+

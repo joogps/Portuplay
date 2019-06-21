@@ -18,6 +18,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var gameStackView: UIStackView!
     
     var desafio: Desafio? = nil
+    var difficultyIndex = 0
+    
     var answers: [String] = Array()
     
     var score = 0;
@@ -29,7 +31,7 @@ class GameViewController: UIViewController {
         self.navigationController!.isNavigationBarHidden = true
         
         gameTitle.text = desafio!.title
-        self.gameScore.text = String(format: "%0"+String(String(self.desafio!.correct).count)+"d", self.score)+" / "+String(self.desafio!.correct)
+        self.gameScore.text = String(self.score)+" / "+String(self.desafio!.correct[difficultyIndex].int!)
         
         let bodyMonospacedNumbersFontDescriptor = bodyFontDescriptor.addingAttributes(
             [
@@ -50,7 +52,7 @@ class GameViewController: UIViewController {
         wordList.textFont = UIFont.systemFont(ofSize: 24)
         wordList.alignment = .center
         
-        timeIndicator.gameOverTime = Double(desafio!.time)
+        timeIndicator.gameOverTime = Double(desafio!.time[difficultyIndex].int!)
         timeIndicator.timeLabel.text = String(Int(timeIndicator.gameOverTime))
         
         timeIndicator.parentView = self
@@ -107,12 +109,12 @@ class GameViewController: UIViewController {
                             self.score += 1
                             
                             let animation = {
-                                self.gameScore.text = String(format: "%0"+String(String(self.desafio!.correct).count)+"d", self.score)+" / "+String(self.desafio!.correct)
+                                self.gameScore.text = String(self.score)+" / "+String(self.desafio!.correct[self.difficultyIndex].int!)
                             }
                             
                             UIView.transition(with: self.gameScore, duration: 0.5, options: .transitionCrossDissolve, animations: animation, completion: nil)
                             
-                            if self.score == self.desafio!.correct {
+                            if self.score == self.desafio!.correct[self.difficultyIndex].int! {
                                 DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(450)) {
                                     self.complete()
                                 }
@@ -181,7 +183,7 @@ class GameViewController: UIViewController {
         gameOverViewController.statusText = "DESAFIO CONCLUÍDO"
         gameOverViewController.scoreText = self.gameScore.text!
         
-        desafio!.completed = true
+        desafio!.completed[difficultyIndex] = true
         defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio!.fileName)
         
         self.navigationController?.pushViewController(gameOverViewController, animated: true)

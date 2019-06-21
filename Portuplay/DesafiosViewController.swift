@@ -31,9 +31,8 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 let title = json?["title"].string!
                 let goal = json?["goal"].string!
-                let difficulty = json?["difficulty"].string!
-                let correct = json?["correct"].int!
-                let time = json?["time"].int!
+                let correct = json?["correct"].array!
+                let time = json?["time"].array!
                 
                 var phrases = [String]()
                 var answers = [[String]]()
@@ -49,7 +48,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
                     answers.append(answer)
                 }
                 
-                let desafio = Desafio(title: title!, goal: goal!, difficulty: difficulty!, correct: correct!, time: time!, phrases: phrases, answers: answers, completed: false, fileName: file)
+                let desafio = Desafio(title!, goal!, correct!, time!, phrases, answers, fileName: file)
                 
                 defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
                 
@@ -57,7 +56,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
             }
         }
         
-        desafios = desafios.sorted(by: { !$0.completed && $1.completed })
+        desafios = desafios.sorted(by: { $0.completed.contains(false) && !$1.completed.contains(false) })
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

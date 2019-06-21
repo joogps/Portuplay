@@ -2,8 +2,8 @@
     "title": "Adjetivos",
     "goal": "Aperte nos adjetivos presentes em cada frase",
     "difficulty": "Intermediário",
-    "correct": 10,
-    "time": 4,
+    "correct": [8, 12, 14],
+    "time": [5, 4, 3],
     "phrases": [
         {"total": "Ele é alto.", "answer": ["alto"]}
     ]

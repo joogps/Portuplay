@@ -9,17 +9,30 @@
 import Foundation
 import SwiftyJSON
 
-struct Desafio:Codable {
+struct Desafio: Codable {
     var title: String
     var goal: String
-    var difficulty: String
-    var correct: Int
-    var time: Int
+    var correct: [JSON]
+    var time: [JSON]
     
     var phrases: [String]
     var answers: [[String]]
     
-    var completed: Bool = false
+    var completed: [Bool] = [false]
     
     var fileName: String = String()
+    
+    init(_ title: String, _ goal: String, _ correct: [JSON], _ time: [JSON], _ phrases: [String], _ answers: [[String]], fileName: String) {
+        self.title = title
+        self.goal = goal
+        self.correct = correct
+        self.time = time
+        
+        self.phrases = phrases
+        self.answers = answers
+        
+        self.completed = Array(repeating: false, count: 3)
+        
+        self.fileName = fileName
+    }
 }
