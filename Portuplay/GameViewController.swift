@@ -100,8 +100,6 @@ class GameViewController: UIViewController {
             let tag = wordList.addTag(String(word))
             
             if (!special.contains(word)) {
-                tag.addTarget(self, action: #selector(tagPressed(_:)), for: .touchUpInside)
-                
                 tag.onTap = { tag in
                     let move = CABasicAnimation(keyPath: "transform")
                     move.fromValue = tag.layer.transform
@@ -243,10 +241,6 @@ class GameViewController: UIViewController {
     }
     
     @objc func handleTap(gesture: UITapGestureRecognizer) -> Void {
-        print(true)
-    }
-    
-    @objc func tagPressed(_ sender: TagView!) {
         print(true)
     }
 }
