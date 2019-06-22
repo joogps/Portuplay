@@ -43,15 +43,15 @@ class CountdownViewController: UIViewController {
             
             countdown -= 1
         } else {
-            let gameViewController = self.storyboard?.instantiateViewController(withIdentifier: "Game")
+            let gameViewController = self.storyboard?.instantiateViewController(withIdentifier: "Game") as! GameViewController
             
-            gameViewController!.desafio = desafio
-            gameViewController!.difficultyIndex = difficultyIndex!
+            gameViewController.desafio = desafio
+            gameViewController.difficultyIndex = difficultyIndex!
             
             transition.duration = 0.75
             self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
             
-            self.navigationController?.pushViewController(gameViewController!, animated: false)
+            self.navigationController?.pushViewController(gameViewController, animated: false)
             
             timer.invalidate()
         }
