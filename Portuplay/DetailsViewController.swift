@@ -91,8 +91,6 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
             
             self.navigationController?.pushViewController(blackViewController, animated: false)
-            
-            detailsTable.deselectRow(at: indexPath, animated: true)
         }
     }
     
@@ -111,6 +109,8 @@ class BlackViewController: UIViewController {
     var desafio: Desafio? = nil
     var difficultyIndex: Int? = nil
     
+    var hideStatusBar = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -118,7 +118,7 @@ class BlackViewController: UIViewController {
         
         self.view.backgroundColor = .black
         
-        Timer.scheduledTimer(withTimeInterval: 1.25, repeats: false, block: { timer in
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1500)) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let countdownViewController = storyboard.instantiateViewController(withIdentifier: "Countdown") as! CountdownViewController
             
@@ -129,10 +129,23 @@ class BlackViewController: UIViewController {
             transition.timingFunction = CAMediaTimingFunction(name:
                 .easeInEaseOut)
             transition.type = .fade
-            transition.duration = 0.75
+            transition.duration = 1
             self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
             
             self.navigationController?.pushViewController(countdownViewController, animated: false)
-        })
+        }
+        
+        hideStatusBar = true
+        UIView.animate(withDuration: 1) { () -> Void in
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .fade
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return hideStatusBar
     }
 }

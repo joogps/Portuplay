@@ -17,15 +17,22 @@ class CountdownViewController: UIViewController {
     var desafio: Desafio? = nil
     var difficultyIndex: Int? = nil
     
+    var hideStatusBar = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController!.isNavigationBarHidden = true
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(350)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1050)) {
             self.updateCountdown()
             
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateCountdown), userInfo: nil, repeats: true)
+        }
+        
+        hideStatusBar = false
+        UIView.animate(withDuration: 1) { () -> Void in
+            self.setNeedsStatusBarAppearanceUpdate()
         }
     }
     
@@ -55,5 +62,13 @@ class CountdownViewController: UIViewController {
             
             timer.invalidate()
         }
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .fade
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return hideStatusBar
     }
 }
