@@ -216,6 +216,8 @@ class GameViewController: UIViewController {
                 self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
                 
                 self.navigationController?.pushViewController(desafiosViewController, animated: false)
+                
+                self.timeIndicator.timer.invalidate()
             }))
             alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
             
