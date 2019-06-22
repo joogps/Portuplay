@@ -20,6 +20,8 @@ struct Desafio: Codable {
     
     var concluded: [Bool] = [false]
     
+    var unselectedPhrases: [Int]
+    
     var fileName: String = String()
     
     init(_ title: String, _ goal: String, _ correct: [JSON], _ time: [JSON], _ phrases: [String], _ answers: [[String]], fileName: String) {
@@ -32,6 +34,8 @@ struct Desafio: Codable {
         self.answers = answers
         
         self.concluded = Array(repeating: false, count: 3)
+        
+        self.unselectedPhrases = Array(0 ..< phrases.count)
         
         self.fileName = fileName
     }

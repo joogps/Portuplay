@@ -23,6 +23,8 @@ class GameViewController: UIViewController {
     
     var answers: [String] = Array()
     
+    var alreadySelected: [Int] = Array()
+    
     var score = 0;
     
     let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFont.TextStyle.body)
@@ -63,11 +65,25 @@ class GameViewController: UIViewController {
         
         timeIndicator.parentView = self
         
-        addPhrase(Int.random(in: 0 ..< desafio!.phrases.count) )
-        
+        addPhrase(Int.random(in: 0 ..< desafio!.unselectedPhrases.count))
     }
     
-    func addPhrase(_ index: Int) {
+    func addPhrase(_ i: Int) {
+        let index = desafio!.unselectedPhrases[i]
+        
+        desafio!.unselectedPhrases.remove(at: i)
+        alreadySelected.append(index)
+        
+        if desafio!.unselectedPhrases.count == 0 {
+            desafio!.unselectedPhrases = Array(0 ..< desafio!.phrases.count)
+            
+            if desafio!.unselectedPhrases.count >= alreadySelected.count*2 {
+                desafio!.unselectedPhrases = Array(Set(desafio!.unselectedPhrases).subtracting(alreadySelected))
+            }
+        }
+        
+        defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio!.fileName)
+        
         var phrase = desafio!.phrases[index]
         
         let special = ".!?"
@@ -84,12 +100,12 @@ class GameViewController: UIViewController {
             let tag = wordList.addTag(String(word))
             
             if (!special.contains(word)) {
-                tag.layer.transform = CATransform3DMakeTranslation(0, -3, 0)
+                tag.addTarget(self, action: #selector(tagPressed(_:)), for: .touchUpInside)
                 
                 tag.onTap = { tag in
                     let move = CABasicAnimation(keyPath: "transform")
                     move.fromValue = tag.layer.transform
-                    move.toValue = CATransform3DMakeTranslation(0, 0, 0)
+                    move.toValue = CATransform3DMakeTranslation(0, 3, 0)
                     move.duration = 0.1
                     tag.layer.add(move, forKey: move.keyPath)
                     tag.layer.transform = move.toValue as! CATransform3D
@@ -157,8 +173,9 @@ class GameViewController: UIViewController {
             self.timeIndicator.alpha = 0
         }, completion: { (finished: Bool) in
             self.wordList.removeAllTags()
-            self.addPhrase(Int.random(in: 0 ..< self.desafio!.phrases.count))
             self.wordList.frame.origin.x = self.view.frame.width/2+self.wordList.frame.width
+            
+            self.addPhrase(Int.random(in: 0 ..< self.desafio!.unselectedPhrases.count))
             
             self.timeIndicator.time = 0
             
@@ -223,5 +240,13 @@ class GameViewController: UIViewController {
             
             self.present(alert, animated: true)
         }
+    }
+    
+    @objc func handleTap(gesture: UITapGestureRecognizer) -> Void {
+        print(true)
+    }
+    
+    @objc func tagPressed(_ sender: TagView!) {
+        print(true)
     }
 }
