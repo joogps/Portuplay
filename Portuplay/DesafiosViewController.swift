@@ -19,6 +19,9 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.isNavigationBarHidden = false
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         for file in files {
             if UserDefaults.standard.object(forKey: file) as? Data != nil {
                 if let data = UserDefaults.standard.value(forKey: file) as? Data {

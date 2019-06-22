@@ -194,4 +194,32 @@ class GameViewController: UIViewController {
         
         self.navigationController?.pushViewController(gameOverViewController, animated: true)
     }
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let alert = UIAlertController(title: "Sair do desafio?", message: "Você não poderá recuperar o seu progresso.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: {
+                action in
+                let desafiosViewController = self.storyboard?.instantiateViewController(withIdentifier: "Desafios") as! DesafiosViewController
+                
+                let transition = CATransition()
+                transition.timingFunction = CAMediaTimingFunction(name:
+                    CAMediaTimingFunctionName.easeInEaseOut)
+                transition.type = .push
+                transition.subtype = .fromTop
+                transition.duration = 0.35
+                self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
+                
+                self.navigationController?.pushViewController(desafiosViewController, animated: false)
+            }))
+            alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
+    }
 }
