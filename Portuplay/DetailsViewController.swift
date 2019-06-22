@@ -120,10 +120,10 @@ class BlackViewController: UIViewController {
         
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false, block: { timer in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let countdownViewController: CountdownViewController = storyboard.instantiateViewController(withIdentifier: "Countdown") as! CountdownViewController
+            let countdownViewController = storyboard.instantiateViewController(withIdentifier: "Countdown")
             
-            countdownViewController.desafio = self.desafio
-            countdownViewController.difficultyIndex = self.difficultyIndex
+            countdownViewController!.desafio = self.desafio
+            countdownViewController!.difficultyIndex = self.difficultyIndex
             
             let transition = CATransition()
             transition.timingFunction = CAMediaTimingFunction(name:
@@ -132,7 +132,7 @@ class BlackViewController: UIViewController {
             transition.duration = 0.75
             self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
             
-            self.navigationController?.pushViewController(countdownViewController, animated: false)
+            self.navigationController?.pushViewController(countdownViewController!, animated: false)
         })
     }
 }
