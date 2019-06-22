@@ -87,7 +87,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             transition.timingFunction = CAMediaTimingFunction(name:
                 .easeInEaseOut)
             transition.type = .fade
-            transition.duration = 0.5
+            transition.duration = 1
             self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
             
             self.navigationController?.pushViewController(blackViewController, animated: false)
@@ -118,7 +118,7 @@ class BlackViewController: UIViewController {
         
         self.view.backgroundColor = .black
         
-        Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false, block: { timer in
+        Timer.scheduledTimer(withTimeInterval: 1.25, repeats: false, block: { timer in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let countdownViewController = storyboard.instantiateViewController(withIdentifier: "Countdown") as! CountdownViewController
             
