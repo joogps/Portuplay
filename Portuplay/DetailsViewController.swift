@@ -14,7 +14,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var desafio: Desafio? = nil
     
-    let sections = ["OBJETIVO", "PARA CONCLUIR", "TEMPO POR QUESTÃO", "CONCLUÍDO", ""]
+    let sections = ["Objetivo", "Para concluir", "Tempo por questão", "Concluído", ""]
     var labels: [String] = []
     
     var difficultyIndex = 0

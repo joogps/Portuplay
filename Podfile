@@ -5,4 +5,5 @@ target 'Portuplay' do
 
   pod 'SwiftyJSON', '~> 4.0'
   pod 'TagListView', '~> 1.0'
+  pod 'SPStorkController'
 end

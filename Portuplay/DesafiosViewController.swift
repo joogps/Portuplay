@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import SwiftyJSON
+import SPStorkController
 
 class DesafiosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var desafiosTable: UITableView!
-    var desafios: [Desafio] = []
     
     let searchController = UISearchController(searchResultsController: nil)
     var filteredDesafios: [Desafio] = []
@@ -19,45 +18,14 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createDesafios()
+        
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+        
         self.navigationController!.isNavigationBarHidden = false
         self.navigationItem.setHidesBackButton(true, animated: false)
-        
-        for file in files {
-            if UserDefaults.standard.object(forKey: file) as? Data != nil {
-                if let data = UserDefaults.standard.value(forKey: file) as? Data {
-                    desafios.append(try! PropertyListDecoder().decode(Desafio.self, from: data))
-                }
-            } else {
-                let path = Bundle.main.path(forResource: file, ofType: "json")
-                let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
-                let json = try? JSON(data: data!)
-                
-                let title = json?["title"].string!
-                let goal = json?["goal"].string!
-                let correct = json?["correct"].array!
-                let time = json?["time"].array!
-                
-                var phrases = [String]()
-                var answers = [[String]]()
-                
-                for item in (json?["phrases"].array!)! {
-                    phrases.append(item["total"].string!)
-                    
-                    var answer: [String] = Array()
-                    for ans in item["answer"].array! {
-                        answer.append(ans.string!)
-                    }
-                    
-                    answers.append(answer)
-                }
-                
-                let desafio = Desafio(title!, goal!, correct!, time!, phrases, answers, fileName: file)
-                
-                defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
-                
-                desafios.append(desafio)
-            }
-        }
         
         desafios = desafios.sorted(by: { $0.concluded.contains(false) && !$1.concluded.contains(false) })
         
@@ -122,6 +90,20 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func isSearching() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    @objc func infoButtonTapped() {
+        let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "Info") as! InfoViewController
+        infoViewController.view.backgroundColor = .white
+        self.presentAsStork(infoViewController)
+    }
+    
+    func didDismissStorkBySwipe() {
+        desafiosTable.reloadData()
+    }
+    
+    func didDismissStorkByTap() {
+        desafiosTable.reloadData()
     }
 }
 

@@ -330,7 +330,146 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyW-jQ-Ohx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2070" y="2230"/>
+            <point key="canvasLocation" x="1980" y="2230"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="BLB-0N-1Ah">
+            <objects>
+                <viewController storyboardIdentifier="Info" id="QCv-mV-9pr" customClass="InfoViewController" customModule="Portuplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hI2-zO-KYU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4lP-de-TfU">
+                                <rect key="frame" x="157" y="129" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="O8P-mS-mbU"/>
+                                    <constraint firstAttribute="height" constant="100" id="sTV-eC-Yvk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portuplay - v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t28-cP-w0q">
+                                <rect key="frame" x="140" y="249" width="134" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made by João Gabriel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-RZ-vJ8">
+                                <rect key="frame" x="132.5" y="280" width="149" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjZ-gY-Vsc">
+                                <rect key="frame" x="0.0" y="350" width="414" height="546"/>
+                                <connections>
+                                    <segue destination="h2f-yN-3jw" kind="embed" id="b3W-B9-hue"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cjZ-gY-Vsc" firstAttribute="trailing" secondItem="I73-d1-jyS" secondAttribute="trailing" id="3GZ-ni-fGy"/>
+                            <constraint firstItem="t28-cP-w0q" firstAttribute="centerX" secondItem="hI2-zO-KYU" secondAttribute="centerX" id="Jwc-YQ-VHa"/>
+                            <constraint firstItem="4lP-de-TfU" firstAttribute="centerX" secondItem="hI2-zO-KYU" secondAttribute="centerX" id="axH-QY-aBc"/>
+                            <constraint firstAttribute="bottom" secondItem="cjZ-gY-Vsc" secondAttribute="bottom" id="dZD-nC-zeU"/>
+                            <constraint firstItem="cjZ-gY-Vsc" firstAttribute="top" secondItem="zTK-RZ-vJ8" secondAttribute="bottom" constant="52" id="hnF-18-4KK"/>
+                            <constraint firstItem="zTK-RZ-vJ8" firstAttribute="centerX" secondItem="hI2-zO-KYU" secondAttribute="centerX" id="i7B-Py-Ji4"/>
+                            <constraint firstItem="zTK-RZ-vJ8" firstAttribute="top" secondItem="t28-cP-w0q" secondAttribute="bottom" constant="8" id="sQc-ub-EAD"/>
+                            <constraint firstItem="cjZ-gY-Vsc" firstAttribute="leading" secondItem="I73-d1-jyS" secondAttribute="leading" id="sa9-Xr-mir"/>
+                            <constraint firstItem="4lP-de-TfU" firstAttribute="top" secondItem="I73-d1-jyS" secondAttribute="top" constant="85" id="vDW-zn-yof"/>
+                            <constraint firstItem="t28-cP-w0q" firstAttribute="top" secondItem="4lP-de-TfU" secondAttribute="bottom" constant="20" id="wDh-U6-vhe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I73-d1-jyS"/>
+                    </view>
+                    <connections>
+                        <outlet property="appIcon" destination="4lP-de-TfU" id="L9g-DI-x3K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4AS-nU-qpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979.7101449275365" y="126.5625"/>
+        </scene>
+        <!--Info Table View Controller-->
+        <scene sceneID="MKS-oW-8dP">
+            <objects>
+                <tableViewController id="h2f-yN-3jw" customClass="InfoTableViewController" customModule="Portuplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="PfB-Tz-32b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="546"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Quer saber mais?" id="Re1-Gn-TfF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Fjs-3D-cfd" style="IBUITableViewCellStyleDefault" id="QzO-BY-Mzw">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QzO-BY-Mzw" id="HsW-Ge-vvF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Projeto no GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fjs-3D-cfd">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="n6V-F3-1Az" style="IBUITableViewCellStyleDefault" id="2ml-nG-AD3">
+                                        <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ml-nG-AD3" id="p9S-yl-hH2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Perfil do Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n6V-F3-1Az">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection footerTitle="Essa ação apagará os dados salvos de todos os desafios." id="YoQ-Ab-6io">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="YOy-dY-OPK" style="IBUITableViewCellStyleDefault" id="URg-gS-lgc">
+                                        <rect key="frame" x="0.0" y="179.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="URg-gS-lgc" id="tHt-Q3-vTV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Apagar dados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YOy-dY-OPK">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.0093617555430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="h2f-yN-3jw" id="XHo-bN-Kkb"/>
+                            <outlet property="delegate" destination="h2f-yN-3jw" id="1kC-hQ-Xf4"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="infoTable" destination="PfB-Tz-32b" id="Kx0-Kc-TgI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icy-Ku-MAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917" y="135"/>
         </scene>
         <!--Countdown View Controller-->
         <scene sceneID="ndX-vw-Yxf">

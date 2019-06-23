@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 let defaults = UserDefaults.standard
 let files = ["Substantivos", "Adjetivos", "Verbos"]
+
+var desafios: [Desafio] = []
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -46,5 +49,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+}
+
+func createDesafios() {
+    desafios = Array()
+    
+    for file in files {
+        if UserDefaults.standard.object(forKey: file) as? Data != nil {
+            if let data = UserDefaults.standard.value(forKey: file) as? Data {
+                desafios.append(try! PropertyListDecoder().decode(Desafio.self, from: data))
+            }
+        } else {
+            let path = Bundle.main.path(forResource: file, ofType: "json")
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
+            let json = try? JSON(data: data!)
+            
+            let title = json?["title"].string!
+            let goal = json?["goal"].string!
+            let correct = json?["correct"].array!
+            let time = json?["time"].array!
+            
+            var phrases = [String]()
+            var answers = [[String]]()
+            
+            for item in (json?["phrases"].array!)! {
+                phrases.append(item["total"].string!)
+                
+                var answer: [String] = Array()
+                for ans in item["answer"].array! {
+                    answer.append(ans.string!)
+                }
+                
+                answers.append(answer)
+            }
+            
+            let desafio = Desafio(title!, goal!, correct!, time!, phrases, answers, fileName: file)
+            
+            defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
+            
+            desafios.append(desafio)
+        }
     }
 }
