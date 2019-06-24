@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AcknowList
 
 class InfoViewController: UIViewController {
     @IBOutlet weak var appIcon: UIImageView!
@@ -43,8 +44,30 @@ class InfoTableViewController: UITableViewController {
                 let web = URL(string: "https://www.twitter.com/joogps")!
                 UIApplication.shared.open(UIApplication.shared.canOpenURL(twitter) ? twitter : web, options: [:], completionHandler: nil)
             }
+        } else if indexPath.section == 1 {
+            let acknowListViewController = AcknowListViewController()
+            acknowListViewController.title = "Créditos"
+            acknowListViewController.footerText = ""
+            
+            let parentDesafiosViewController = self.presentingViewController?.children.last as! DesafiosViewController
+            parentDesafiosViewController.navigationItem.backBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: nil)
+            
+            self.dismiss(animated: true, completion: { () -> Void in
+                let transition = CATransition()
+                transition.timingFunction = CAMediaTimingFunction(name:
+                    CAMediaTimingFunctionName.easeInEaseOut)
+                transition.type = .moveIn
+                transition.subtype = .fromTop
+                transition.duration = 0.35
+                
+                parentDesafiosViewController.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
+                
+                parentDesafiosViewController.navigationController?.pushViewController(acknowListViewController, animated: false)
+            })
+            
+    
         } else {
-        let alert = UIAlertController(title: "Apagar dados?", message: "Essa ação não poderá ser desfeita.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Apagar dados?", message: "Essa ação não poderá ser desfeita.", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Sim", style: .destructive, handler: {
                 action in

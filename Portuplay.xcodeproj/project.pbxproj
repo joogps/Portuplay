@@ -17,6 +17,7 @@
 		274B105B22BB2841003208EB /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B105A22BB2841003208EB /* GameOverViewController.swift */; };
 		27730D2022BAE8F3001C42CB /* TimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */; };
 		2788E3C822BFD20300BE905F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788E3C722BFD20300BE905F /* InfoViewController.swift */; };
+		27BB4E4022C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27BB4E3F22C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist */; };
 		27C78C9522A847C40039E362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78C9422A847C40039E362 /* AppDelegate.swift */; };
 		27C78C9A22A847C40039E362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C78C9822A847C40039E362 /* Main.storyboard */; };
 		27C78C9C22A847C50039E362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C78C9B22A847C50039E362 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		274B105A22BB2841003208EB /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicator.swift; sourceTree = "<group>"; };
 		2788E3C722BFD20300BE905F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		27BB4E3F22C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-Portuplay-acknowledgements.plist"; path = "Portuplay/Pods-Portuplay-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		27C78C9122A847C40039E362 /* Portuplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portuplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C78C9422A847C40039E362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C78C9922A847C40039E362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				27C78C9B22A847C50039E362 /* Assets.xcassets */,
 				2723A48F22C030CB0089691E /* AlternateIcons */,
 				270E789122ACA8330002FE10 /* Data */,
+				27BB4E3F22C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist */,
 			);
 			path = Portuplay;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				270E789722ACA8340002FE10 /* Substantivos.json in Resources */,
 				2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */,
+				27BB4E4022C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist in Resources */,
 				2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */,
 				270E789622ACA8340002FE10 /* Adjetivos.json in Resources */,
 				270E789522ACA8340002FE10 /* Verbos.json in Resources */,
