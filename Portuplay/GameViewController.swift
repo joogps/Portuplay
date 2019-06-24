@@ -239,8 +239,4 @@ class GameViewController: UIViewController {
             self.present(alert, animated: true)
         }
     }
-    
-    @objc func handleTap(gesture: UITapGestureRecognizer) -> Void {
-        print(true)
-    }
 }

@@ -10,7 +10,10 @@
 		270E789522ACA8340002FE10 /* Verbos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789222ACA8330002FE10 /* Verbos.json */; };
 		270E789622ACA8340002FE10 /* Adjetivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789322ACA8330002FE10 /* Adjetivos.json */; };
 		270E789722ACA8340002FE10 /* Substantivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789422ACA8330002FE10 /* Substantivos.json */; };
+		2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49022C030CB0089691E /* GoldenIcon@2x.png */; };
+		2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49122C030CB0089691E /* GoldenIcon@3x.png */; };
 		2738AC0822BD771F00EABCC5 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738AC0722BD771F00EABCC5 /* CountdownViewController.swift */; };
+		273AB49C22C0568A00B923A9 /* AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 273AB49A22C0568A00B923A9 /* AppIcon@3x.png */; };
 		274B105B22BB2841003208EB /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B105A22BB2841003208EB /* GameOverViewController.swift */; };
 		27730D2022BAE8F3001C42CB /* TimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */; };
 		2788E3C822BFD20300BE905F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788E3C722BFD20300BE905F /* InfoViewController.swift */; };
@@ -30,7 +33,10 @@
 		270E789222ACA8330002FE10 /* Verbos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Verbos.json; sourceTree = "<group>"; };
 		270E789322ACA8330002FE10 /* Adjetivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Adjetivos.json; sourceTree = "<group>"; };
 		270E789422ACA8330002FE10 /* Substantivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Substantivos.json; sourceTree = "<group>"; };
+		2723A49022C030CB0089691E /* GoldenIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenIcon@2x.png"; sourceTree = "<group>"; };
+		2723A49122C030CB0089691E /* GoldenIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenIcon@3x.png"; sourceTree = "<group>"; };
 		2738AC0722BD771F00EABCC5 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
+		273AB49A22C0568A00B923A9 /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
 		274B105A22BB2841003208EB /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicator.swift; sourceTree = "<group>"; };
 		2788E3C722BFD20300BE905F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,16 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		2723A48F22C030CB0089691E /* AlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				2723A49022C030CB0089691E /* GoldenIcon@2x.png */,
+				2723A49122C030CB0089691E /* GoldenIcon@3x.png */,
+				273AB49A22C0568A00B923A9 /* AppIcon@3x.png */,
+			);
+			path = AlternateIcons;
+			sourceTree = "<group>";
+		};
 		27C78C8822A847C40039E362 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +120,10 @@
 				27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */,
 				274B105A22BB2841003208EB /* GameOverViewController.swift */,
 				2788E3C722BFD20300BE905F /* InfoViewController.swift */,
-				27C78C9B22A847C50039E362 /* Assets.xcassets */,
 				27C78C9D22A847C50039E362 /* LaunchScreen.storyboard */,
 				27C78CA022A847C50039E362 /* Info.plist */,
+				27C78C9B22A847C50039E362 /* Assets.xcassets */,
+				2723A48F22C030CB0089691E /* AlternateIcons */,
 				270E789122ACA8330002FE10 /* Data */,
 			);
 			path = Portuplay;
@@ -190,11 +207,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				270E789722ACA8340002FE10 /* Substantivos.json in Resources */,
+				2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */,
+				2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */,
 				270E789622ACA8340002FE10 /* Adjetivos.json in Resources */,
 				270E789522ACA8340002FE10 /* Verbos.json in Resources */,
 				27C78C9F22A847C50039E362 /* LaunchScreen.storyboard in Resources */,
 				27C78C9C22A847C50039E362 /* Assets.xcassets in Resources */,
 				27C78C9A22A847C40039E362 /* Main.storyboard in Resources */,
+				273AB49C22C0568A00B923A9 /* AppIcon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

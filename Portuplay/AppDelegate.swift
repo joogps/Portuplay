@@ -14,6 +14,8 @@ let files = ["Substantivos", "Adjetivos", "Verbos"]
 
 var desafios: [Desafio] = []
 
+var allConcluded = false
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?

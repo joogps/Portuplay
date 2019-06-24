@@ -341,26 +341,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4lP-de-TfU">
-                                <rect key="frame" x="157" y="129" width="100" height="100"/>
+                                <rect key="frame" x="157" y="124" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="O8P-mS-mbU"/>
                                     <constraint firstAttribute="height" constant="100" id="sTV-eC-Yvk"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portuplay - v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t28-cP-w0q">
-                                <rect key="frame" x="140" y="249" width="134" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="137" y="244" width="140" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made by João Gabriel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-RZ-vJ8">
-                                <rect key="frame" x="132.5" y="280" width="149" height="18"/>
+                                <rect key="frame" x="132.5" y="275" width="149" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjZ-gY-Vsc">
-                                <rect key="frame" x="0.0" y="350" width="414" height="546"/>
+                                <rect key="frame" x="0.0" y="345" width="414" height="551"/>
                                 <connections>
                                     <segue destination="h2f-yN-3jw" kind="embed" id="b3W-B9-hue"/>
                                 </connections>
@@ -376,7 +376,7 @@
                             <constraint firstItem="zTK-RZ-vJ8" firstAttribute="centerX" secondItem="hI2-zO-KYU" secondAttribute="centerX" id="i7B-Py-Ji4"/>
                             <constraint firstItem="zTK-RZ-vJ8" firstAttribute="top" secondItem="t28-cP-w0q" secondAttribute="bottom" constant="8" id="sQc-ub-EAD"/>
                             <constraint firstItem="cjZ-gY-Vsc" firstAttribute="leading" secondItem="I73-d1-jyS" secondAttribute="leading" id="sa9-Xr-mir"/>
-                            <constraint firstItem="4lP-de-TfU" firstAttribute="top" secondItem="I73-d1-jyS" secondAttribute="top" constant="85" id="vDW-zn-yof"/>
+                            <constraint firstItem="4lP-de-TfU" firstAttribute="top" secondItem="I73-d1-jyS" secondAttribute="top" constant="80" id="vDW-zn-yof"/>
                             <constraint firstItem="t28-cP-w0q" firstAttribute="top" secondItem="4lP-de-TfU" secondAttribute="bottom" constant="20" id="wDh-U6-vhe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I73-d1-jyS"/>
@@ -394,7 +394,7 @@
             <objects>
                 <tableViewController id="h2f-yN-3jw" customClass="InfoTableViewController" customModule="Portuplay" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="PfB-Tz-32b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="546"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>

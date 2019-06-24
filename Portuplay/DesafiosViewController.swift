@@ -20,6 +20,27 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         
         createDesafios()
         
+        if !allConcluded {
+            allConcluded = true
+            for desafio in desafios {
+                if desafio.concluded.contains(false) {
+                    allConcluded = false
+                    break
+                }
+            }
+            
+            if allConcluded {
+                if UIApplication.shared.supportsAlternateIcons {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+                        let alert = UIAlertController(title: "Parabéns!", message: "Você concluiu todos os desafios!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                        
+                        UIApplication.shared.setAlternateIconName("GoldenIcon")
+                    }
+                }
+            }
+        }
+        
         let infoButton = UIButton(type: .infoLight)
         infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
@@ -96,14 +117,6 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "Info") as! InfoViewController
         infoViewController.view.backgroundColor = .white
         self.presentAsStork(infoViewController)
-    }
-    
-    func didDismissStorkBySwipe() {
-        desafiosTable.reloadData()
-    }
-    
-    func didDismissStorkByTap() {
-        desafiosTable.reloadData()
     }
 }
 

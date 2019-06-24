@@ -18,11 +18,11 @@ struct Desafio: Codable {
     var phrases: [String]
     var answers: [[String]]
     
-    var concluded: [Bool] = [false]
+    var concluded: [Bool]
     
     var unselectedPhrases: [Int]
     
-    var fileName: String = String()
+    var fileName: String
     
     init(_ title: String, _ goal: String, _ correct: [JSON], _ time: [JSON], _ phrases: [String], _ answers: [[String]], fileName: String) {
         self.title = title

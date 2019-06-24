@@ -13,21 +13,20 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        appIcon.image = .appIcon
-        appIcon.layer.borderColor = UIColor.darkGray.cgColor
+        
+        if allConcluded {
+            appIcon.image = UIImage(named: "GoldenIcon@3x")
+        } else {
+            appIcon.image = UIImage(named: "AppIcon@3x")
+        }
+        
+        appIcon.layer.borderColor = UIColor.lightGray.cgColor
         appIcon.layer.borderWidth = 1
         appIcon.layer.cornerRadius = 10/57*appIcon.frame.width
     }
-}
-
-extension UIImage {
-    static var appIcon: UIImage? {
-        guard let iconsDictionary = Bundle.main.infoDictionary?["CFBundleIcons"] as? [String:Any],
-            let primaryIconsDictionary = iconsDictionary["CFBundlePrimaryIcon"] as? [String:Any],
-            let iconFiles = primaryIconsDictionary["CFBundleIconFiles"] as? [String],
-            let lastIcon = iconFiles.last else { return nil }
-        return UIImage(named: lastIcon)
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 
@@ -45,15 +44,24 @@ class InfoTableViewController: UITableViewController {
                 UIApplication.shared.open(UIApplication.shared.canOpenURL(twitter) ? twitter : web, options: [:], completionHandler: nil)
             }
         } else {
-        let alert = UIAlertController(title: "Apagar dados?", message: "Essa ação não pode ser desfeita.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Apagar dados?", message: "Essa ação não poderá ser desfeita.", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Sim", style: .destructive, handler: {
                 action in
-                let domain = Bundle.main.bundleIdentifier!
-                UserDefaults.standard.removePersistentDomain(forName: domain)
+                
+                UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
                 UserDefaults.standard.synchronize()
                 
                 createDesafios()
+                
+                allConcluded = false
+                
+                if UIApplication.shared.supportsAlternateIcons {
+                    UIApplication.shared.setAlternateIconName(nil)
+                }
+                
+                (self.presentingViewController?.children.last as! DesafiosViewController).desafiosTable.reloadData()
+                
                 self.dismiss(animated: true, completion: nil)
             }))
             alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
