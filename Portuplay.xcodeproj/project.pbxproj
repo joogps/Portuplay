@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270E789522ACA8340002FE10 /* Verbos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789222ACA8330002FE10 /* Verbos.json */; };
-		270E789622ACA8340002FE10 /* Adjetivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789322ACA8330002FE10 /* Adjetivos.json */; };
-		270E789722ACA8340002FE10 /* Substantivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 270E789422ACA8330002FE10 /* Substantivos.json */; };
 		2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49022C030CB0089691E /* GoldenIcon@2x.png */; };
 		2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49122C030CB0089691E /* GoldenIcon@3x.png */; };
 		2738AC0822BD771F00EABCC5 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738AC0722BD771F00EABCC5 /* CountdownViewController.swift */; };
@@ -17,6 +14,9 @@
 		274B105B22BB2841003208EB /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B105A22BB2841003208EB /* GameOverViewController.swift */; };
 		27730D2022BAE8F3001C42CB /* TimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */; };
 		2788E3C822BFD20300BE905F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788E3C722BFD20300BE905F /* InfoViewController.swift */; };
+		279216BE22C14B9D00B57B8A /* Verbos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216BB22C14B9D00B57B8A /* Verbos.plist */; };
+		279216BF22C14B9D00B57B8A /* Adjetivos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216BC22C14B9D00B57B8A /* Adjetivos.plist */; };
+		279216C022C14B9D00B57B8A /* Substantivos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216BD22C14B9D00B57B8A /* Substantivos.plist */; };
 		27BB4E4022C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27BB4E3F22C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist */; };
 		27C78C9522A847C40039E362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78C9422A847C40039E362 /* AppDelegate.swift */; };
 		27C78C9A22A847C40039E362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C78C9822A847C40039E362 /* Main.storyboard */; };
@@ -31,9 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		270E789222ACA8330002FE10 /* Verbos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Verbos.json; sourceTree = "<group>"; };
-		270E789322ACA8330002FE10 /* Adjetivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Adjetivos.json; sourceTree = "<group>"; };
-		270E789422ACA8330002FE10 /* Substantivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Substantivos.json; sourceTree = "<group>"; };
 		2723A49022C030CB0089691E /* GoldenIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenIcon@2x.png"; sourceTree = "<group>"; };
 		2723A49122C030CB0089691E /* GoldenIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenIcon@3x.png"; sourceTree = "<group>"; };
 		2738AC0722BD771F00EABCC5 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +38,9 @@
 		274B105A22BB2841003208EB /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicator.swift; sourceTree = "<group>"; };
 		2788E3C722BFD20300BE905F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		279216BB22C14B9D00B57B8A /* Verbos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Verbos.plist; sourceTree = "<group>"; };
+		279216BC22C14B9D00B57B8A /* Adjetivos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Adjetivos.plist; sourceTree = "<group>"; };
+		279216BD22C14B9D00B57B8A /* Substantivos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Substantivos.plist; sourceTree = "<group>"; };
 		27BB4E3F22C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-Portuplay-acknowledgements.plist"; path = "Portuplay/Pods-Portuplay-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		27C78C9122A847C40039E362 /* Portuplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portuplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C78C9422A847C40039E362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +73,9 @@
 		270E789122ACA8330002FE10 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				270E789222ACA8330002FE10 /* Verbos.json */,
-				270E789322ACA8330002FE10 /* Adjetivos.json */,
-				270E789422ACA8330002FE10 /* Substantivos.json */,
+				279216BC22C14B9D00B57B8A /* Adjetivos.plist */,
+				279216BD22C14B9D00B57B8A /* Substantivos.plist */,
+				279216BB22C14B9D00B57B8A /* Verbos.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -209,16 +209,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270E789722ACA8340002FE10 /* Substantivos.json in Resources */,
 				2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */,
 				27BB4E4022C0646700C18A01 /* Pods-Portuplay-acknowledgements.plist in Resources */,
 				2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */,
-				270E789622ACA8340002FE10 /* Adjetivos.json in Resources */,
-				270E789522ACA8340002FE10 /* Verbos.json in Resources */,
 				27C78C9F22A847C50039E362 /* LaunchScreen.storyboard in Resources */,
 				27C78C9C22A847C50039E362 /* Assets.xcassets in Resources */,
+				279216C022C14B9D00B57B8A /* Substantivos.plist in Resources */,
 				27C78C9A22A847C40039E362 /* Main.storyboard in Resources */,
 				273AB49C22C0568A00B923A9 /* AppIcon@3x.png in Resources */,
+				279216BF22C14B9D00B57B8A /* Adjetivos.plist in Resources */,
+				279216BE22C14B9D00B57B8A /* Verbos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

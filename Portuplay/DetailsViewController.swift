@@ -34,8 +34,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let title = desafio.title
         let goal = desafio.goal
-        let correct = desafio.correct[difficultyIndex].int!
-        let time = desafio.time[difficultyIndex].int!
+        let correct = desafio.correct[difficultyIndex]
+        let time = desafio.time[difficultyIndex]
         let completed = desafio.concluded
         
         self.title = title

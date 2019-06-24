@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>correto</key>
+	<array>
+		<integer>8</integer>
+		<integer>12</integer>
+		<integer>14</integer>
+	</array>
+	<key>objetivo</key>
+	<string>Aperte nos substantivos presentes em cada frase</string>
+	<key>frases</key>
+	<array>
+		<dict>
+			<key>respostas</key>
+			<array>
+				<string>suco</string>
+			</array>
+			<key>total</key>
+			<string>Eu gosto de suco.</string>
+		</dict>
+	</array>
+	<key>tempo</key>
+	<array>
+		<integer>5</integer>
+		<integer>4</integer>
+		<integer>3</integer>
+	</array>
+	<key>título</key>
+	<string>Substantivos</string>
+</dict>
+</plist>

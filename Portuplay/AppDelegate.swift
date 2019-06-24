@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 let defaults = UserDefaults.standard
 let files = ["Substantivos", "Adjetivos", "Verbos"]
@@ -63,34 +62,30 @@ func createDesafios() {
                 desafios.append(try! PropertyListDecoder().decode(Desafio.self, from: data))
             }
         } else {
-            let path = Bundle.main.path(forResource: file, ofType: "json")
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
-            let json = try? JSON(data: data!)
-            
-            let title = json?["title"].string!
-            let goal = json?["goal"].string!
-            let correct = json?["correct"].array!
-            let time = json?["time"].array!
-            
-            var phrases = [String]()
-            var answers = [[String]]()
-            
-            for item in (json?["phrases"].array!)! {
-                phrases.append(item["total"].string!)
-                
-                var answer: [String] = Array()
-                for ans in item["answer"].array! {
-                    answer.append(ans.string!)
+            if let path = Bundle.main.path(forResource: file, ofType: "plist") {
+                let dictRoot = NSDictionary(contentsOfFile: path)
+                if let dict = dictRoot {
+                    
+                    let title = dict["título"] as! String
+                    let goal = dict["objetivo"] as! String
+                    let correct = dict["correto"] as! [Int]
+                    let time = dict["tempo"] as! [Int]
+                    
+                    var phrases = [String]()
+                    var answers = [[String]]()
+                    
+                    for phrase in dict["frases"] as! [NSDictionary] {
+                        phrases.append(phrase["total"] as! String)
+                        answers.append(phrase["respostas"] as! [String])
+                    }
+                    
+                    let desafio = Desafio(title, goal, correct, time, phrases, answers, fileName: file)
+                    
+                    defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
+                    
+                    desafios.append(desafio)
                 }
-                
-                answers.append(answer)
             }
-            
-            let desafio = Desafio(title!, goal!, correct!, time!, phrases, answers, fileName: file)
-            
-            defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
-            
-            desafios.append(desafio)
         }
     }
 }

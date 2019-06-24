@@ -33,9 +33,9 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
                 if UIApplication.shared.supportsAlternateIcons {
                     DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
                         let alert = UIAlertController(title: "Parabéns!", message: "Você concluiu todos os desafios!", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                        
-                        UIApplication.shared.setAlternateIconName("GoldenIcon")
+                        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { action in
+                            UIApplication.shared.setAlternateIconName("GoldenIcon")
+                        }))
                     }
                 }
             }

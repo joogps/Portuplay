@@ -7,13 +7,12 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 struct Desafio: Codable {
     var title: String
     var goal: String
-    var correct: [JSON]
-    var time: [JSON]
+    var correct: [Int]
+    var time: [Int]
     
     var phrases: [String]
     var answers: [[String]]
@@ -24,7 +23,7 @@ struct Desafio: Codable {
     
     var fileName: String
     
-    init(_ title: String, _ goal: String, _ correct: [JSON], _ time: [JSON], _ phrases: [String], _ answers: [[String]], fileName: String) {
+    init(_ title: String, _ goal: String, _ correct: [Int], _ time: [Int], _ phrases: [String], _ answers: [[String]], fileName: String) {
         self.title = title
         self.goal = goal
         self.correct = correct

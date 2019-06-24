@@ -7,70 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CED47CA40D9A003E7193610674AC565 /* SPStorkViewControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CE473EA4D50461D4D5AF967D6A0D01 /* SPStorkViewControllerExtenshion.swift */; };
-		121A8AD42462FEECF371943A99AD06F7 /* AcknowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29549754FD4883245BEE23517D52A1D1 /* AcknowViewController.swift */; };
-		15D0F6B630E270433F41BBB6EEE5903A /* AcknowList.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9534BA236F904C5F8A08CC9A0F4D6F08 /* AcknowList.bundle */; };
-		232BAB08F5E8BC95D3F222074720E758 /* Pods-Portuplay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6055DF3F32348EF58E560A835658C9 /* Pods-Portuplay-dummy.m */; };
-		27EC3BFB735230A02F10A3E7A9661E62 /* SPStorkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7F0539A039C2570502544C21E9A5A /* SPStorkTransitioningDelegate.swift */; };
-		2863D958453D05FD0A7701D59CFC53A6 /* AcknowLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98BF41FAF15E074CD9A4E7265AE9A7 /* AcknowLocalization.swift */; };
-		29C63AB0D159A830DBD4F8E61F5CE5DE /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAFB881F0538B24D059BB9BE20BD246 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BBB79080B91ADF4320A83548BA3AED8 /* SPStorkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655FC2413EC51109CCDAF64673D829A3 /* SPStorkDismissingAnimationController.swift */; };
-		393CA77FFCEC195730C38E7C9EB8EDB1 /* Acknow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4177156719992083C62BF11FA58899C /* Acknow.swift */; };
-		3C28A0E25F73FB7152EB8BCCF4DE75A3 /* SPStorkController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BAABA7051557CD185CD6EBE3E7946A /* SPStorkController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F256F296FEA82A84729BC1277E411B6 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2FA2D30CE614F9E85B2C15A76438E /* TagListView.swift */; };
-		51861A611A4307F4F0666167E376C5F7 /* SPStorkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502C5DCBA054BC30BD7973838D17B567 /* SPStorkPresentationController.swift */; };
+		0CED47CA40D9A003E7193610674AC565 /* SPStorkViewControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED486BFBC98B94CADF3B57B5C4E47AA /* SPStorkViewControllerExtenshion.swift */; };
+		121A8AD42462FEECF371943A99AD06F7 /* AcknowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E69B350A76541408CAD00DB6C2009 /* AcknowViewController.swift */; };
+		15D0F6B630E270433F41BBB6EEE5903A /* AcknowList.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 81AF0E95DF2C0A888223B41449A0D7BF /* AcknowList.bundle */; };
+		27EC3BFB735230A02F10A3E7A9661E62 /* SPStorkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1E80B7969BDB8187EC26E12061A39 /* SPStorkTransitioningDelegate.swift */; };
+		2863D958453D05FD0A7701D59CFC53A6 /* AcknowLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB18A040327130C9932320BF674328 /* AcknowLocalization.swift */; };
+		2BBB79080B91ADF4320A83548BA3AED8 /* SPStorkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF043A367DC7F0EA23F886FC72E09F4 /* SPStorkDismissingAnimationController.swift */; };
+		393CA77FFCEC195730C38E7C9EB8EDB1 /* Acknow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B3F2D633EA86735A8539B6A4FE3A7 /* Acknow.swift */; };
+		3C28A0E25F73FB7152EB8BCCF4DE75A3 /* SPStorkController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 771575AB0F89A458825C60F20A8248E1 /* SPStorkController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F256F296FEA82A84729BC1277E411B6 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B53EA528B11FFD1716EAEB78768016 /* TagListView.swift */; };
+		51861A611A4307F4F0666167E376C5F7 /* SPStorkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ABDA817802824AAC99C0512B717A5 /* SPStorkPresentationController.swift */; };
 		55CF8DCB5143C30B939EF428DAAAAE7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		5D178F6D5B619B8EBE71B230BEDAAB84 /* AcknowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A10619AABC1ED41A6484CA24C95041 /* AcknowListViewController.swift */; };
-		5DA131A18A8FAAC571AEF9FAAC201C84 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B689381B0AE516013EBA62D39939A07F /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62F9CB198F25F37328DAD61544FB0F60 /* SPStorkCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332D6503DDF4F23481F6A602A43D5F39 /* SPStorkCloseView.swift */; };
-		6B35AC325A3D395C4E90DBC7589D2F00 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363E9BDFA41A49FB5CC882870AEB641 /* TagView.swift */; };
-		6D0A484DDA327797966D44B35F7007A0 /* SPStorkController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA2FCB3669D382E02ABFD8D0F0F313 /* SPStorkController-dummy.m */; };
-		726FB505E9371C571526F1146F8CCDE1 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F235BFE43C71152D25B4A7B1016C5B6E /* CloseButton.swift */; };
-		763EA582B030AB9A2FC93F6C1AF1EF19 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B1CF422E6477345C281624232775E /* SwiftyJSON-dummy.m */; };
-		8304D48F4AE670C7DFB0BB333DC1FEE3 /* SPStorkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82133540CF29CA7B6A41B3DC177D8BFF /* SPStorkPresentingAnimationController.swift */; };
+		5D178F6D5B619B8EBE71B230BEDAAB84 /* AcknowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77396F7C4BA6E8175459BAEC65F2CA /* AcknowListViewController.swift */; };
+		5DA131A18A8FAAC571AEF9FAAC201C84 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A8EE2829E9CA5E42C19505E89DD3E9 /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F9CB198F25F37328DAD61544FB0F60 /* SPStorkCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D0AE2D41ECF84F27570D460A57E22 /* SPStorkCloseView.swift */; };
+		6B35AC325A3D395C4E90DBC7589D2F00 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E785E7E7485D15940C477756A50B1 /* TagView.swift */; };
+		6D0A484DDA327797966D44B35F7007A0 /* SPStorkController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5952FE9001822EA57B7D98D183338 /* SPStorkController-dummy.m */; };
+		726FB505E9371C571526F1146F8CCDE1 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A810D1F5400B3341C4A36982BC610C /* CloseButton.swift */; };
+		8304D48F4AE670C7DFB0BB333DC1FEE3 /* SPStorkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03755020FBC45C60052CE9A8875D68A7 /* SPStorkPresentingAnimationController.swift */; };
+		83F7E586B1E7C096DC97C36208C9F32E /* Pods-Portuplay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6055DF3F32348EF58E560A835658C9 /* Pods-Portuplay-dummy.m */; };
+		84A325F7C83DC14EFF0DC119E080EC5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		8FD6583212B52C15DA3BEE1730E77438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		93251E6E2AD574056EFEFB9A118F6406 /* SPStorkHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554D80750828170E93D8B11D018E9C7 /* SPStorkHaptic.swift */; };
-		9B765F5B6ABD3E05D41541F1388D9394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		A2CE53A538503F3E5078B0924EF867A1 /* Pods-Portuplay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8856C954F5F9010144B81FEF7668880F /* Pods-Portuplay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93251E6E2AD574056EFEFB9A118F6406 /* SPStorkHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609E2167B5A901928725875D29A84D1 /* SPStorkHaptic.swift */; };
 		A38277087BDFD4804DAFC7833A19FABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		B8B9F6DA9BE6BE3679EC77D89E028E73 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70CAF63AB44204C57407F735962451C /* SwiftyJSON.swift */; };
-		BA370F72EC0BC58A1CD9C6C7E8EAA40D /* SPStorkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B76619661A3AA5AF3BA5E9B009578 /* SPStorkIndicatorView.swift */; };
-		BA6D4D69802EBF7C16A65FAE1F8965C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		BF213AC4D112C237309468B1FCFE882B /* SPStorkCodeDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5081A6A2FAE4A1EA6A0E44345F10E1 /* SPStorkCodeDraw.swift */; };
-		C5F4EA0782DFB8EA8FB8092F3DB14904 /* AcknowParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63475360902252725A5ECF66C6A87543 /* AcknowParser.swift */; };
-		C859EB70C488822263F82F7A225D0C08 /* AcknowList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4095F69CCDA9ACBF51E69AFFAC663D8E /* AcknowList-dummy.m */; };
-		CB4761B82AEA5A569A3952E82BE98689 /* AcknowList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1557593C8BBF22D6C7B8CFEC22B6E9F9 /* AcknowList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA370F72EC0BC58A1CD9C6C7E8EAA40D /* SPStorkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1D2F61F9B9469DF3D9EF60E624A81 /* SPStorkIndicatorView.swift */; };
+		BF213AC4D112C237309468B1FCFE882B /* SPStorkCodeDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27604B5F011245BDAD7EF52CC3458F48 /* SPStorkCodeDraw.swift */; };
+		C5F4EA0782DFB8EA8FB8092F3DB14904 /* AcknowParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EEF00717C27F8188DBE6CB6002AA4 /* AcknowParser.swift */; };
+		C859EB70C488822263F82F7A225D0C08 /* AcknowList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9B0AF93516CD256058D43964F8FB42 /* AcknowList-dummy.m */; };
+		CB4761B82AEA5A569A3952E82BE98689 /* AcknowList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5788BF04551D649FA44F338F2D1406A2 /* AcknowList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCEEC309974A81C2B12C810F714D3C45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		CD4131E120E52D73E03B634985FDB5D4 /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C587B972F17D8D2F9D1F56A172A7F4A7 /* TagListView-dummy.m */; };
+		CD4131E120E52D73E03B634985FDB5D4 /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD525A9C73F38126AD587302E365E94 /* TagListView-dummy.m */; };
 		D052D21042B5F7E8B9803559F81B3AA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		DF58407DE405C8C478389C85AF0B7880 /* SPStorkCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D5878920487B8228FB20AEC96019D /* SPStorkCloseButton.swift */; };
-		ED7080BD3502920ECA4388BC406BED6E /* SPStorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C21AC85ADFF4758BB16E5D0551B79F /* SPStorkController.swift */; };
-		F804B2CC32D29B1DFAF5DBACC6104439 /* SPStorkControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB12EA09F0CD30305C3F5AFDDB76D7 /* SPStorkControllerDelegate.swift */; };
+		DE15A927DF0ABB29A4677A0AB566ADD4 /* Pods-Portuplay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8856C954F5F9010144B81FEF7668880F /* Pods-Portuplay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF58407DE405C8C478389C85AF0B7880 /* SPStorkCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37566DC20C7E082127D24376033D83 /* SPStorkCloseButton.swift */; };
+		ED7080BD3502920ECA4388BC406BED6E /* SPStorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425102EE0C10FF98F88C763AA820251 /* SPStorkController.swift */; };
+		F804B2CC32D29B1DFAF5DBACC6104439 /* SPStorkControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F65A76D1377476DB130828EF1F15DA7 /* SPStorkControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33B4E1D47989C61C5BF98A0744B41496 /* PBXContainerItemProxy */ = {
+		7147A1589A3D3BD2E86C5A9E65E3BCD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 81E95886B4E31CDABBDB7AF092755E05;
 			remoteInfo = SPStorkController;
 		};
-		850637E8CA86736F5A13E6923F2758C4 /* PBXContainerItemProxy */ = {
+		D6D9B7BD5DDD8BFA14E77E03AD3EBFFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
 			remoteInfo = TagListView;
 		};
-		9C3DA58760220F0EB067121A091DF989 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
-			remoteInfo = SwiftyJSON;
-		};
-		EC1166647379964CFA283AB61D10BE5E /* PBXContainerItemProxy */ = {
+		DDA31515C2A11B3FBA7426A79B9BCC29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -80,80 +69,64 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ECA2FCB3669D382E02ABFD8D0F0F313 /* SPStorkController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPStorkController-dummy.m"; sourceTree = "<group>"; };
-		143D901DB4471AEEAE984E852F8FDC89 /* SPStorkController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPStorkController-Info.plist"; sourceTree = "<group>"; };
-		1557593C8BBF22D6C7B8CFEC22B6E9F9 /* AcknowList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AcknowList-umbrella.h"; sourceTree = "<group>"; };
-		163D5878920487B8228FB20AEC96019D /* SPStorkCloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCloseButton.swift; path = Source/SPStorkController/Views/SPStorkCloseButton.swift; sourceTree = "<group>"; };
+		03755020FBC45C60052CE9A8875D68A7 /* SPStorkPresentingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkPresentingAnimationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkPresentingAnimationController.swift; sourceTree = "<group>"; };
+		0848FC4C063D8ADDA4930A90F44AAE85 /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
 		1AB292DEC0B08C071C47375988B3366E /* AcknowList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AcknowList.framework; path = AcknowList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA9B3253612965920EFC46EFE8CEC46 /* Pods-Portuplay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Portuplay-Info.plist"; sourceTree = "<group>"; };
-		1F5081A6A2FAE4A1EA6A0E44345F10E1 /* SPStorkCodeDraw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCodeDraw.swift; path = Source/SPStorkController/CodeDraw/SPStorkCodeDraw.swift; sourceTree = "<group>"; };
-		21CB12EA09F0CD30305C3F5AFDDB76D7 /* SPStorkControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkControllerDelegate.swift; path = Source/SPStorkController/Protocols/SPStorkControllerDelegate.swift; sourceTree = "<group>"; };
 		2272EB45ABFED799C20F11CB1ABB94D5 /* Pods-Portuplay-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Portuplay-frameworks.sh"; sourceTree = "<group>"; };
-		2716664D6DEE1EA88A138A3CE93BCB8A /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
-		29549754FD4883245BEE23517D52A1D1 /* AcknowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowViewController.swift; path = Source/AcknowViewController.swift; sourceTree = "<group>"; };
+		2425102EE0C10FF98F88C763AA820251 /* SPStorkController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkController.swift; path = Source/SPStorkController/SPStorkController.swift; sourceTree = "<group>"; };
+		27604B5F011245BDAD7EF52CC3458F48 /* SPStorkCodeDraw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCodeDraw.swift; path = Source/SPStorkController/CodeDraw/SPStorkCodeDraw.swift; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		32CE473EA4D50461D4D5AF967D6A0D01 /* SPStorkViewControllerExtenshion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkViewControllerExtenshion.swift; path = Source/SPStorkController/Extenshion/SPStorkViewControllerExtenshion.swift; sourceTree = "<group>"; };
-		332D6503DDF4F23481F6A602A43D5F39 /* SPStorkCloseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCloseView.swift; path = Source/SPStorkController/Views/SPStorkCloseView.swift; sourceTree = "<group>"; };
-		35A10619AABC1ED41A6484CA24C95041 /* AcknowListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowListViewController.swift; path = Source/AcknowListViewController.swift; sourceTree = "<group>"; };
-		36897BDDC27E05A5F2B6D5CA69721753 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
+		314E69B350A76541408CAD00DB6C2009 /* AcknowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowViewController.swift; path = Source/AcknowViewController.swift; sourceTree = "<group>"; };
+		32484A9E5B31E4F156F0DCA00B13F9B2 /* AcknowList-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AcknowList-prefix.pch"; sourceTree = "<group>"; };
+		358D0AE2D41ECF84F27570D460A57E22 /* SPStorkCloseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCloseView.swift; path = Source/SPStorkController/Views/SPStorkCloseView.swift; sourceTree = "<group>"; };
+		3609E2167B5A901928725875D29A84D1 /* SPStorkHaptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkHaptic.swift; path = Source/SPStorkController/Models/SPStorkHaptic.swift; sourceTree = "<group>"; };
 		3982AA736383DAA86EE47BB47A83DDBC /* Pods-Portuplay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Portuplay-acknowledgements.plist"; sourceTree = "<group>"; };
 		3A68891E38A242C3F01B01B71A9DB72D /* Pods_Portuplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Portuplay.framework; path = "Pods-Portuplay.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4095F69CCDA9ACBF51E69AFFAC663D8E /* AcknowList-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AcknowList-dummy.m"; sourceTree = "<group>"; };
+		41115DB78F61BF45D7C58B23B55D53D6 /* SPStorkController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPStorkController.xcconfig; sourceTree = "<group>"; };
+		42B53EA528B11FFD1716EAEB78768016 /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43FA68CCEE55048857484345420E2AFE /* TagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.xcconfig; sourceTree = "<group>"; };
 		4CBD637252FF8EBA2CB01982D5DB40F4 /* Pods-Portuplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Portuplay.debug.xcconfig"; sourceTree = "<group>"; };
-		4E18444F87166D169622D4E6C2203170 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		502C5DCBA054BC30BD7973838D17B567 /* SPStorkPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkPresentationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkPresentationController.swift; sourceTree = "<group>"; };
-		5554D80750828170E93D8B11D018E9C7 /* SPStorkHaptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkHaptic.swift; path = Source/SPStorkController/Models/SPStorkHaptic.swift; sourceTree = "<group>"; };
-		57CFEF45E6F6BCC8F9FB99E9031377E6 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		59BAABA7051557CD185CD6EBE3E7946A /* SPStorkController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPStorkController-umbrella.h"; sourceTree = "<group>"; };
-		63475360902252725A5ECF66C6A87543 /* AcknowParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowParser.swift; path = Source/AcknowParser.swift; sourceTree = "<group>"; };
-		655FC2413EC51109CCDAF64673D829A3 /* SPStorkDismissingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkDismissingAnimationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkDismissingAnimationController.swift; sourceTree = "<group>"; };
+		4D77396F7C4BA6E8175459BAEC65F2CA /* AcknowListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowListViewController.swift; path = Source/AcknowListViewController.swift; sourceTree = "<group>"; };
+		5788BF04551D649FA44F338F2D1406A2 /* AcknowList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AcknowList-umbrella.h"; sourceTree = "<group>"; };
+		5DDB18A040327130C9932320BF674328 /* AcknowLocalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowLocalization.swift; path = Source/AcknowLocalization.swift; sourceTree = "<group>"; };
 		67747A845ACD39E22DC33ACA2B38A397 /* Pods-Portuplay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Portuplay.modulemap"; sourceTree = "<group>"; };
-		69161EC1545DD70F197D50A4AE89F5B5 /* AcknowList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AcknowList.modulemap; sourceTree = "<group>"; };
-		69A575F2DE220CDC1393939B09C9F6F0 /* TagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.xcconfig; sourceTree = "<group>"; };
-		73A52721E4795F8B859F458494F2E45F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		78C21AC85ADFF4758BB16E5D0551B79F /* SPStorkController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkController.swift; path = Source/SPStorkController/SPStorkController.swift; sourceTree = "<group>"; };
-		82133540CF29CA7B6A41B3DC177D8BFF /* SPStorkPresentingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkPresentingAnimationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkPresentingAnimationController.swift; sourceTree = "<group>"; };
-		847659CB96FAE68E30695B4A788BE2D4 /* SPStorkController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPStorkController.xcconfig; sourceTree = "<group>"; };
+		76A8EE2829E9CA5E42C19505E89DD3E9 /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
+		771575AB0F89A458825C60F20A8248E1 /* SPStorkController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPStorkController-umbrella.h"; sourceTree = "<group>"; };
+		81AF0E95DF2C0A888223B41449A0D7BF /* AcknowList.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AcknowList.bundle; path = Resources/AcknowList.bundle; sourceTree = "<group>"; };
+		84A810D1F5400B3341C4A36982BC610C /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
 		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView.framework; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B18CDE09F60FBD3690B8E139233102 /* SPStorkController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPStorkController-Info.plist"; sourceTree = "<group>"; };
 		8856C954F5F9010144B81FEF7668880F /* Pods-Portuplay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Portuplay-umbrella.h"; sourceTree = "<group>"; };
-		8B700491A3F75A7B65C8504874BCE6C4 /* AcknowList-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AcknowList-Info.plist"; sourceTree = "<group>"; };
 		8C8D3E7DAC4A6F7D93BEE7C98A601DC9 /* SPStorkController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPStorkController.framework; path = SPStorkController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D98BF41FAF15E074CD9A4E7265AE9A7 /* AcknowLocalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowLocalization.swift; path = Source/AcknowLocalization.swift; sourceTree = "<group>"; };
-		9363E9BDFA41A49FB5CC882870AEB641 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
-		9534BA236F904C5F8A08CC9A0F4D6F08 /* AcknowList.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AcknowList.bundle; path = Resources/AcknowList.bundle; sourceTree = "<group>"; };
+		8EC1D2F61F9B9469DF3D9EF60E624A81 /* SPStorkIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkIndicatorView.swift; path = Source/SPStorkController/Views/SPStorkIndicatorView.swift; sourceTree = "<group>"; };
+		930B3F2D633EA86735A8539B6A4FE3A7 /* Acknow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Acknow.swift; path = Source/Acknow.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD525A9C73F38126AD587302E365E94 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
+		9F65A76D1377476DB130828EF1F15DA7 /* SPStorkControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkControllerDelegate.swift; path = Source/SPStorkController/Protocols/SPStorkControllerDelegate.swift; sourceTree = "<group>"; };
+		A94D2E44CBD5ABF7FFFA87463015703E /* SPStorkController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPStorkController-prefix.pch"; sourceTree = "<group>"; };
+		AAF043A367DC7F0EA23F886FC72E09F4 /* SPStorkDismissingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkDismissingAnimationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkDismissingAnimationController.swift; sourceTree = "<group>"; };
 		AE6D06DDF3604B352C5E564A11E8FC19 /* Pods-Portuplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Portuplay.release.xcconfig"; sourceTree = "<group>"; };
-		B689381B0AE516013EBA62D39939A07F /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
-		B935F8981555EA14710E1DC71847E015 /* AcknowList-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AcknowList-prefix.pch"; sourceTree = "<group>"; };
-		BB68790AEDE60144604698E2C11CC2C4 /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
-		C587B972F17D8D2F9D1F56A172A7F4A7 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
+		AF9B0AF93516CD256058D43964F8FB42 /* AcknowList-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AcknowList-dummy.m"; sourceTree = "<group>"; };
+		B63EEF00717C27F8188DBE6CB6002AA4 /* AcknowParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcknowParser.swift; path = Source/AcknowParser.swift; sourceTree = "<group>"; };
+		B8F5952FE9001822EA57B7D98D183338 /* SPStorkController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPStorkController-dummy.m"; sourceTree = "<group>"; };
+		C2D9C05515E0E2891E7DCE57C34594CB /* AcknowList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AcknowList.modulemap; sourceTree = "<group>"; };
 		CB6055DF3F32348EF58E560A835658C9 /* Pods-Portuplay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Portuplay-dummy.m"; sourceTree = "<group>"; };
-		CCAFB881F0538B24D059BB9BE20BD246 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		CCD2B53886F872005593B0E85651C334 /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
-		DFC2FA2D30CE614F9E85B2C15A76438E /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
-		E16B1CF422E6477345C281624232775E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		E1F7F0539A039C2570502544C21E9A5A /* SPStorkTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkTransitioningDelegate.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkTransitioningDelegate.swift; sourceTree = "<group>"; };
-		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4177156719992083C62BF11FA58899C /* Acknow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Acknow.swift; path = Source/Acknow.swift; sourceTree = "<group>"; };
-		E70CAF63AB44204C57407F735962451C /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
-		E74157C5B9D02A4C45546F32B10D79EF /* SPStorkController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPStorkController-prefix.pch"; sourceTree = "<group>"; };
-		F235BFE43C71152D25B4A7B1016C5B6E /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
+		CCF70C17544C79869893268F4F419DF6 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
+		CED486BFBC98B94CADF3B57B5C4E47AA /* SPStorkViewControllerExtenshion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkViewControllerExtenshion.swift; path = Source/SPStorkController/Extenshion/SPStorkViewControllerExtenshion.swift; sourceTree = "<group>"; };
+		D518EBA3079D1C576218D1DA5CC4B922 /* AcknowList-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AcknowList-Info.plist"; sourceTree = "<group>"; };
+		E68E785E7E7485D15940C477756A50B1 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
+		EBF2D68FC66008873323A437973BC00C /* AcknowList.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AcknowList.xcconfig; sourceTree = "<group>"; };
+		EF37566DC20C7E082127D24376033D83 /* SPStorkCloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCloseButton.swift; path = Source/SPStorkController/Views/SPStorkCloseButton.swift; sourceTree = "<group>"; };
+		F00ABDA817802824AAC99C0512B717A5 /* SPStorkPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkPresentationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkPresentationController.swift; sourceTree = "<group>"; };
 		F29BBA3E296C0A0D429C7D74844EA016 /* Pods-Portuplay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Portuplay-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3B2E331B8B0D11717EB61F8816B71A8 /* SPStorkController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPStorkController.modulemap; sourceTree = "<group>"; };
-		F52D42754EE5D174601F9668D552DBB1 /* AcknowList.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AcknowList.xcconfig; sourceTree = "<group>"; };
-		FF5B76619661A3AA5AF3BA5E9B009578 /* SPStorkIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkIndicatorView.swift; path = Source/SPStorkController/Views/SPStorkIndicatorView.swift; sourceTree = "<group>"; };
+		F6D1E80B7969BDB8187EC26E12061A39 /* SPStorkTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkTransitioningDelegate.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkTransitioningDelegate.swift; sourceTree = "<group>"; };
+		FAFDF1E027431FA44F800AADFD3080E9 /* SPStorkController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPStorkController.modulemap; sourceTree = "<group>"; };
+		FF252E011261E76BD94A22B3AFE9ABAF /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57F59F4F98A4C4810A148DF776B9B5BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA6D4D69802EBF7C16A65FAE1F8965C2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		772CD1367749A2935CDCF53300C60207 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +144,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0C5A4FE1897836FA87A2FC1CBF4B076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A325F7C83DC14EFF0DC119E080EC5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5C2BA805573C76F0F9CE4642D71D863 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,17 +161,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8A9392DBB1895E2829C74A20B8E0FF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B765F5B6ABD3E05D41541F1388D9394 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14381818786342B217BF7FD56A160103 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81AF0E95DF2C0A888223B41449A0D7BF /* AcknowList.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,56 +180,101 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4DD06DDF5DC7BB70BC56233625152C49 /* Support Files */ = {
+		34407F0EAC57360DBF65E7D04360E4D8 /* TagListView */ = {
 			isa = PBXGroup;
 			children = (
-				57CFEF45E6F6BCC8F9FB99E9031377E6 /* SwiftyJSON.modulemap */,
-				4E18444F87166D169622D4E6C2203170 /* SwiftyJSON.xcconfig */,
-				E16B1CF422E6477345C281624232775E /* SwiftyJSON-dummy.m */,
-				2716664D6DEE1EA88A138A3CE93BCB8A /* SwiftyJSON-Info.plist */,
-				73A52721E4795F8B859F458494F2E45F /* SwiftyJSON-prefix.pch */,
-				CCAFB881F0538B24D059BB9BE20BD246 /* SwiftyJSON-umbrella.h */,
+				84A810D1F5400B3341C4A36982BC610C /* CloseButton.swift */,
+				42B53EA528B11FFD1716EAEB78768016 /* TagListView.swift */,
+				E68E785E7E7485D15940C477756A50B1 /* TagView.swift */,
+				7D6D2C67D2C504907009BC9A727ABAA9 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = TagListView;
+			path = TagListView;
 			sourceTree = "<group>";
 		};
-		6235AE84E5966C752555562B1FA3F463 /* Support Files */ = {
+		5280D30D355D77DE514428CD801B4E42 /* AcknowList */ = {
 			isa = PBXGroup;
 			children = (
-				F3B2E331B8B0D11717EB61F8816B71A8 /* SPStorkController.modulemap */,
-				847659CB96FAE68E30695B4A788BE2D4 /* SPStorkController.xcconfig */,
-				0ECA2FCB3669D382E02ABFD8D0F0F313 /* SPStorkController-dummy.m */,
-				143D901DB4471AEEAE984E852F8FDC89 /* SPStorkController-Info.plist */,
-				E74157C5B9D02A4C45546F32B10D79EF /* SPStorkController-prefix.pch */,
-				59BAABA7051557CD185CD6EBE3E7946A /* SPStorkController-umbrella.h */,
+				930B3F2D633EA86735A8539B6A4FE3A7 /* Acknow.swift */,
+				4D77396F7C4BA6E8175459BAEC65F2CA /* AcknowListViewController.swift */,
+				5DDB18A040327130C9932320BF674328 /* AcknowLocalization.swift */,
+				B63EEF00717C27F8188DBE6CB6002AA4 /* AcknowParser.swift */,
+				314E69B350A76541408CAD00DB6C2009 /* AcknowViewController.swift */,
+				14381818786342B217BF7FD56A160103 /* Resources */,
+				97810833F497B805B182A6880463CF48 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SPStorkController";
+			name = AcknowList;
+			path = AcknowList;
 			sourceTree = "<group>";
 		};
-		8A1C94D1369714471769E27823210B49 /* Support Files */ = {
+		57E34DBE2D8F5F1051055C32D64000A2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CCD2B53886F872005593B0E85651C334 /* TagListView.modulemap */,
-				69A575F2DE220CDC1393939B09C9F6F0 /* TagListView.xcconfig */,
-				C587B972F17D8D2F9D1F56A172A7F4A7 /* TagListView-dummy.m */,
-				BB68790AEDE60144604698E2C11CC2C4 /* TagListView-Info.plist */,
-				36897BDDC27E05A5F2B6D5CA69721753 /* TagListView-prefix.pch */,
-				B689381B0AE516013EBA62D39939A07F /* TagListView-umbrella.h */,
+				5280D30D355D77DE514428CD801B4E42 /* AcknowList */,
+				764D5D8217BF76B97FB1E76E8A4AA59E /* SPStorkController */,
+				34407F0EAC57360DBF65E7D04360E4D8 /* TagListView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6388FA00C7D9B52E7CCE90EC04FFA9F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AB292DEC0B08C071C47375988B3366E /* AcknowList.framework */,
+				3A68891E38A242C3F01B01B71A9DB72D /* Pods_Portuplay.framework */,
+				8C8D3E7DAC4A6F7D93BEE7C98A601DC9 /* SPStorkController.framework */,
+				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		764D5D8217BF76B97FB1E76E8A4AA59E /* SPStorkController */ = {
+			isa = PBXGroup;
+			children = (
+				EF37566DC20C7E082127D24376033D83 /* SPStorkCloseButton.swift */,
+				358D0AE2D41ECF84F27570D460A57E22 /* SPStorkCloseView.swift */,
+				27604B5F011245BDAD7EF52CC3458F48 /* SPStorkCodeDraw.swift */,
+				2425102EE0C10FF98F88C763AA820251 /* SPStorkController.swift */,
+				9F65A76D1377476DB130828EF1F15DA7 /* SPStorkControllerDelegate.swift */,
+				AAF043A367DC7F0EA23F886FC72E09F4 /* SPStorkDismissingAnimationController.swift */,
+				3609E2167B5A901928725875D29A84D1 /* SPStorkHaptic.swift */,
+				8EC1D2F61F9B9469DF3D9EF60E624A81 /* SPStorkIndicatorView.swift */,
+				F00ABDA817802824AAC99C0512B717A5 /* SPStorkPresentationController.swift */,
+				03755020FBC45C60052CE9A8875D68A7 /* SPStorkPresentingAnimationController.swift */,
+				F6D1E80B7969BDB8187EC26E12061A39 /* SPStorkTransitioningDelegate.swift */,
+				CED486BFBC98B94CADF3B57B5C4E47AA /* SPStorkViewControllerExtenshion.swift */,
+				DCE1F8F9B9EE6F1BDF20BBF549C0A6BD /* Support Files */,
+			);
+			name = SPStorkController;
+			path = SPStorkController;
+			sourceTree = "<group>";
+		};
+		7D6D2C67D2C504907009BC9A727ABAA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF252E011261E76BD94A22B3AFE9ABAF /* TagListView.modulemap */,
+				43FA68CCEE55048857484345420E2AFE /* TagListView.xcconfig */,
+				9DD525A9C73F38126AD587302E365E94 /* TagListView-dummy.m */,
+				0848FC4C063D8ADDA4930A90F44AAE85 /* TagListView-Info.plist */,
+				CCF70C17544C79869893268F4F419DF6 /* TagListView-prefix.pch */,
+				76A8EE2829E9CA5E42C19505E89DD3E9 /* TagListView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TagListView";
 			sourceTree = "<group>";
 		};
-		92B8AA9BA566BFD6E18B64340EAF5355 /* SwiftyJSON */ = {
+		97810833F497B805B182A6880463CF48 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E70CAF63AB44204C57407F735962451C /* SwiftyJSON.swift */,
-				4DD06DDF5DC7BB70BC56233625152C49 /* Support Files */,
+				C2D9C05515E0E2891E7DCE57C34594CB /* AcknowList.modulemap */,
+				EBF2D68FC66008873323A437973BC00C /* AcknowList.xcconfig */,
+				AF9B0AF93516CD256058D43964F8FB42 /* AcknowList-dummy.m */,
+				D518EBA3079D1C576218D1DA5CC4B922 /* AcknowList-Info.plist */,
+				32484A9E5B31E4F156F0DCA00B13F9B2 /* AcknowList-prefix.pch */,
+				5788BF04551D649FA44F338F2D1406A2 /* AcknowList-umbrella.h */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/AcknowList";
 			sourceTree = "<group>";
 		};
 		B6F37472BC33B0471F08DD4A2B7B0889 /* Targets Support Files */ = {
@@ -276,108 +302,29 @@
 			path = "Target Support Files/Pods-Portuplay";
 			sourceTree = "<group>";
 		};
-		CBA396F8246580DFA8D7FEB56ABC920B /* TagListView */ = {
-			isa = PBXGroup;
-			children = (
-				F235BFE43C71152D25B4A7B1016C5B6E /* CloseButton.swift */,
-				DFC2FA2D30CE614F9E85B2C15A76438E /* TagListView.swift */,
-				9363E9BDFA41A49FB5CC882870AEB641 /* TagView.swift */,
-				8A1C94D1369714471769E27823210B49 /* Support Files */,
-			);
-			name = TagListView;
-			path = TagListView;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				D5301441100714EDD082236781377ABC /* Pods */,
-				DFA8CBA97FE775BE41C3C94178EEF613 /* Products */,
+				57E34DBE2D8F5F1051055C32D64000A2 /* Pods */,
+				6388FA00C7D9B52E7CCE90EC04FFA9F9 /* Products */,
 				B6F37472BC33B0471F08DD4A2B7B0889 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D192F50C6BB3C9A98EAEC87A4B504FA6 /* Resources */ = {
+		DCE1F8F9B9EE6F1BDF20BBF549C0A6BD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9534BA236F904C5F8A08CC9A0F4D6F08 /* AcknowList.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D2ED5805EAEE14C6993940CDB674B91E /* SPStorkController */ = {
-			isa = PBXGroup;
-			children = (
-				163D5878920487B8228FB20AEC96019D /* SPStorkCloseButton.swift */,
-				332D6503DDF4F23481F6A602A43D5F39 /* SPStorkCloseView.swift */,
-				1F5081A6A2FAE4A1EA6A0E44345F10E1 /* SPStorkCodeDraw.swift */,
-				78C21AC85ADFF4758BB16E5D0551B79F /* SPStorkController.swift */,
-				21CB12EA09F0CD30305C3F5AFDDB76D7 /* SPStorkControllerDelegate.swift */,
-				655FC2413EC51109CCDAF64673D829A3 /* SPStorkDismissingAnimationController.swift */,
-				5554D80750828170E93D8B11D018E9C7 /* SPStorkHaptic.swift */,
-				FF5B76619661A3AA5AF3BA5E9B009578 /* SPStorkIndicatorView.swift */,
-				502C5DCBA054BC30BD7973838D17B567 /* SPStorkPresentationController.swift */,
-				82133540CF29CA7B6A41B3DC177D8BFF /* SPStorkPresentingAnimationController.swift */,
-				E1F7F0539A039C2570502544C21E9A5A /* SPStorkTransitioningDelegate.swift */,
-				32CE473EA4D50461D4D5AF967D6A0D01 /* SPStorkViewControllerExtenshion.swift */,
-				6235AE84E5966C752555562B1FA3F463 /* Support Files */,
-			);
-			name = SPStorkController;
-			path = SPStorkController;
-			sourceTree = "<group>";
-		};
-		D3A365AA5E48835CF6F81EA201FE59E3 /* AcknowList */ = {
-			isa = PBXGroup;
-			children = (
-				E4177156719992083C62BF11FA58899C /* Acknow.swift */,
-				35A10619AABC1ED41A6484CA24C95041 /* AcknowListViewController.swift */,
-				8D98BF41FAF15E074CD9A4E7265AE9A7 /* AcknowLocalization.swift */,
-				63475360902252725A5ECF66C6A87543 /* AcknowParser.swift */,
-				29549754FD4883245BEE23517D52A1D1 /* AcknowViewController.swift */,
-				D192F50C6BB3C9A98EAEC87A4B504FA6 /* Resources */,
-				D47C6A35A14DBBB8B56F5AAAF694919F /* Support Files */,
-			);
-			name = AcknowList;
-			path = AcknowList;
-			sourceTree = "<group>";
-		};
-		D47C6A35A14DBBB8B56F5AAAF694919F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				69161EC1545DD70F197D50A4AE89F5B5 /* AcknowList.modulemap */,
-				F52D42754EE5D174601F9668D552DBB1 /* AcknowList.xcconfig */,
-				4095F69CCDA9ACBF51E69AFFAC663D8E /* AcknowList-dummy.m */,
-				8B700491A3F75A7B65C8504874BCE6C4 /* AcknowList-Info.plist */,
-				B935F8981555EA14710E1DC71847E015 /* AcknowList-prefix.pch */,
-				1557593C8BBF22D6C7B8CFEC22B6E9F9 /* AcknowList-umbrella.h */,
+				FAFDF1E027431FA44F800AADFD3080E9 /* SPStorkController.modulemap */,
+				41115DB78F61BF45D7C58B23B55D53D6 /* SPStorkController.xcconfig */,
+				B8F5952FE9001822EA57B7D98D183338 /* SPStorkController-dummy.m */,
+				87B18CDE09F60FBD3690B8E139233102 /* SPStorkController-Info.plist */,
+				A94D2E44CBD5ABF7FFFA87463015703E /* SPStorkController-prefix.pch */,
+				771575AB0F89A458825C60F20A8248E1 /* SPStorkController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AcknowList";
-			sourceTree = "<group>";
-		};
-		D5301441100714EDD082236781377ABC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3A365AA5E48835CF6F81EA201FE59E3 /* AcknowList */,
-				D2ED5805EAEE14C6993940CDB674B91E /* SPStorkController */,
-				92B8AA9BA566BFD6E18B64340EAF5355 /* SwiftyJSON */,
-				CBA396F8246580DFA8D7FEB56ABC920B /* TagListView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DFA8CBA97FE775BE41C3C94178EEF613 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AB292DEC0B08C071C47375988B3366E /* AcknowList.framework */,
-				3A68891E38A242C3F01B01B71A9DB72D /* Pods_Portuplay.framework */,
-				8C8D3E7DAC4A6F7D93BEE7C98A601DC9 /* SPStorkController.framework */,
-				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
-				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
-			);
-			name = Products;
+			path = "../Target Support Files/SPStorkController";
 			sourceTree = "<group>";
 		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
@@ -392,11 +339,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3872A9C7D417963978C09BF748BD809F /* Headers */ = {
+		0717C145914E66C6823844B0909A64C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE53A538503F3E5078B0924EF867A1 /* Pods-Portuplay-umbrella.h in Headers */,
+				DE15A927DF0ABB29A4677A0AB566ADD4 /* Pods-Portuplay-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,14 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C28A0E25F73FB7152EB8BCCF4DE75A3 /* SPStorkController-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5FD500616E7B3585CDC612B217AB8EF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29C63AB0D159A830DBD4F8E61F5CE5DE /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,40 +428,21 @@
 			productReference = 85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 500983288FD27F691001EEF004174E82 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				D5FD500616E7B3585CDC612B217AB8EF /* Headers */,
-				1C23F93016AD02D1E2389C53E71EF604 /* Sources */,
-				57F59F4F98A4C4810A148DF776B9B5BE /* Frameworks */,
-				04D10243A21F1712662C92EBCC5385D1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		FF82D2963BA9EF3AFBB1048C4E500F5B /* Pods-Portuplay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B53D9279F39CF3B20A26CD4AFD43D6D8 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */;
+			buildConfigurationList = C798E1F365DF6A87E34875631988C9C2 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */;
 			buildPhases = (
-				3872A9C7D417963978C09BF748BD809F /* Headers */,
-				88CCDB3C747226AE1F1DED9F5ECD7528 /* Sources */,
-				F8A9392DBB1895E2829C74A20B8E0FF7 /* Frameworks */,
-				46FDBF05FB0E41E9818B4E8DD0F533DB /* Resources */,
+				0717C145914E66C6823844B0909A64C7 /* Headers */,
+				9542BFEA4EA6C46E7754B3BCBD5AD46E /* Sources */,
+				C0C5A4FE1897836FA87A2FC1CBF4B076 /* Frameworks */,
+				D58B16AD4269DB436F3226F70614DADF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA5E615FCF6F88D5AB53752A71D8F202 /* PBXTargetDependency */,
-				F92770A959E0D96104A0973649F09FFA /* PBXTargetDependency */,
-				9EBC9AC5DC57FF0299E6E872D857F298 /* PBXTargetDependency */,
-				58C3876C6BFD92F45B8CF94C52EAA461 /* PBXTargetDependency */,
+				3BC0A85D26E1F972A4FAE809D4755338 /* PBXTargetDependency */,
+				6DF2C6C2E013220AF25AB6DEB6B6361A /* PBXTargetDependency */,
+				41212441608905A577FF853F66BCC8E2 /* PBXTargetDependency */,
 			);
 			name = "Pods-Portuplay";
 			productName = "Pods-Portuplay";
@@ -546,27 +466,19 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DFA8CBA97FE775BE41C3C94178EEF613 /* Products */;
+			productRefGroup = 6388FA00C7D9B52E7CCE90EC04FFA9F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				51691F4311958691BD98F5F26E2D77D4 /* AcknowList */,
 				FF82D2963BA9EF3AFBB1048C4E500F5B /* Pods-Portuplay */,
 				81E95886B4E31CDABBDB7AF092755E05 /* SPStorkController */,
-				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
 				B43A58FC22C898DE29F6E12FE9636507 /* TagListView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		04D10243A21F1712662C92EBCC5385D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		09FC11F36CFF2F7E8F4C8BB9460E2716 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,14 +494,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46FDBF05FB0E41E9818B4E8DD0F533DB /* Resources */ = {
+		83CB51CCDBB972880A633D5C7AEC76ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83CB51CCDBB972880A633D5C7AEC76ED /* Resources */ = {
+		D58B16AD4269DB436F3226F70614DADF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -599,15 +511,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C23F93016AD02D1E2389C53E71EF604 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				763EA582B030AB9A2FC93F6C1AF1EF19 /* SwiftyJSON-dummy.m in Sources */,
-				B8B9F6DA9BE6BE3679EC77D89E028E73 /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2399DC90E03689A9300D0DA39D04C3B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -632,11 +535,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88CCDB3C747226AE1F1DED9F5ECD7528 /* Sources */ = {
+		9542BFEA4EA6C46E7754B3BCBD5AD46E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232BAB08F5E8BC95D3F222074720E758 /* Pods-Portuplay-dummy.m in Sources */,
+				83F7E586B1E7C096DC97C36208C9F32E /* Pods-Portuplay-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,36 +566,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		58C3876C6BFD92F45B8CF94C52EAA461 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TagListView;
-			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
-			targetProxy = 850637E8CA86736F5A13E6923F2758C4 /* PBXContainerItemProxy */;
-		};
-		9EBC9AC5DC57FF0299E6E872D857F298 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
-			targetProxy = 9C3DA58760220F0EB067121A091DF989 /* PBXContainerItemProxy */;
-		};
-		AA5E615FCF6F88D5AB53752A71D8F202 /* PBXTargetDependency */ = {
+		3BC0A85D26E1F972A4FAE809D4755338 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AcknowList;
 			target = 51691F4311958691BD98F5F26E2D77D4 /* AcknowList */;
-			targetProxy = EC1166647379964CFA283AB61D10BE5E /* PBXContainerItemProxy */;
+			targetProxy = DDA31515C2A11B3FBA7426A79B9BCC29 /* PBXContainerItemProxy */;
 		};
-		F92770A959E0D96104A0973649F09FFA /* PBXTargetDependency */ = {
+		41212441608905A577FF853F66BCC8E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TagListView;
+			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
+			targetProxy = D6D9B7BD5DDD8BFA14E77E03AD3EBFFF /* PBXContainerItemProxy */;
+		};
+		6DF2C6C2E013220AF25AB6DEB6B6361A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SPStorkController;
 			target = 81E95886B4E31CDABBDB7AF092755E05 /* SPStorkController */;
-			targetProxy = 33B4E1D47989C61C5BF98A0744B41496 /* PBXContainerItemProxy */;
+			targetProxy = 7147A1589A3D3BD2E86C5A9E65E3BCD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0641DBF793719EF07770686190B34A5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69A575F2DE220CDC1393939B09C9F6F0 /* TagListView.xcconfig */;
+			baseConfigurationReference = 43FA68CCEE55048857484345420E2AFE /* TagListView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -790,7 +687,42 @@
 			};
 			name = Debug;
 		};
-		1A63ACDAEEB20F8CD6F199AA56C46373 /* Debug */ = {
+		2C8B3AA10756B6FB5663F940CE6ED1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43FA68CCEE55048857484345420E2AFE /* TagListView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		333484602A9348DD603D77094882573B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CBD637252FF8EBA2CB01982D5DB40F4 /* Pods-Portuplay.debug.xcconfig */;
 			buildSettings = {
@@ -828,9 +760,9 @@
 			};
 			name = Debug;
 		};
-		2C8B3AA10756B6FB5663F940CE6ED1A0 /* Debug */ = {
+		421AAA5FCD214A28B9C8DBAD335AD705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69A575F2DE220CDC1393939B09C9F6F0 /* TagListView.xcconfig */;
+			baseConfigurationReference = EBF2D68FC66008873323A437973BC00C /* AcknowList.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -841,8 +773,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AcknowList/AcknowList-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AcknowList/AcknowList-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -850,9 +782,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
-				PRODUCT_MODULE_NAME = TagListView;
-				PRODUCT_NAME = TagListView;
+				MODULEMAP_FILE = "Target Support Files/AcknowList/AcknowList.modulemap";
+				PRODUCT_MODULE_NAME = AcknowList;
+				PRODUCT_NAME = AcknowList;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -863,7 +795,80 @@
 			};
 			name = Debug;
 		};
-		38EC171756D340B3B79D67A7F63D8F9F /* Release */ = {
+		4F3CB9F47FB7FDB9CE9FC0599D1DF5B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41115DB78F61BF45D7C58B23B55D53D6 /* SPStorkController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPStorkController/SPStorkController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPStorkController/SPStorkController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPStorkController/SPStorkController.modulemap";
+				PRODUCT_MODULE_NAME = SPStorkController;
+				PRODUCT_NAME = SPStorkController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F390429095C0838DCD5560E0119C72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF2D68FC66008873323A437973BC00C /* AcknowList.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AcknowList/AcknowList-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AcknowList/AcknowList-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AcknowList/AcknowList.modulemap";
+				PRODUCT_MODULE_NAME = AcknowList;
+				PRODUCT_NAME = AcknowList;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A07939A4560F171567911B2BEE737D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE6D06DDF3604B352C5E564A11E8FC19 /* Pods-Portuplay.release.xcconfig */;
 			buildSettings = {
@@ -902,153 +907,9 @@
 			};
 			name = Release;
 		};
-		421AAA5FCD214A28B9C8DBAD335AD705 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F52D42754EE5D174601F9668D552DBB1 /* AcknowList.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AcknowList/AcknowList-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AcknowList/AcknowList-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AcknowList/AcknowList.modulemap";
-				PRODUCT_MODULE_NAME = AcknowList;
-				PRODUCT_NAME = AcknowList;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4F3CB9F47FB7FDB9CE9FC0599D1DF5B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 847659CB96FAE68E30695B4A788BE2D4 /* SPStorkController.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SPStorkController/SPStorkController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SPStorkController/SPStorkController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SPStorkController/SPStorkController.modulemap";
-				PRODUCT_MODULE_NAME = SPStorkController;
-				PRODUCT_NAME = SPStorkController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5F390429095C0838DCD5560E0119C72D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F52D42754EE5D174601F9668D552DBB1 /* AcknowList.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AcknowList/AcknowList-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AcknowList/AcknowList-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AcknowList/AcknowList.modulemap";
-				PRODUCT_MODULE_NAME = AcknowList;
-				PRODUCT_NAME = AcknowList;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		96EFDB97F9EFB8EEBBA65C5AA6A9488E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E18444F87166D169622D4E6C2203170 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C26A4E08E1EB0CED83528B00A30F2028 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 847659CB96FAE68E30695B4A788BE2D4 /* SPStorkController.xcconfig */;
+			baseConfigurationReference = 41115DB78F61BF45D7C58B23B55D53D6 /* SPStorkController.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1072,41 +933,6 @@
 				MODULEMAP_FILE = "Target Support Files/SPStorkController/SPStorkController.modulemap";
 				PRODUCT_MODULE_NAME = SPStorkController;
 				PRODUCT_NAME = SPStorkController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E7E18A3E8278024C2F3A5AA8E8C2EFCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E18444F87166D169622D4E6C2203170 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1198,15 +1024,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		500983288FD27F691001EEF004174E82 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7E18A3E8278024C2F3A5AA8E8C2EFCF /* Debug */,
-				96EFDB97F9EFB8EEBBA65C5AA6A9488E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B04DA25108FF7CBEAAAB169A0B113FF7 /* Build configuration list for PBXNativeTarget "TagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1216,11 +1033,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B53D9279F39CF3B20A26CD4AFD43D6D8 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */ = {
+		C798E1F365DF6A87E34875631988C9C2 /* Build configuration list for PBXNativeTarget "Pods-Portuplay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A63ACDAEEB20F8CD6F199AA56C46373 /* Debug */,
-				38EC171756D340B3B79D67A7F63D8F9F /* Release */,
+				333484602A9348DD603D77094882573B /* Debug */,
+				9A07939A4560F171567911B2BEE737D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
