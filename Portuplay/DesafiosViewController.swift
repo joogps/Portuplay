@@ -95,9 +95,6 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         
         detailsViewController.setDetails(desafio)
         
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Desafios", style: .plain, target: self
-            , action: nil)
-        
         self.navigationController?.pushViewController(detailsViewController, animated: true)
         
         desafiosTable.deselectRow(at: indexPath, animated: true)

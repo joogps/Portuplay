@@ -50,19 +50,13 @@ class InfoTableViewController: UITableViewController {
             acknowListViewController.footerText = ""
             
             let parentDesafiosViewController = self.presentingViewController?.children.last as! DesafiosViewController
-            parentDesafiosViewController.navigationItem.backBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: nil)
             
             self.dismiss(animated: true, completion: { () -> Void in
-                let transition = CATransition()
-                transition.timingFunction = CAMediaTimingFunction(name:
-                    CAMediaTimingFunctionName.easeInEaseOut)
-                transition.type = .moveIn
-                transition.subtype = .fromTop
-                transition.duration = 0.35
+                let acknowListNavigationController = UINavigationController(rootViewController: acknowListViewController)
+                acknowListNavigationController.navigationBar.prefersLargeTitles = true
                 
-                parentDesafiosViewController.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
-                
-                parentDesafiosViewController.navigationController?.pushViewController(acknowListViewController, animated: false)
+                parentDesafiosViewController.present(acknowListNavigationController
+                    , animated: true, completion: nil)
             })
             
     
