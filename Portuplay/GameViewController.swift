@@ -114,7 +114,7 @@ class GameViewController: UIViewController {
                         UIApplication.shared.beginIgnoringInteractionEvents()
                         self.timeIndicator.timer.invalidate()
                         
-                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(700)) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
                             self.gameOver()
                         }
                     } else {
@@ -135,12 +135,12 @@ class GameViewController: UIViewController {
                             UIView.transition(with: self.gameScore, duration: 0.5, options: .transitionCrossDissolve, animations: animation, completion: nil)
                             
                             if self.score == self.desafio!.correct[self.difficultyIndex] {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(700)) {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
                                     self.complete()
                                 }
                             }
                             else {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400)) {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
                                     self.newPhrase()
                                 }
                             }
@@ -148,16 +148,20 @@ class GameViewController: UIViewController {
                     }
                     
                     let color =  !gameover ?
-                        UIColor(red: 0.56, green: 1.00, blue: 0.23, alpha:1.0) :
-                        UIColor(red: 1.00, green: 0.35, blue: 0.45, alpha:1.0)
+                        UIColor(red: 0.56, green: 1.00, blue: 0.23, alpha: 1.0) :
+                        UIColor(red: 1.00, green: 0.0, blue: 0.0, alpha: 1.0)
                     
-                    let background = CABasicAnimation(keyPath: "backgroundColor")
-                    background.fromValue = tag.layer.backgroundColor
-                    background.toValue = color.cgColor
-                    background.duration = 0.6
-                    tag.layer.add(background, forKey: background.keyPath)
+                    let backgroundColor = CABasicAnimation(keyPath: "backgroundColor")
+                    backgroundColor.fromValue = tag.layer.backgroundColor
+                    backgroundColor.toValue = color.cgColor
+                    backgroundColor.duration = 0.6
+                    tag.layer.add(backgroundColor, forKey: backgroundColor.keyPath)
                     
-                    tag.tagBackgroundColor = UIColor(cgColor: background.toValue as! CGColor)
+                    tag.tagBackgroundColor = UIColor(cgColor: backgroundColor.toValue as! CGColor)
+                    
+                    if gameover {
+                        tag.textColor = .white
+                    }
                 }
             }
         }
