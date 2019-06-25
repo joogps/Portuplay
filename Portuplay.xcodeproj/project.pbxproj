@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49022C030CB0089691E /* GoldenIcon@2x.png */; };
-		2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49122C030CB0089691E /* GoldenIcon@3x.png */; };
+		2723A49222C030CB0089691E /* GoldenAppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49022C030CB0089691E /* GoldenAppIcon@2x.png */; };
+		2723A49322C030CB0089691E /* GoldenAppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723A49122C030CB0089691E /* GoldenAppIcon@3x.png */; };
 		2738AC0822BD771F00EABCC5 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738AC0722BD771F00EABCC5 /* CountdownViewController.swift */; };
 		273AB49C22C0568A00B923A9 /* AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 273AB49A22C0568A00B923A9 /* AppIcon@3x.png */; };
 		274B105B22BB2841003208EB /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B105A22BB2841003208EB /* GameOverViewController.swift */; };
@@ -27,12 +27,13 @@
 		27C78CAB22A881FA0039E362 /* DesafioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C78CAA22A881FA0039E362 /* DesafioCell.swift */; };
 		27E91F5722B46B390047CC59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E91F5622B46B390047CC59 /* GameViewController.swift */; };
 		27F9E2FA22B3026B005B1AE2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9E2F922B3026B005B1AE2 /* DetailsViewController.swift */; };
+		27FB9C1622C1B51800A35130 /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27FB9C1522C1B51800A35130 /* AppIcon@2x.png */; };
 		6F2DC69BEE6A6D2C21980470 /* Pods_Portuplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2723A49022C030CB0089691E /* GoldenIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenIcon@2x.png"; sourceTree = "<group>"; };
-		2723A49122C030CB0089691E /* GoldenIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenIcon@3x.png"; sourceTree = "<group>"; };
+		2723A49022C030CB0089691E /* GoldenAppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenAppIcon@2x.png"; sourceTree = "<group>"; };
+		2723A49122C030CB0089691E /* GoldenAppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldenAppIcon@3x.png"; sourceTree = "<group>"; };
 		2738AC0722BD771F00EABCC5 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 		273AB49A22C0568A00B923A9 /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
 		274B105A22BB2841003208EB /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		27C78CAA22A881FA0039E362 /* DesafioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioCell.swift; sourceTree = "<group>"; };
 		27E91F5622B46B390047CC59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		27F9E2F922B3026B005B1AE2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		27FB9C1522C1B51800A35130 /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
 		32D415F5EAA1D831C485DD8F /* Pods-Portuplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portuplay.release.xcconfig"; path = "Target Support Files/Pods-Portuplay/Pods-Portuplay.release.xcconfig"; sourceTree = "<group>"; };
 		7F7F07EB175AD7CB9282AC14 /* Pods_Portuplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portuplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EDCD3BB193EFAAC00805C4 /* Pods-Portuplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portuplay.debug.xcconfig"; path = "Target Support Files/Pods-Portuplay/Pods-Portuplay.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,14 +82,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		2723A48F22C030CB0089691E /* AlternateIcons */ = {
+		2723A48F22C030CB0089691E /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				2723A49022C030CB0089691E /* GoldenIcon@2x.png */,
-				2723A49122C030CB0089691E /* GoldenIcon@3x.png */,
+				27FB9C1522C1B51800A35130 /* AppIcon@2x.png */,
 				273AB49A22C0568A00B923A9 /* AppIcon@3x.png */,
+				2723A49022C030CB0089691E /* GoldenAppIcon@2x.png */,
+				2723A49122C030CB0089691E /* GoldenAppIcon@3x.png */,
 			);
-			path = AlternateIcons;
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		27C78C8822A847C40039E362 = {
@@ -125,7 +128,7 @@
 				27C78C9D22A847C50039E362 /* LaunchScreen.storyboard */,
 				27C78CA022A847C50039E362 /* Info.plist */,
 				27C78C9B22A847C50039E362 /* Assets.xcassets */,
-				2723A48F22C030CB0089691E /* AlternateIcons */,
+				2723A48F22C030CB0089691E /* Icons */,
 				270E789122ACA8330002FE10 /* Data */,
 				279216C522C16DC400B57B8A /* Pods-Portuplay-acknowledgements.plist */,
 			);
@@ -209,8 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2723A49322C030CB0089691E /* GoldenIcon@3x.png in Resources */,
-				2723A49222C030CB0089691E /* GoldenIcon@2x.png in Resources */,
+				2723A49322C030CB0089691E /* GoldenAppIcon@3x.png in Resources */,
+				2723A49222C030CB0089691E /* GoldenAppIcon@2x.png in Resources */,
+				27FB9C1622C1B51800A35130 /* AppIcon@2x.png in Resources */,
 				279216C622C16DC400B57B8A /* Pods-Portuplay-acknowledgements.plist in Resources */,
 				27C78C9F22A847C50039E362 /* LaunchScreen.storyboard in Resources */,
 				27C78C9C22A847C50039E362 /* Assets.xcassets in Resources */,
