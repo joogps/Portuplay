@@ -16,7 +16,7 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
         
         if allConcluded {
-            appIcon.image = UIImage(named: "GoldenIcon@3x")
+            appIcon.image = UIImage(named: "GoldenAppIcon@3x")
         } else {
             appIcon.image = UIImage(named: "AppIcon@3x")
         }
