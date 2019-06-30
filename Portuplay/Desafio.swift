@@ -14,8 +14,7 @@ struct Desafio: Codable {
     var correct: [Int]
     var time: [Int]
     
-    var phrases: [String]
-    var answers: [[String]]
+    var phrases: [Phrase]
     
     var concluded: [Bool]
     
@@ -23,19 +22,28 @@ struct Desafio: Codable {
     
     var fileName: String
     
-    init(_ title: String, _ goal: String, _ correct: [Int], _ time: [Int], _ phrases: [String], _ answers: [[String]], fileName: String) {
+    init(_ title: String, _ goal: String, _ correct: [Int], _ time: [Int], _ phrases: [Phrase], fileName: String) {
         self.title = title
         self.goal = goal
         self.correct = correct
         self.time = time
         
         self.phrases = phrases
-        self.answers = answers
         
         self.concluded = Array(repeating: false, count: 3)
         
         self.unselectedPhrases = Array(0 ..< phrases.count)
         
         self.fileName = fileName
+    }
+}
+
+struct Phrase: Codable, Equatable {
+    var total: String
+    var answer: [String]
+    
+    init(_ total: String, _ answer: [String]) {
+        self.total = total
+        self.answer = answer
     }
 }

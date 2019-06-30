@@ -9,16 +9,14 @@
 		<integer>14</integer>
 	</array>
 	<key>objetivo</key>
-	<string>Aperte nos substantivos presentes em cada frase</string>
+	<string>Aperte nos verbos das locuções verbais presentes em cada frase</string>
 	<key>frases</key>
 	<array>
 		<dict>
 			<key>resposta</key>
-			<array>
-				<string>suco</string>
-			</array>
+			<array/>
 			<key>total</key>
-			<string>Eu gosto de suco.</string>
+			<string></string>
 		</dict>
 	</array>
 	<key>tempo</key>
@@ -28,6 +26,6 @@
 		<integer>3</integer>
 	</array>
 	<key>título</key>
-	<string>Substantivos</string>
+	<string>Locuções verbais</string>
 </dict>
 </plist>

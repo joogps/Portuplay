@@ -9,7 +9,7 @@
 import UIKit
 
 let defaults = UserDefaults.standard
-let files = ["Substantivos", "Adjetivos", "Verbos"]
+let files = ["Adjetivos", "Advérbios", "Artigos", "Conjunções", "Locuções adverbiais", "Numerais", "Preposições", "Pronomes", "Substantivos", "Verbos"]
 
 var desafios: [Desafio] = []
 
@@ -57,35 +57,44 @@ func createDesafios() {
     desafios = Array()
     
     for file in files {
-        if UserDefaults.standard.object(forKey: file) as? Data != nil {
-            if let data = UserDefaults.standard.value(forKey: file) as? Data {
-                desafios.append(try! PropertyListDecoder().decode(Desafio.self, from: data))
-            }
-        } else {
-            if let path = Bundle.main.path(forResource: file, ofType: "plist") {
-                let dictRoot = NSDictionary(contentsOfFile: path)
-                if let dict = dictRoot {
-                    
-                    let title = dict["título"] as! String
-                    let goal = dict["objetivo"] as! String
-                    let correct = dict["correto"] as! [Int]
-                    let time = dict["tempo"] as! [Int]
-                    
-                    var phrases = [String]()
-                    var answers = [[String]]()
-                    
-                    for phrase in dict["frases"] as! [NSDictionary] {
-                        phrases.append(phrase["total"] as! String)
-                        answers.append(phrase["respostas"] as! [String])
-                    }
-                    
-                    let desafio = Desafio(title, goal, correct, time, phrases, answers, fileName: file)
-                    
-                    defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
-                    
-                    desafios.append(desafio)
+        if var desafio = createDesafio(file) {
+            if UserDefaults.standard.object(forKey: file) as? Data != nil {
+                let data = UserDefaults.standard.value(forKey: file) as? Data
+                let desafioFromDefaults = try! PropertyListDecoder().decode(Desafio.self, from: data!)
+                
+                if desafio.phrases != desafioFromDefaults.phrases {
+                    desafio.concluded = desafioFromDefaults.concluded
+                } else {
+                    desafio = desafioFromDefaults
                 }
             }
+            
+            defaults.set(try? PropertyListEncoder().encode(desafio), forKey: desafio.fileName)
+            desafios.append(desafio)
         }
     }
+}
+
+func createDesafio(_ file: String) -> Desafio? {
+    if let path = Bundle.main.path(forResource: file, ofType: "plist") {
+        let dict = NSDictionary(contentsOfFile: path)
+        
+        let title = dict?["título"] as! String
+        let goal = dict?["objetivo"] as! String
+        let correct = dict?["correto"] as! [Int]
+        let time = dict?["tempo"] as! [Int]
+        
+        var phrases = [Phrase]()
+        
+        for phrase in dict?["frases"] as! [NSDictionary] {
+            let total = phrase["total"] as! String
+            let answer = phrase["resposta"] as! [String]
+            
+            phrases.append(Phrase(total, answer))
+        }
+        
+        return Desafio(title, goal, correct, time, phrases, fileName: file)
+    }
+    
+    return nil
 }

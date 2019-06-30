@@ -158,10 +158,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-8w-iJR">
-                                <rect key="frame" x="60" y="89" width="294" height="773"/>
+                                <rect key="frame" x="40" y="89" width="334" height="773"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sK-jC-1Ki">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="TBQ-Vg-Cu2"/>
                                         </constraints>
@@ -170,7 +170,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZx-Mc-FMy">
-                                        <rect key="frame" x="0.0" y="60" width="294" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="334" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="m7S-sO-q8g"/>
                                         </constraints>
@@ -179,7 +179,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4D-kK-w96">
-                                        <rect key="frame" x="0.0" y="90" width="294" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="334" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="YiV-DN-lLE"/>
                                         </constraints>
@@ -188,73 +188,84 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tws-12-gHN" customClass="TimeIndicator" customModule="Portuplay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="294" height="100"/>
+                                        <rect key="frame" x="0.0" y="120" width="334" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="n5Y-oD-lsx"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eay-YZ-TVL" customClass="TagListView" customModule="TagListView">
-                                        <rect key="frame" x="0.0" y="220" width="294" height="553"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="7"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="marginX">
-                                                <real key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="marginY">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xh-Wx-Mj0">
+                                        <rect key="frame" x="0.0" y="220" width="334" height="553"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eay-YZ-TVL" customClass="TagListView" customModule="TagListView">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="eay-YZ-TVL" secondAttribute="bottom" id="Y4Z-VB-yNl"/>
+                                            <constraint firstItem="eay-YZ-TVL" firstAttribute="top" secondItem="5xh-Wx-Mj0" secondAttribute="top" id="YOd-qR-qwH"/>
+                                            <constraint firstItem="eay-YZ-TVL" firstAttribute="leading" secondItem="5xh-Wx-Mj0" secondAttribute="leading" id="b1V-Fo-OAT"/>
+                                            <constraint firstAttribute="trailing" secondItem="eay-YZ-TVL" secondAttribute="trailing" id="boY-30-nRx"/>
+                                        </constraints>
+                                    </scrollView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ik9-8w-iJR" firstAttribute="leading" secondItem="TNv-zI-4Vg" secondAttribute="leading" constant="60" id="7CE-BS-BfW"/>
+                            <constraint firstItem="ik9-8w-iJR" firstAttribute="leading" secondItem="TNv-zI-4Vg" secondAttribute="leading" constant="40" id="7CE-BS-BfW"/>
                             <constraint firstItem="ik9-8w-iJR" firstAttribute="top" secondItem="TNv-zI-4Vg" secondAttribute="top" constant="45" id="8Uq-dW-Y7O"/>
-                            <constraint firstItem="TNv-zI-4Vg" firstAttribute="trailing" secondItem="ik9-8w-iJR" secondAttribute="trailing" constant="60" id="BF3-qT-kXn"/>
+                            <constraint firstItem="TNv-zI-4Vg" firstAttribute="trailing" secondItem="ik9-8w-iJR" secondAttribute="trailing" constant="40" id="BF3-qT-kXn"/>
                             <constraint firstItem="TNv-zI-4Vg" firstAttribute="bottom" secondItem="ik9-8w-iJR" secondAttribute="bottom" id="uRW-gj-M0S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TNv-zI-4Vg"/>
@@ -265,6 +276,7 @@
                         <outlet property="gameScore" destination="b4D-kK-w96" id="RJv-MV-pKf"/>
                         <outlet property="gameStackView" destination="ik9-8w-iJR" id="7JH-xr-B6h"/>
                         <outlet property="gameTitle" destination="3sK-jC-1Ki" id="1Ej-Xd-wV2"/>
+                        <outlet property="scrollView" destination="5xh-Wx-Mj0" id="Dpj-gi-Yh6"/>
                         <outlet property="timeIndicator" destination="Tws-12-gHN" id="Ycd-pa-cxR"/>
                         <outlet property="wordList" destination="eay-YZ-TVL" id="f2m-dw-Sre"/>
                     </connections>

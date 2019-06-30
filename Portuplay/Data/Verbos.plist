@@ -13,7 +13,7 @@
 	<key>frases</key>
 	<array>
 		<dict>
-			<key>respostas</key>
+			<key>resposta</key>
 			<array>
 				<string>andou</string>
 			</array>
@@ -21,7 +21,7 @@
 			<string>Ele andou pela cidade.</string>
 		</dict>
 		<dict>
-			<key>respostas</key>
+			<key>resposta</key>
 			<array>
 				<string>correu</string>
 			</array>
@@ -29,7 +29,7 @@
 			<string>Claudia correu com o seu gato.</string>
 		</dict>
 		<dict>
-			<key>respostas</key>
+			<key>resposta</key>
 			<array>
 				<string>foi</string>
 			</array>
@@ -37,7 +37,7 @@
 			<string>Ela foi para casa.</string>
 		</dict>
 		<dict>
-			<key>respostas</key>
+			<key>resposta</key>
 			<array>
 				<string>preparou</string>
 			</array>

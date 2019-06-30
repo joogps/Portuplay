@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var gameDifficulty: UILabel!
     @IBOutlet weak var gameScore: UILabel!
     @IBOutlet weak var timeIndicator: TimeIndicator!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var wordList: TagListView!
     
     @IBOutlet weak var gameStackView: UIStackView!
@@ -57,7 +58,7 @@ class GameViewController: UIViewController {
         gameStackView.setCustomSpacing(40, after: gameScore)
         gameStackView.setCustomSpacing(40, after: timeIndicator)
         
-        wordList.textFont = UIFont.systemFont(ofSize: 24)
+        wordList.textFont = UIFont.systemFont(ofSize: 22.0)
         wordList.alignment = .center
         
         timeIndicator.gameOverTime = Double(desafio!.time[difficultyIndex])
@@ -66,6 +67,10 @@ class GameViewController: UIViewController {
         timeIndicator.parentView = self
         
         addPhrase(Int.random(in: 0 ..< desafio!.unselectedPhrases.count))
+    }
+    
+    override func viewDidLayoutSubviews() {
+        wordList.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: wordList.frame.height)
     }
     
     func addPhrase(_ i: Int) {
@@ -86,15 +91,19 @@ class GameViewController: UIViewController {
         
         var phrase = desafio!.phrases[index]
         
-        let special = ".!?"
+        let special = ".!?,"
         
-        for (i, char) in phrase.enumerated() {
-            if  special.contains(char) {
-                phrase.insert(" ", at: phrase.index(phrase.startIndex, offsetBy: i))
+        var offset = 0
+        for (i, char) in phrase.total.enumerated() {
+            if special.contains(char) {
+                phrase.total.insert(" ", at: phrase.total.index(phrase.total.startIndex, offsetBy: i+offset))
+                offset += 1
             }
         }
         
-        let words = phrase.components(separatedBy: .whitespaces)
+        let words = phrase.total.components(separatedBy: .whitespaces)
+        
+        print(phrase.total, phrase.answer)
         
         for word in words {
             let tag = wordList.addTag(String(word))
@@ -108,7 +117,7 @@ class GameViewController: UIViewController {
                     tag.layer.add(move, forKey: move.keyPath)
                     tag.layer.transform = move.toValue as! CATransform3D
                     
-                    let gameover = !(self.desafio?.answers[index].contains(tag.titleLabel!.text!))!
+                    let gameover = !(phrase.answer.contains(tag.titleLabel!.text!))
                     
                     if gameover {
                         UIApplication.shared.beginIgnoringInteractionEvents()
@@ -120,7 +129,7 @@ class GameViewController: UIViewController {
                     } else {
                         self.answers.append(tag.titleLabel!.text!)
                         
-                        let correct =  self.desafio?.answers[index].count == self.answers.count && (self.desafio?.answers[index] as! [String]).sorted() == self.answers.sorted()
+                        let correct =  phrase.answer.count == self.answers.count && phrase.answer.sorted() == self.answers.sorted()
                         
                         if correct {
                             UIApplication.shared.beginIgnoringInteractionEvents()
@@ -163,6 +172,8 @@ class GameViewController: UIViewController {
                         tag.textColor = .white
                     }
                 }
+            } else {
+                tag.layer.transform = CATransform3DMakeTranslation(0, 3, 0)
             }
         }
     }
@@ -171,11 +182,11 @@ class GameViewController: UIViewController {
         answers = Array()
         
         UIView.animate(withDuration: 0.4, animations: { () -> Void in
-            self.wordList.frame.origin.x = -self.view.frame.width/2-self.wordList.frame.width
+            self.scrollView.frame.origin.x = -self.view.frame.width/2-self.wordList.frame.width
             self.timeIndicator.alpha = 0
         }, completion: { (finished: Bool) in
             self.wordList.removeAllTags()
-            self.wordList.frame.origin.x = self.view.frame.width/2+self.wordList.frame.width
+            self.scrollView.frame.origin.x = self.view.frame.width/2+self.scrollView.frame.width
             
             self.addPhrase(Int.random(in: 0 ..< self.desafio!.unselectedPhrases.count))
             
@@ -184,7 +195,7 @@ class GameViewController: UIViewController {
             self.timeIndicator.timeIndicator.strokeEnd = 1
             self.timeIndicator.timeLabel.text = String(Int(self.timeIndicator.gameOverTime))
             UIView.animate(withDuration: 0.2, animations: { () -> Void in
-                self.wordList.frame.origin.x = 0
+                self.scrollView.frame.origin.x = 0
                 self.timeIndicator.alpha = 1
             }, completion: { (finished: Bool) in
                 self.timeIndicator.setTimer()

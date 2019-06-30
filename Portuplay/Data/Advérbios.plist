@@ -9,286 +9,288 @@
 		<integer>14</integer>
 	</array>
 	<key>objetivo</key>
-	<string>Aperte nos adjetivos presentes em cada frase</string>
+	<string>Aperte nos advérbios (que podem ser parte de uma locução adverbial) presentes em cada frase</string>
 	<key>frases</key>
 	<array>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>alto</string>
+				<string>rapidamente</string>
 			</array>
 			<key>total</key>
-			<string>Ele é alto.</string>
+			<string>Eu corri rapidamente.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>dedicado</string>
+				<string>muito</string>
+				<string>bem</string>
 			</array>
 			<key>total</key>
-			<string>Ele é dedicado.</string>
+			<string>Ela canta muito bem!</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>inteligente</string>
+				<string>com</string>
+				<string>cautela</string>
 			</array>
 			<key>total</key>
-			<string>Rafa é inteligente.</string>
+			<string>Ela investigou tudo com cautela.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>bonito</string>
+				<string>empolgadamente</string>
 			</array>
 			<key>total</key>
-			<string>Mario é bonito.</string>
+			<string>Eles pularam empolgadamente.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>atenta</string>
-				<string>esperta</string>
+				<string>não</string>
 			</array>
 			<key>total</key>
-			<string>Maria é atenta e esperta.</string>
+			<string>Eu não gosto de gatos.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>agressivos</string>
+				<string>bem</string>
 			</array>
 			<key>total</key>
-			<string>Eles são agressivos.</string>
+			<string>Eu fui bem na prova!</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>apressadas</string>
+				<string>chorando</string>
 			</array>
 			<key>total</key>
-			<string>Elas estão apressadas.</string>
+			<string>Ele veio chorando.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>adoráveis</string>
+				<string>lá</string>
+				<string>em</string>
+				<string>casa</string>
 			</array>
 			<key>total</key>
-			<string>Cachorros são adoráveis.</string>
+			<string>A festa aconteceu lá em casa.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>temperamentais</string>
+				<string>determinadamente</string>
 			</array>
 			<key>total</key>
-			<string>Gatos são temperamentais.</string>
+			<string>Ele andou determinadamente.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>boa</string>
-				<string>ruim</string>
+				<string>com</string>
+				<string>bravura</string>
 			</array>
 			<key>total</key>
-			<string>A Internet pode ser boa ou ruim.</string>
+			<string>Ela discursou com bravura.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>maior</string>
-				<string>pronto</string>
+				<string>muito</string>
+				<string>bonitos</string>
 			</array>
 			<key>total</key>
-			<string>O bolo será maior quando pronto.</string>
+			<string>Eles são muito bonitos.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>amigável</string>
+				<string>Ontem</string>
+				<string>demais</string>
 			</array>
 			<key>total</key>
-			<string>Ele era mais amigável.</string>
+			<string>Ontem eu estudei demais.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>enfurecidos</string>
+				<string>Não</string>
 			</array>
 			<key>total</key>
-			<string>Os animais estão enfurecidos.</string>
+			<string>Não jantei porque estou sem fome.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>perplexo</string>
+				<string>honestamente</string>
 			</array>
 			<key>total</key>
-			<string>Estou perplexo.</string>
+			<string>Ele a ajudou honestamente.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>lindo</string>
+				<string>Certamente</string>
 			</array>
 			<key>total</key>
-			<string>O amor é lindo.</string>
+			<string>Certamente tirarei uma nota baixa!</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>cheirosas</string>
+				<string>Talvez</string>
 			</array>
 			<key>total</key>
-			<string>As rosas são muito cheirosas.</string>
+			<string>Talvez chova hoje.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>legal</string>
+				<string>com</string>
+				<string>calma</string>
 			</array>
 			<key>total</key>
-			<string>Eu acho você muito legal.</string>
+			<string>Eu o disse tudo com calma.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>complicado</string>
-				<string>recompensante</string>
+				<string>Sempre</string>
 			</array>
 			<key>total</key>
-			<string>Aprender é complicado, mas também é recompensante.</string>
+			<string>Sempre te amarei.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>cansado</string>
-				<string>exausto</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Estou cansado, estou exausto!</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>recentes</string>
-				<string>inteligentes</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Os celulares recentes são bem inteligentes.</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>enorme</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>A nossa turma é enorme!</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>maneiro</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Ele tem um gingado maneiro.</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>esquisitas.</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Essas coisas são esquisitas.</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>experiente</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Ela é experiente no ramo.</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>legal</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Ele é legal?</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string> correto</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Você tem certeza que isso é correto?</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>errado</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Isso é errado.</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>estranho</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Meu nome é muito estranho.</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>gelado</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Que tal um suco gelado?</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>confuso</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Será que eu estou confuso?</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>importante</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Esse assunto é muito importante!</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>indiscutível</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Isso é indiscutível!</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>chato</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Você me acha chato?</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>incrível</string>
+				<string></string>
 			</array>
 			<key>total</key>
-			<string>Você é incrível!</string>
+			<string></string>
 		</dict>
 	</array>
 	<key>tempo</key>
@@ -298,6 +300,6 @@
 		<integer>3</integer>
 	</array>
 	<key>título</key>
-	<string>Adjetivos</string>
+	<string>Advérbios</string>
 </dict>
 </plist>
