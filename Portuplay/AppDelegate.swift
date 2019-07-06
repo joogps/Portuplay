@@ -9,7 +9,7 @@
 import UIKit
 
 let defaults = UserDefaults.standard
-let files = ["Adjetivos", "Advérbios", "Artigos", "Conjunções", "Locuções adverbiais", "Numerais", "Preposições", "Pronomes", "Substantivos", "Verbos"]
+let files = ["Adjetivos", "Advérbios", "Artigos", "Substantivos", "Verbos"]
 
 var desafios: [Desafio] = []
 

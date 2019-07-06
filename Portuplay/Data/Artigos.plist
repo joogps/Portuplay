@@ -9,14 +9,126 @@
 		<integer>14</integer>
 	</array>
 	<key>objetivo</key>
-	<string>Aperte nos artigos presentes em cada frase</string>
+	<string>Aperte nos artigos (mesmo que contraídos em preposições) presentes em cada frase</string>
 	<key>frases</key>
 	<array>
 		<dict>
 			<key>resposta</key>
-			<array/>
+			<array>
+				<string>um</string>
+				<string>no</string>
+			</array>
 			<key>total</key>
-			<string></string>
+			<string>Um carro bateu no poste.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>O</string>
+				<string>do</string>
+			</array>
+			<key>total</key>
+			<string>O dicionário estava dentro do armário.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>uma</string>
+			</array>
+			<key>total</key>
+			<string>Cantarei uma música mais tarde.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>da</string>
+			</array>
+			<key>total</key>
+			<string>Eu caí da cadeira</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>A</string>
+			</array>
+			<key>total</key>
+			<string>A estrada está sendo reformada.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>o</string>
+			</array>
+			<key>total</key>
+			<string>Ele pegou o seu celular.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>O</string>
+				<string>no</string>
+			</array>
+			<key>total</key>
+			<string>O prato foi jogado no lixo.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>A</string>
+				<string>no</string>
+			</array>
+			<key>total</key>
+			<string>A taça caiu no chão.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>O</string>
+			</array>
+			<key>total</key>
+			<string>O computador funcionou!</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>O</string>
+			</array>
+			<key>total</key>
+			<string>O menino me cumprimentou.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>Uma</string>
+			</array>
+			<key>total</key>
+			<string>Uma amiga minha me disse isso.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>O</string>
+				<string>o</string>
+			</array>
+			<key>total</key>
+			<string>O cachorro pulou o muro.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>o</string>
+			</array>
+			<key>total</key>
+			<string>Eu te avisei sobre o perigo.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>A</string>
+				<string>na</string>
+			</array>
+			<key>total</key>
+			<string>A lagartixa subiu na parede.</string>
 		</dict>
 	</array>
 	<key>tempo</key>

@@ -167,130 +167,19 @@
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string></string>
+				<string>hoje</string>
 			</array>
 			<key>total</key>
-			<string></string>
+			<string>Conte-me os seus planos hoje.</string>
 		</dict>
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string></string>
+				<string>com</string>
+				<string>cautela</string>
 			</array>
 			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>resposta</key>
-			<array>
-				<string></string>
-			</array>
-			<key>total</key>
-			<string></string>
+			<string>Ela gastou o dinheiro com cautela.</string>
 		</dict>
 	</array>
 	<key>tempo</key>
