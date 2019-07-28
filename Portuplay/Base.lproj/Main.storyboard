@@ -58,7 +58,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Desafios" id="FM3-Cz-oxg"/>
+                    <navigationItem key="navigationItem" title="Desafios" largeTitleDisplayMode="always" id="FM3-Cz-oxg"/>
                     <connections>
                         <outlet property="desafiosTable" destination="DNa-YA-BQn" id="z1U-tk-c8o"/>
                     </connections>
@@ -158,7 +158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-8w-iJR">
-                                <rect key="frame" x="40" y="89" width="334" height="773"/>
+                                <rect key="frame" x="40" y="88" width="334" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sK-jC-1Ki">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
@@ -195,7 +195,7 @@
                                         </constraints>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xh-Wx-Mj0">
-                                        <rect key="frame" x="0.0" y="220" width="334" height="553"/>
+                                        <rect key="frame" x="0.0" y="220" width="334" height="554"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eay-YZ-TVL" customClass="TagListView" customModule="TagListView">
                                                 <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
@@ -264,13 +264,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ik9-8w-iJR" firstAttribute="leading" secondItem="TNv-zI-4Vg" secondAttribute="leading" constant="40" id="7CE-BS-BfW"/>
-                            <constraint firstItem="ik9-8w-iJR" firstAttribute="top" secondItem="TNv-zI-4Vg" secondAttribute="top" constant="45" id="8Uq-dW-Y7O"/>
+                            <constraint firstItem="ik9-8w-iJR" firstAttribute="top" secondItem="TNv-zI-4Vg" secondAttribute="top" id="8Uq-dW-Y7O"/>
                             <constraint firstItem="TNv-zI-4Vg" firstAttribute="trailing" secondItem="ik9-8w-iJR" secondAttribute="trailing" constant="40" id="BF3-qT-kXn"/>
                             <constraint firstItem="TNv-zI-4Vg" firstAttribute="bottom" secondItem="ik9-8w-iJR" secondAttribute="bottom" id="uRW-gj-M0S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TNv-zI-4Vg"/>
                     </view>
-                    <navigationItem key="navigationItem" id="T23-0k-Zsl"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="T23-0k-Zsl"/>
                     <connections>
                         <outlet property="gameDifficulty" destination="tZx-Mc-FMy" id="c5h-5E-3jX"/>
                         <outlet property="gameScore" destination="b4D-kK-w96" id="RJv-MV-pKf"/>
@@ -283,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b46-F0-s3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="2230"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="2229.9107142857142"/>
         </scene>
         <!--Game Over View Controller-->
         <scene sceneID="vJt-o5-qeB">
@@ -342,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyW-jQ-Ohx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="2230"/>
+            <point key="canvasLocation" x="2889.8550724637685" y="2229.9107142857142"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="BLB-0N-1Ah">
@@ -569,6 +569,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jp-Sn-uFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113" y="832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yra-Hn-Y2u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D8e-6v-Ndm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F5X-Oc-zqI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yo6-DQ-tDW" kind="relationship" relationship="rootViewController" id="5vD-rT-52v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPn-Kb-rZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="2229.9107142857142"/>
         </scene>
     </scenes>
     <resources>

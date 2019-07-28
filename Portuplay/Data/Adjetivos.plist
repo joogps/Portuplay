@@ -197,7 +197,7 @@
 		<dict>
 			<key>resposta</key>
 			<array>
-				<string>esquisitas.</string>
+				<string>esquisitas</string>
 			</array>
 			<key>total</key>
 			<string>Essas coisas são esquisitas.</string>

@@ -33,7 +33,12 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController!.isNavigationBarHidden = true
+        self.navigationController!.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.subviews.first?.alpha = 0
+        
+        let backButton = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(back(sender:)))
+        backButton.tintColor = .darkText
+        self.navigationItem.leftBarButtonItem = backButton
         
         gameTitle.text = desafio!.title
         self.gameScore.text = String(self.score)+" / "+String(self.desafio!.correct[difficultyIndex])
@@ -69,6 +74,30 @@ class GameViewController: UIViewController {
         addPhrase(Int.random(in: 0 ..< desafio!.unselectedPhrases.count))
     }
     
+    @objc func back(sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Sair do desafio?", message: "Você não poderá recuperar o seu progresso.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: {
+            action in
+            let desafiosViewController = self.storyboard?.instantiateViewController(withIdentifier: "Desafios") as! DesafiosViewController
+            
+            let transition = CATransition()
+            transition.timingFunction = CAMediaTimingFunction(name:
+                CAMediaTimingFunctionName.easeInEaseOut)
+            transition.type = .push
+            transition.subtype = .fromTop
+            transition.duration = 0.35
+            self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
+            
+            self.navigationController?.pushViewController(desafiosViewController, animated: false)
+            
+            self.timeIndicator.timer.invalidate()
+        }))
+        alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
+    
     override func viewDidLayoutSubviews() {
         wordList.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: wordList.frame.height)
     }
@@ -102,8 +131,6 @@ class GameViewController: UIViewController {
         }
         
         let words = phrase.total.components(separatedBy: .whitespaces)
-        
-        print(phrase.total, phrase.answer)
         
         for word in words {
             let tag = wordList.addTag(String(word))
@@ -231,25 +258,9 @@ class GameViewController: UIViewController {
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            let alert = UIAlertController(title: "Sair do desafio?", message: "Você não poderá recuperar o seu progresso.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Agitar para mandar feedback", message: "No futuro você poderá mandar feedback sobre o jogo por aqui.", preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: {
-                action in
-                let desafiosViewController = self.storyboard?.instantiateViewController(withIdentifier: "Desafios") as! DesafiosViewController
-                
-                let transition = CATransition()
-                transition.timingFunction = CAMediaTimingFunction(name:
-                    CAMediaTimingFunctionName.easeInEaseOut)
-                transition.type = .push
-                transition.subtype = .fromTop
-                transition.duration = 0.35
-                self.navigationController?.view.layer.add(transition, forKey: CATransitionType.push.rawValue)
-                
-                self.navigationController?.pushViewController(desafiosViewController, animated: false)
-                
-                self.timeIndicator.timer.invalidate()
-            }))
-            alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Entendi", style: .cancel, handler: nil))
             
             self.present(alert, animated: true)
         }

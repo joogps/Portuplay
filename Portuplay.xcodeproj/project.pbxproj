@@ -14,7 +14,6 @@
 		274B105B22BB2841003208EB /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B105A22BB2841003208EB /* GameOverViewController.swift */; };
 		27730D2022BAE8F3001C42CB /* TimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */; };
 		2788E3C822BFD20300BE905F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788E3C722BFD20300BE905F /* InfoViewController.swift */; };
-		279216BE22C14B9D00B57B8A /* Verbos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216BB22C14B9D00B57B8A /* Verbos.plist */; };
 		279216BF22C14B9D00B57B8A /* Adjetivos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216BC22C14B9D00B57B8A /* Adjetivos.plist */; };
 		279216C022C14B9D00B57B8A /* Substantivos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216BD22C14B9D00B57B8A /* Substantivos.plist */; };
 		279216C622C16DC400B57B8A /* Pods-Portuplay-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279216C522C16DC400B57B8A /* Pods-Portuplay-acknowledgements.plist */; };
@@ -41,7 +40,6 @@
 		274B105A22BB2841003208EB /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		27730D1F22BAE8F3001C42CB /* TimeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicator.swift; sourceTree = "<group>"; };
 		2788E3C722BFD20300BE905F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		279216BB22C14B9D00B57B8A /* Verbos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Verbos.plist; sourceTree = "<group>"; };
 		279216BC22C14B9D00B57B8A /* Adjetivos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Adjetivos.plist; sourceTree = "<group>"; };
 		279216BD22C14B9D00B57B8A /* Substantivos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Substantivos.plist; sourceTree = "<group>"; };
 		279216C522C16DC400B57B8A /* Pods-Portuplay-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-Portuplay-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-Portuplay/Pods-Portuplay-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
@@ -83,7 +81,6 @@
 				2707A8A822C8183100B5EFEC /* Advérbios.plist */,
 				2707A8A722C8183000B5EFEC /* Artigos.plist */,
 				279216BD22C14B9D00B57B8A /* Substantivos.plist */,
-				279216BB22C14B9D00B57B8A /* Verbos.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -230,7 +227,6 @@
 				2707A8AE22C8183100B5EFEC /* Artigos.plist in Resources */,
 				273AB49C22C0568A00B923A9 /* AppIcon@3x.png in Resources */,
 				279216BF22C14B9D00B57B8A /* Adjetivos.plist in Resources */,
-				279216BE22C14B9D00B57B8A /* Verbos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

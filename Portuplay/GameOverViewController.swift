@@ -19,6 +19,8 @@ class GameOverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.isNavigationBarHidden = true
+        
         status.text = statusText
         score.text = scoreText
         voltar.layer.cornerRadius = 6

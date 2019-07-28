@@ -20,6 +20,114 @@
 			<key>total</key>
 			<string>Eu gosto de suco.</string>
 		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>chuva</string>
+			</array>
+			<key>total</key>
+			<string>Eu andei sob a chuva.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>escada</string>
+			</array>
+			<key>total</key>
+			<string>Ela caiu da escada.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>salgado</string>
+			</array>
+			<key>total</key>
+			<string>O salgado está delicioso.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>computador</string>
+			</array>
+			<key>total</key>
+			<string>O computador está quente.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>mãe</string>
+			</array>
+			<key>total</key>
+			<string>Minha mãe acabou de voltar.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>família</string>
+			</array>
+			<key>total</key>
+			<string>A minha família foi viajar.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>bola</string>
+			</array>
+			<key>total</key>
+			<string>Me desculpe, eu pisei na bola.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>pilar</string>
+			</array>
+			<key>total</key>
+			<string>O pilar é fraco demais.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>música</string>
+				<string>guitarra</string>
+			</array>
+			<key>total</key>
+			<string>Ela tocou uma música na guitarra.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>cachorro</string>
+				<string>salto</string>
+			</array>
+			<key>total</key>
+			<string>O cachorro deu um salto.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>temperatura</string>
+			</array>
+			<key>total</key>
+			<string>A temperatura ainda está baixa.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>jogo</string>
+				<string>celulares</string>
+			</array>
+			<key>total</key>
+			<string>O jogo foi baixado em mais de mil celulares.</string>
+		</dict>
+		<dict>
+			<key>resposta</key>
+			<array>
+				<string>azulejos</string>
+				<string>chão</string>
+			</array>
+			<key>total</key>
+			<string>Os azulejos se repitiam sobre o chão.</string>
+		</dict>
 	</array>
 	<key>tempo</key>
 	<array>
